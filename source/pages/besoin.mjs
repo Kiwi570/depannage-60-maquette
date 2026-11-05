@@ -2,7 +2,7 @@
    la première question au centre ; le questionnaire (3 questions) démarre dans le premier écran. */
 import { html, brut } from '../../outils/gabarit.mjs';
 import { icone } from '../gabarits/commun.mjs';
-import { prix, trouver, imagePrestation } from '../gabarits/composants.mjs';
+import { prix, trouver, imagePrestation, compteur } from '../gabarits/composants.mjs';
 
 export const page = { cle: 'besoin', fichier: 'decrivez-votre-besoin', imagePartage: 'grok/diagnostic-ouverture-1280.webp' };
 
@@ -81,7 +81,7 @@ export default (c) => {
     <div>
       <h2 data-anime="lignes" data-raccord-cible>${c.t('besoin.fin.titre')}</h2>
       <p data-anime>${c.t('besoin.fin.texte')}</p>
-      <p class="fin-actions" data-anime><a class="appel-numero appel-numero--moyen" href="tel:${c.site.contact.telephoneLien}" data-survol="magnetique">${icone.tel}<span>${c.site.contact.telephone}</span></a></p>
+      <p class="fin-actions" data-anime><a class="appel-numero appel-numero--moyen" href="tel:${c.site.contact.telephoneLien}" data-survol="magnetique">${icone.tel}${compteur(c)}</a></p>
     </div>
   </div>
 </section>

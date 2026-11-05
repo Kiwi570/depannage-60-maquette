@@ -1,7 +1,7 @@
 // Catalogue filtré avec Flip : filtres par groupe, budget maximal, tri ; les fiches se réordonnent, sortent et entrent en fondu.
 // Les données sont dans le HTML : chaque fiche porte data-<groupe>="valeur(s) séparées par des espaces", data-<champ>="nombre".
 // La sélection est reportée dans l'adresse (?categorie=…&prix=…&tri=…) et relue à l'arrivée.
-import { pret } from '../socle.js?v=1';
+import { pret } from '../socle.js?v=2';
 
 /**
  * @param {HTMLElement} root  section.cff

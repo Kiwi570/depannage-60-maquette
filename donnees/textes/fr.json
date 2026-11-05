@@ -34,7 +34,8 @@
     "commander": "Demander cette prestation",
     "voirFiche": "Voir la fiche",
     "aVolOiseau": "à vol d’oiseau",
-    "nouvelOnglet": "(nouvel onglet)"
+    "nouvelOnglet": "(nouvel onglet)",
+    "appelerNumero": "Appeler le 07 61 18 33 22"
   },
   "pages": {
     "accueil": {
@@ -93,16 +94,18 @@
       "indiceDoigt": "Touchez l’eau"
     },
     "diag": {
-      "surtitre": "Quel est votre problème ?",
-      "titre": "Basculez l’interrupteur de votre panne.",
-      "texte": "Chaque problème courant a sa prestation et son prix affiché. Touchez-en un pour voir ce qui est compris.",
+      "surtitre": "Pannes courantes",
+      "titre": "Rallumez la lumière sur votre panne.",
+      "texte": "Faites défiler ou touchez un interrupteur : chaque panne courante s’allume avec sa prestation et son prix affiché.",
       "autre": "Autre problème ? Décrivez votre besoin",
       "fuite": "Fuite d’eau",
       "wc": "WC bouché",
-      "evacuation": "Évier ou douche bouché",
+      "evacuation": "Évier ou douche bouchés",
       "eauChaude": "Plus d’eau chaude",
       "humidite": "Trace d’humidité",
-      "prise": "Prise à poser"
+      "prise": "Prise à poser",
+      "indiceSouris": "La lampe suit votre souris",
+      "indiceDoigt": "Touchez le tableau pour l’éclairer"
     },
     "prix": {
       "surtitre": "Tarifs affichés",
@@ -141,7 +144,8 @@
       "eauFroide": "Eau froide",
       "eauChaude": "Eau chaude",
       "courant": "Courant",
-      "glisser": "Faites glisser le schéma"
+      "glisser": "Faites glisser le schéma",
+      "eclats": "Faites défiler : l’enduit tombe"
     },
     "rayon": {
       "surtitre": "Rayon d’action",
@@ -192,6 +196,26 @@
       "titre": "Un appel, et le problème est pris en main.",
       "rappel": "Demander à être rappelé",
       "ruban": "Longueil-Sainte-Marie · Rivecourt · Le Meux · Chevrières · Houdancourt · Verberie · Saint-Vaast-de-Longmont · Compiègne · Creil · Lamorlaye · Toute l’Oise ·"
+    },
+    "chauffe": {
+      "surtitre": "Chauffe-eau",
+      "titre": "Votre ballon, pièce par pièce.",
+      "intro": "Plus d’eau chaude ? Le diagnostic du ballon est à 149 € TTC, déplacement et première heure compris. Chaque pièce a sa prestation.",
+      "liste": "Les pièces, de haut en bas",
+      "mention": "Schéma illustratif",
+      "p1": "Cuve",
+      "p1t": "Remplacement du ballon",
+      "p2": "Résistance",
+      "p2t": "Remplacement de la résistance",
+      "p3": "Thermostat",
+      "p3t": "Remplacement des thermostats",
+      "p4": "Capot",
+      "p4t": "Retiré pour le diagnostic, 149 € TTC",
+      "p5": "Groupe de sécurité",
+      "p5t": "Remplacement du groupe de sécurité",
+      "p6": "Réducteur de pression",
+      "p6t": "Remplacement du réducteur de pression",
+      "action": "Toutes les prestations chauffe-eau"
     }
   },
   "prestations": {

@@ -1,20 +1,21 @@
-# Dépannage 60 — maquette v1 (direction « Deux réseaux »)
+# Dépannage 60 — maquette v2 (direction « Deux réseaux »)
 
 Maquette du futur site de Dépannage 60 (plomberie, électricité et rénovation, Longueil-Sainte-Marie, Oise).
 Site statique, prêt pour Vercel (`cleanUrls`), sans étape de construction : les pages HTML sont générées à l'avance.
+Ce qui a changé depuis la v1 : `CHANGELOG.md`.
 
-## Pages de la v1
+## Pages de la v2
 
 | Page | Adresse | Ouverture |
 |---|---|---|
-| Accueil | `/` | Photo plein cadre sous une eau WebGL, intro « mise en service » (tuyau bleu et câble jaune, le nom qui se remplit d'eau, « 60 » qui s'allume, manomètre à 45 min) |
+| Accueil | `/` | Photo plein cadre sous une eau WebGL (ondes 2D sans carte graphique), intro « mise en service » (tuyau bleu et câble jaune, le nom qui se remplit d'eau, arc électrique, « 60 » qui s'allume, manomètre à 45 min, vidange du panneau) ; puis coupure de courant, mur en éclats et radiographie des réseaux, chauffe-eau en vue éclatée |
 | Prestations et tarifs | `/prestations` | Fond bleu nuit, étiquettes de prix suspendues qui tombent et se balancent ; catalogue filtrable des 69 prestations |
 | Décrivez votre besoin | `/decrivez-votre-besoin` | Carrelage dont les carreaux se retournent ; questionnaire en 3 questions qui mène à la prestation et son prix |
 | Rayon d'action | `/rayon-d-action` | Carte des 10 communes, ondes depuis Longueil-Sainte-Marie, vérification de la commune |
 | Contact | `/contact` | Fond jaune, la fiche se branche et le formulaire en 3 étapes s'allume (simulé) |
 | 404 | `/404` | Coude de cuivre qui fuit |
 
-Pages du site actuel non reprises en v1 (disponibles en v2) : les 10 pages de communes (regroupées dans « Rayon d'action »), l'espace pro (connexion), l'outil PMR de Budgetravaux, les comptes clients, les mentions légales et CGV.
+Pages du site actuel non reprises dans la maquette (possibles dans une prochaine version) : les 10 pages de communes (regroupées dans « Rayon d'action »), l'espace pro (connexion), l'outil PMR de Budgetravaux, les comptes clients, les mentions légales et CGV.
 
 ## Mettre à jour
 
@@ -60,3 +61,4 @@ Pages du site actuel non reprises en v1 (disponibles en v2) : les 10 pages de co
 - Illustrations générées (Grok) : ouverture, rénovation, matières, rues ; marquées « Illustration générée ».
 - Polices : Bricolage Grotesque et IBM Plex Mono (licence SIL OFL), hébergées avec le site.
 - GSAP (ScrollTrigger, SplitText, Flip) et OGL, hébergés avec le site.
+- Schéma du chauffe-eau : dessin vectoriel de la maquette, marqué « Schéma illustratif ».

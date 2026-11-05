@@ -3,7 +3,7 @@
 // décalage chromatique et reflet spéculaire ; une goutte ouvre l'eau depuis le centre, le pointeur y dépose des ronds,
 // l'eau se calme au défilement. Sans WebGL, en mode calme ou sous « réduire les animations » : image nette ou légère
 // distorsion SVG figée ; sans JavaScript : image nette.
-import { pret } from '../socle.js?v=1';
+import { pret } from '../socle.js?v=2';
 
 const N = 10; // ronds simultanés
 const VERT = 'attribute vec2 uv; attribute vec2 position; varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position, 0.0, 1.0); }';

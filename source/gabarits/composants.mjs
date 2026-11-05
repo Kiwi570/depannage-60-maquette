@@ -57,3 +57,13 @@ export function carte(c, { id = 'carte', classe = '', ondes = true, libelle } = 
   <span class="carte-note" aria-hidden="true">${c.t('rayon.tete.schema')}</span>
 </div>`;
 }
+
+/* Compteur d'eau : le numéro roule chiffre par chiffre (bandes 0-9 deux fois, dessinées en CSS par ::before).
+   Un seul texte réel : le numéro, lu par les lecteurs d'écran. */
+export function compteur(c, { classe = '' } = {}) {
+  const tel = c.site.contact.telephone;
+  const roues = [...tel].map((ch) => (/\d/.test(ch)
+    ? `<span class="odo-roue"><span class="odo-bande" style="--n:${ch}"></span></span>`
+    : '<span class="odo-espace"></span>')).join('');
+  return html`<span class="odo ${classe}" data-effet="compteur" aria-hidden="true" data-audit-ignorer>${brut(roues)}</span><span class="visuellement-cache">${tel}</span>`;
+}

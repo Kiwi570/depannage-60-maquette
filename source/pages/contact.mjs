@@ -2,7 +2,7 @@
    Formulaire par étapes (module de la bibliothèque), simulé : rien n'est envoyé. Prérempli par ?prestation=, ?delai=, ?sujet=. */
 import { html, brut } from '../../outils/gabarit.mjs';
 import { icone } from '../gabarits/commun.mjs';
-import { carte } from '../gabarits/composants.mjs';
+import { carte, compteur } from '../gabarits/composants.mjs';
 
 export const page = { cle: 'contact', fichier: 'contact', imagePartage: 'grok/accueil-sac-640.webp' };
 
@@ -123,7 +123,7 @@ export default (c) => { const F = c.donnees.formulaire; return html`
       <h2 data-anime="lignes" data-raccord-cible>${c.t('contact.fin.titre')}</h2>
       <p data-anime>${c.t('contact.fin.texte')}</p>
     </div>
-    <p class="fin-actions" data-anime><a class="appel-numero appel-numero--moyen" href="tel:${c.site.contact.telephoneLien}" data-survol="magnetique">${icone.tel}<span>${c.site.contact.telephone}</span></a></p>
+    <p class="fin-actions" data-anime><a class="appel-numero appel-numero--moyen" href="tel:${c.site.contact.telephoneLien}" data-survol="magnetique">${icone.tel}${compteur(c)}</a></p>
   </div>
 </section>
 `;

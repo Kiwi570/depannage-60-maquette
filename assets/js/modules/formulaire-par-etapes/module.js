@@ -3,7 +3,7 @@
 // en français, liés aux champs par aria-describedby), le récapitulatif modifiable et un envoi simulé :
 // aucun envoi réel, un événement « formulaire:envoye » porte les données, et un lien mailto: de repli est possible.
 // Sans JavaScript : toutes les étapes sont visibles et le formulaire reste un formulaire HTML ordinaire.
-import { pret } from '../socle.js?v=1';
+import { pret } from '../socle.js?v=2';
 
 const MESSAGES = {
   obligatoire: 'Ce champ est obligatoire.',

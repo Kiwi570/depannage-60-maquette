@@ -1,7 +1,7 @@
 /* Pont entre les modules de la bibliothèque (qui attendent pret([...]) de leur socle) et le socle du projet.
    GSAP et ScrollTrigger sont déjà chargés par la page ; Flip et OGL sont chargés à la demande depuis /assets/vendor.
    Mode calme, mesures et rafraîchissement regroupé : ceux du socle du projet, jamais recalculés ici. */
-import { etat, rafraichir, boucle as boucleSocle } from '../socle/index.js?v=1';
+import { etat, rafraichir, boucle as boucleSocle } from '../socle/index.js?v=2';
 
 const FICHIERS = { flip: 'Flip.min.js', ogl: 'ogl.min.js' };
 const charges = {};

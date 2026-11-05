@@ -133,8 +133,9 @@ function voile(c) {
   return html`<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/losanges.png" alt="" width="472" height="112"><span data-voile-libelle>${c.libelle(c.page.cle)}</span></div></div>`;
 }
 
-/* Panneau d'intro « mise en service » : deux moitiés de papier, le tuyau bleu et le câble jaune qui se rejoignent,
-   le nom qui se remplit d'eau, « 60 » qui s'allume, le manomètre qui monte à 45. Visible et entier dès la première image. */
+/* Panneau d'intro « mise en service » : le tuyau bleu et le câble jaune se rejoignent, le nom se remplit d'eau (vague,
+   bulles), un arc électrique traverse « 60 » qui s'allume, le manomètre monte à 45, puis le panneau se vide comme une
+   cuve (bord en vague qui descend). Visible et entier dès la première image. */
 function panneau(c) {
   return html`<div class="ouverture-panneau" data-ouverture data-gouttiere="#f4f1ea" aria-hidden="true">
   <div class="ouv-moitie ouv-haut"></div><div class="ouv-moitie ouv-bas"></div>
@@ -145,7 +146,7 @@ function panneau(c) {
   </svg>
   <div class="ouv-scene">
     <img class="ouv-losanges" src="/assets/images/losanges.png" alt="" width="472" height="112">
-    <p class="ouv-nom"><span class="ouv-mot">DÉPANNAGE<span class="ouv-eau">DÉPANNAGE</span></span><span class="ouv-60">60<span class="ouv-60-lum">60</span></span></p>
+    <p class="ouv-nom"><span class="ouv-mot">DÉPANNAGE<span class="ouv-eau">DÉPANNAGE</span></span><span class="ouv-60">60<span class="ouv-60-lum">60</span><svg class="ouv-arc" viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="ouv-arc-halo" d="M0 30 H100"/><path class="ouv-arc-trait" d="M0 30 H100"/></svg></span></p>
     <div class="ouv-bas-ligne">
       ${manometre(45, 'ouv-mano')}
       <p class="ouv-ligne"><span class="ouv-chiffre" data-ouv-chiffre>45</span> ${c.t('commun.introMinutes')} · ${c.t('commun.introLigne')}</p>
