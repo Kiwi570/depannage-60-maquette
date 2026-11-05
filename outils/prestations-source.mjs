@@ -1,0 +1,121 @@
+/* Source du catalogue, relevée sur depannage-60.com le 5 novembre 2026 (fautes d'orthographe du site corrigées).
+   Écrit donnees/prestations.json. Prix : uniquement ceux affichés sur le site actuel. */
+import fs from 'node:fs';
+
+const slug = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/['’]/g, '-').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+const familles = [
+  { id: 'wc', nom: 'WC', reseau: 'plomberie', picto: 'wc-bouche' },
+  { id: 'evier', nom: 'Évier', reseau: 'plomberie', picto: 'evier' },
+  { id: 'lavabo', nom: 'Lavabo', reseau: 'plomberie', picto: 'lavabo' },
+  { id: 'baignoire', nom: 'Baignoire', reseau: 'plomberie', picto: 'baignoire' },
+  { id: 'douche', nom: 'Douche', reseau: 'plomberie', picto: 'douche' },
+  { id: 'chauffe-eau', nom: 'Chauffe-eau', reseau: 'plomberie', picto: 'chauffe-eau' },
+  { id: 'fuite', nom: 'Recherche de fuite', reseau: 'plomberie', picto: 'robinet' },
+  { id: 'canalisation', nom: 'Canalisation', reseau: 'plomberie', picto: 'vanne-arret' },
+  { id: 'electromenager', nom: 'Électroménager', reseau: 'plomberie', picto: 'lave-vaisselle' },
+  { id: 'chauffage', nom: 'Chauffage', reseau: 'plomberie', picto: 'radiateur' },
+  { id: 'prises', nom: 'Prises électriques', reseau: 'electricite', picto: null },
+  { id: 'point-lumineux', nom: 'Point lumineux', reseau: 'electricite', picto: null },
+  { id: 'divers-electricite', nom: 'Divers électricité', reseau: 'electricite', picto: null },
+];
+
+const debouchage149 = {
+  prix: 149, detail: [['Déplacement', '49 €'], ['Main-d’œuvre, 1 h', '100 €']],
+  inclus: ['Diagnostic de la cause du bouchon', 'Débouchage avec des outils professionnels (pompe manuelle, furet électrique)', 'Nettoyage du lieu de travail'],
+  nonInclus: ['Toute intervention hors descriptif : sur devis, par téléphone'],
+};
+
+const P = [
+  ['wc', 'Débouchage WC', { prix: 100, des: true, photo: 'site/debouchage-wc', detail: [['Déplacement jusqu’à 30 km', 'compris'], ['Main-d’œuvre, 1 h', 'comprise']],
+    inclus: ['Canne, pompe manuelle, furet électrique ou aspirateur à eau selon le bouchon', 'Nettoyage du chantier'],
+    nonInclus: ['Si le débouchage simple ne suffit pas : société de curage', 'Colonne commune : contacter le syndic', 'Toute intervention hors descriptif : sur devis'] }],
+  ['wc', 'Réparation de fuite sur alimentation WC', { photo: 'site/fuite-alimentation-wc' }],
+  ['wc', 'Remplacement robinet WC', { photo: 'site/robinet-wc' }],
+  ['wc', 'Réparation chasse d’eau / flotteur', { photo: 'site/chasse-eau' }],
+  ['wc', 'Remplacement joint au pipe d’évacuation', { photo: 'site/joint-pipe' }],
+  ['wc', 'Création d’une alimentation douchette WC', { photo: 'site/douchette-wc' }],
+  ['wc', 'Pack WC standard complet', {}],
+  ['evier', 'Débouchage évier', { ...debouchage149 }],
+  ['evier', 'Remplacement robinet mitigeur évier', {}],
+  ['evier', 'Robinet mélangeur d’évier à remplacer', {}],
+  ['evier', 'Vidange évier', {}],
+  ['evier', 'Réparation de fuite sur alimentation en eau évier', {}],
+  ['evier', 'Réparation de fuite sur évacuation évier', {}],
+  ['evier', 'Vidange machine à laver', {}],
+  ['evier', 'Remplacement robinet machine à laver', {}],
+  ['evier', 'Création alimentation et évacuation machine à laver', {}],
+  ['evier', 'Remplacement flexible gaz (PC gaz) à vie', {}],
+  ['evier', 'Pack meuble évier complet', {}],
+  ['lavabo', 'Débouchage lavabo', { ...debouchage149, duree: '1 h à 1 h 30' }],
+  ['lavabo', 'Vidange lavabo', {}],
+  ['lavabo', 'Remplacement robinet mitigeur lavabo', {}],
+  ['lavabo', 'Robinet mélangeur de lavabo à remplacer', {}],
+  ['lavabo', 'Réparation de fuite sur alimentation en eau lavabo', {}],
+  ['lavabo', 'Réparation de fuite sur évacuation lavabo', {}],
+  ['lavabo', 'Pack remplacement lavabo complet', {}],
+  ['baignoire', 'Débouchage baignoire', { ...debouchage149, photo: 'site/outils-debouchage', duree: '1 h à 1 h 30' }],
+  ['baignoire', 'Robinet mitigeur baignoire', {}],
+  ['baignoire', 'Robinet mélangeur de baignoire à remplacer', {}],
+  ['baignoire', 'Robinet thermostatique à remplacer', {}],
+  ['baignoire', 'Vidange baignoire', {}],
+  ['baignoire', 'Joint silicone baignoire', {}],
+  ['baignoire', 'Fuite sur évacuation baignoire', {}],
+  ['baignoire', 'Fuite sur alimentation en eau baignoire', {}],
+  ['baignoire', 'Pack remplacement baignoire complète', {}],
+  ['douche', 'Débouchage douche', { ...debouchage149 }],
+  ['douche', 'Vidange douche', {}],
+  ['douche', 'Remplacement robinet mitigeur douche', {}],
+  ['douche', 'Réparation de fuite sur alimentation en eau douche', {}],
+  ['douche', 'Réparation de fuite sur évacuation douche', {}],
+  ['douche', 'Barre de pommeau de douche à remplacer', {}],
+  ['douche', 'Pack remplacement receveur de douche', {}],
+  ['chauffe-eau', 'Problème de ballon d’eau chaude', { prix: 149, photo: 'site/ballon', detail: [['Déplacement', '49 €'], ['Main-d’œuvre, 1 h', '100 €']],
+    inclus: ['Diagnostic de la cause de la panne', 'Outillage professionnel (appareils de mesure, recommandations)', 'Nettoyage du lieu de travail'],
+    nonInclus: ['Toute intervention hors descriptif : sur devis'] }],
+  ['chauffe-eau', 'Remplacement réducteur de pression', {}],
+  ['chauffe-eau', 'Remplacement groupe de sécurité', { photo: 'site/groupe-securite' }],
+  ['chauffe-eau', 'Remplacement des thermostats de chauffe-eau', {}],
+  ['chauffe-eau', 'Fuite sur alimentation du ballon d’eau chaude', {}],
+  ['chauffe-eau', 'Fuite sur évacuation du ballon d’eau chaude', {}],
+  ['chauffe-eau', 'Remplacement du ballon ou de la résistance', {}],
+  ['chauffe-eau', 'Pack remplacement chauffe-eau électrique', {}],
+  ['fuite', 'Recherche de fuite simple', { prix: 149, photo: 'site/recherche-fuite', duree: '1 h à 1 h 30', detail: [['Déplacement', '49 €'], ['Fournitures et pièces', '0 €'], ['Main-d’œuvre, 1 h', '100 €']],
+    inclus: ['Localisation de la fuite et sa réparation', 'Contrôle du bon fonctionnement', 'Explications sur les travaux', 'Nettoyage de la zone'],
+    nonInclus: ['Toute intervention hors descriptif : sur devis, par téléphone'] }],
+  ['fuite', 'Recherche de fuite approfondie', {}],
+  ['canalisation', 'J’ai une trace d’humidité', { prix: 150, des: true, photo: 'site/trace-humidite', detail: [['Déplacement à domicile', 'compris'], ['Recherche et diagnostic, 1 h', 'compris']],
+    inclus: ['Matériel de détection standard', 'Devis gratuit et détaillé pour les réparations', 'Rapport de recherche de fuite pour les démarches d’assurance'],
+    nonInclus: ['Réparation de la canalisation : devis complémentaire', 'Remise en état des supports (peinture, plâtrerie, isolation)', 'Caméra endoscopique ou gaz traceur, sauf option ou accord préalable'] }],
+  ['canalisation', 'Remplacement vanne d’arrêt', { photo: 'site/vanne-arret' }],
+  ['canalisation', 'J’ai une fuite sur un joint', {}],
+  ['canalisation', 'Fuite sur un flexible', {}],
+  ['canalisation', 'Remplacement réducteur de pression', {}],
+  ['canalisation', 'Remplacement vanne d’arrêt extérieure', {}],
+  ['canalisation', 'Remplacement réducteur de pression extérieur', {}],
+  ['canalisation', 'Remplacement robinet de puisage extérieur', {}],
+  ['canalisation', 'Fuite sur une alimentation d’eau visible', {}],
+  ['canalisation', 'Fuite sur un tuyau d’évacuation visible', {}],
+  ['canalisation', 'Création d’une alimentation et d’une évacuation d’eau', {}],
+  ['electromenager', 'Robinet de machine à laver à remplacer', { prix: 169, photo: 'site/robinet-machine', detail: [['Déplacement', '49 €'], ['Fournitures et pièces', '20 €'], ['Main-d’œuvre, 1 h', '100 €']],
+    inclus: ['Déplacement du plombier', 'Coupure de l’eau et vidange de la tuyauterie concernée', 'Dépose de l’ancien robinet et pose du neuf', 'Robinet standard en laiton chromé fourni', 'Remplacement du joint entre robinet et flexible', 'Mise en eau et contrôle de pression', 'Évacuation et recyclage de l’ancien robinet'],
+    nonInclus: ['Flexible plastique de la machine, sauf fourni ou en supplément', 'Modification importante de la tuyauterie cassée, dessoudée ou très corrodée', 'Déplacement, installation ou mise en service électrique de la machine', 'Création ou débouchage de l’évacuation PVC'] }],
+  ['electromenager', 'Robinet de lave-vaisselle à remplacer', {}],
+  ['electromenager', 'Création alimentation machine à laver', {}],
+  ['electromenager', 'Création évacuation machine à laver', {}],
+  ['prises', 'Prises électriques standard', { prix: 155, photo: 'site/prises',
+    supplements: [['16 A + T', '0 €', '30 €'], ['16 A + T avec interrupteur', '30 €', '100 €'], ['16 A + T avec variateur', '60 €', '100 €'], ['16 A + T étanche', '65 €', '150 €']],
+    inclus: ['Fourniture et pose de prises standard en rénovation électrique'] }],
+  ['prises', 'Prises électriques spécialisées', {}],
+  ['prises', 'Prises électriques communication', {}],
+];
+
+const vus = new Set();
+const prestations = P.map(([famille, nom, o]) => {
+  let id = slug(nom); if (vus.has(id)) id = `${id}-${famille}`; vus.add(id);
+  return { id, famille, nom, prix: o.prix ?? null, des: !!o.des, photo: o.photo || null, duree: o.duree || null,
+    detail: o.detail || [], inclus: o.inclus || [], nonInclus: o.nonInclus || [], supplements: o.supplements || [] };
+});
+const sortie = new URL('../donnees/prestations.json', import.meta.url);
+fs.writeFileSync(sortie, JSON.stringify({ familles, prestations }, null, 1));
+console.log(prestations.length, 'prestations,', prestations.filter((p) => p.prix).length, 'avec prix');

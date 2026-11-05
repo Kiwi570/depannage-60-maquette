@@ -1,0 +1,47 @@
+{
+  "lieux": [
+    { "id": "wc", "nom": "WC", "picto": "wc-bouche", "cas": [
+      { "id": "bouche", "nom": "C’est bouché", "prestations": ["debouchage-wc"] },
+      { "id": "fuite", "nom": "Ça fuit", "prestations": ["reparation-de-fuite-sur-alimentation-wc", "remplacement-joint-au-pipe-d-evacuation"] },
+      { "id": "chasse", "nom": "La chasse d’eau coule", "prestations": ["reparation-chasse-d-eau-flotteur"] },
+      { "id": "remplacer", "nom": "À remplacer", "prestations": ["pack-wc-standard-complet", "remplacement-robinet-wc"] }
+    ] },
+    { "id": "douche", "nom": "Douche ou baignoire", "picto": "douche", "cas": [
+      { "id": "bouche", "nom": "L’eau ne s’évacue plus", "prestations": ["debouchage-douche", "debouchage-baignoire"] },
+      { "id": "fuite", "nom": "Ça fuit", "prestations": ["reparation-de-fuite-sur-evacuation-douche", "fuite-sur-evacuation-baignoire", "fuite-sur-alimentation-en-eau-baignoire"] },
+      { "id": "robinet", "nom": "Le robinet ou le pommeau", "prestations": ["remplacement-robinet-mitigeur-douche", "robinet-thermostatique-a-remplacer", "barre-de-pommeau-de-douche-a-remplacer"] },
+      { "id": "joint", "nom": "Le joint est abîmé", "prestations": ["joint-silicone-baignoire"] }
+    ] },
+    { "id": "lavabo", "nom": "Lavabo", "picto": "lavabo", "cas": [
+      { "id": "bouche", "nom": "C’est bouché", "prestations": ["debouchage-lavabo"] },
+      { "id": "fuite", "nom": "Ça fuit", "prestations": ["reparation-de-fuite-sur-alimentation-en-eau-lavabo", "reparation-de-fuite-sur-evacuation-lavabo"] },
+      { "id": "robinet", "nom": "Le robinet est à changer", "prestations": ["remplacement-robinet-mitigeur-lavabo", "robinet-melangeur-de-lavabo-a-remplacer"] }
+    ] },
+    { "id": "cuisine", "nom": "Évier, cuisine", "picto": "evier", "cas": [
+      { "id": "bouche", "nom": "C’est bouché", "prestations": ["debouchage-evier"] },
+      { "id": "fuite", "nom": "Ça fuit", "prestations": ["reparation-de-fuite-sur-alimentation-en-eau-evier", "reparation-de-fuite-sur-evacuation-evier"] },
+      { "id": "robinet", "nom": "Le robinet est à changer", "prestations": ["remplacement-robinet-mitigeur-evier", "robinet-melangeur-d-evier-a-remplacer"] },
+      { "id": "machine", "nom": "Brancher une machine", "prestations": ["robinet-de-machine-a-laver-a-remplacer", "creation-alimentation-et-evacuation-machine-a-laver", "robinet-de-lave-vaisselle-a-remplacer"] }
+    ] },
+    { "id": "chauffe-eau", "nom": "Chauffe-eau", "picto": "chauffe-eau", "cas": [
+      { "id": "froid", "nom": "Plus d’eau chaude", "prestations": ["probleme-de-ballon-d-eau-chaude"] },
+      { "id": "fuite", "nom": "Le ballon fuit", "prestations": ["fuite-sur-alimentation-du-ballon-d-eau-chaude", "fuite-sur-evacuation-du-ballon-d-eau-chaude", "remplacement-groupe-de-securite"] },
+      { "id": "remplacer", "nom": "À remplacer", "prestations": ["pack-remplacement-chauffe-eau-electrique", "remplacement-du-ballon-ou-de-la-resistance"] }
+    ] },
+    { "id": "fuite", "nom": "Fuite, humidité", "picto": "canalisation", "cas": [
+      { "id": "humidite", "nom": "Une trace d’humidité", "prestations": ["j-ai-une-trace-d-humidite"] },
+      { "id": "visible", "nom": "Une fuite visible", "prestations": ["recherche-de-fuite-simple", "fuite-sur-une-alimentation-d-eau-visible", "fuite-sur-un-tuyau-d-evacuation-visible"] },
+      { "id": "vanne", "nom": "La vanne d’arrêt", "prestations": ["remplacement-vanne-d-arret", "remplacement-vanne-d-arret-exterieure"] }
+    ] },
+    { "id": "electricite", "nom": "Électricité", "picto": null, "cas": [
+      { "id": "prise", "nom": "Une prise à poser", "prestations": ["prises-electriques-standard", "prises-electriques-specialisees"] },
+      { "id": "reseau", "nom": "Une prise réseau ou télé", "prestations": ["prises-electriques-communication"] },
+      { "id": "panne", "nom": "Une panne de courant", "prestations": [] }
+    ] }
+  ],
+  "delais": [
+    { "id": "urgence", "nom": "C’est urgent", "texte": "Dépannage en urgence" },
+    { "id": "semaine", "nom": "Dans les prochains jours", "texte": "Dans la semaine" },
+    { "id": "planifier", "nom": "Je planifie des travaux", "texte": "À planifier" }
+  ]
+}

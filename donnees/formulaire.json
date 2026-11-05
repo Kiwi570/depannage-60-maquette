@@ -1,0 +1,8 @@
+{
+  "progression": "Progression",
+  "accord": "Accord",
+  "types": ["Plomberie", "Électricité", "Chauffage", "Maçonnerie", "Menuiserie", "Plâtrerie", "Revêtement murs", "Revêtement sol", "Projet complet"],
+  "natures": ["Dépannage", "Dépannage en urgence", "Rénovation", "Réparation", "Montage", "Pose", "Partenariat professionnel"],
+  "pieces": ["Salle de bain", "WC", "Cuisine", "Buanderie", "Chambre", "Séjour", "Garage", "Sous-sol", "Extérieur", "Autre"],
+  "delais": [["urgence", "Dépannage en urgence"], ["semaine", "Dans la semaine"], ["planifier", "À planifier"]]
+}

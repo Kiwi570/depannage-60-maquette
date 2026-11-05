@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-page="besoin" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Décrivez votre besoin : Dépannage 60</title>
+<meta name="description" content="Trois questions pour trouver la prestation qu’il vous faut, avec son prix, puis la commander ou appeler.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://depannage-60-maquette.vercel.app/decrivez-votre-besoin">
+<style>:root{--fond:#f4f1ea;--texte:#16191d;--voile-fond:#0e2340;--ouverture-fond:#f4f1ea;--menu-fond:#f4f1ea}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f4f1ea">
+<link rel="icon" href="/assets/images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dépannage 60">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Décrivez votre besoin : Dépannage 60">
+<meta property="og:description" content="Trois questions pour trouver la prestation qu’il vous faut, avec son prix, puis la commander ou appeler.">
+<meta property="og:url" content="https://depannage-60-maquette.vercel.app/decrivez-votre-besoin">
+<meta property="og:image" content="https://depannage-60-maquette.vercel.app/assets/partage/besoin-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Décrivez votre besoin en trois questions">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["Plumber","Electrician"],"name":"Dépannage 60","telephone":"+33761183322","address":{"@type":"PostalAddress","streetAddress":"9 bis rue de l’Abreuvoir","postalCode":"60126","addressLocality":"Longueil-Sainte-Marie","addressCountry":"FR"},"areaServed":["Longueil-Sainte-Marie","Rivecourt","Le Meux","Chevrières","Houdancourt","Verberie","Saint-Vaast-de-Longmont","Compiègne","Creil","Lamorlaye","Oise"],"sameAs":["https://www.facebook.com/profile.php?id=100025931762469"]}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/losanges.png" alt="" width="472" height="112"><span data-voile-libelle>Décrivez votre besoin</span></div></div>
+<div class="ouverture-panneau" data-ouverture data-gouttiere="#f4f1ea" aria-hidden="true">
+  <div class="ouv-moitie ouv-haut"></div><div class="ouv-moitie ouv-bas"></div>
+  <svg class="ouv-reseaux" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+    <path class="ouv-tuyau" d="M-10 486 H430 Q480 486 480 456 V440" pathLength="1"/>
+    <path class="ouv-tuyau-eau" d="M-10 486 H430 Q480 486 480 456 V440" pathLength="1"/>
+    <path class="ouv-cable" d="M1010 508 H560 Q520 508 520 478 V452" pathLength="1"/>
+  </svg>
+  <div class="ouv-scene">
+    <img class="ouv-losanges" src="/assets/images/losanges.png" alt="" width="472" height="112">
+    <p class="ouv-nom"><span class="ouv-mot">DÉPANNAGE<span class="ouv-eau">DÉPANNAGE</span></span><span class="ouv-60">60<span class="ouv-60-lum">60</span></span></p>
+    <div class="ouv-bas-ligne">
+      <svg class="mano ouv-mano" viewBox="0 0 100 100" aria-hidden="true" focusable="false" style="--angle:60deg">
+<circle class="mano-fond" cx="50" cy="50" r="47"/>
+<path class="mano-arc" d="M13.6 71.0 A42 42 0 1 1 86.4 71.0" pathLength="1"/>
+<g class="mano-grad"><line x1="17.1" y1="69.0" x2="23.2" y2="65.5"/><line x1="17.1" y1="31.0" x2="23.2" y2="34.5"/><line x1="50.0" y1="12.0" x2="50.0" y2="19.0"/><line x1="82.9" y1="31.0" x2="76.8" y2="34.5"/><line x1="82.9" y1="69.0" x2="76.8" y2="65.5"/></g>
+<g class="mano-aiguille"><path d="M50 50 L48 47 L50 14 L52 47 Z"/><circle cx="50" cy="50" r="5"/></g>
+</svg>
+      <p class="ouv-ligne"><span class="ouv-chiffre" data-ouv-chiffre>45</span> min · Plomberie · Électricité · Oise</p>
+    </div>
+  </div>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo-encre.png" alt="" width="622" height="242"><span class="visuellement-cache">Dépannage 60, Accueil</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/prestations" data-libelle="Prestations et tarifs">Prestations et tarifs</a></li><li><a href="/decrivez-votre-besoin" data-libelle="Décrivez votre besoin" aria-current="page">Décrivez votre besoin</a></li><li><a href="/rayon-d-action" data-libelle="Rayon d’action">Rayon d’action</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--jaune entete-tel" href="tel:+33761183322"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg><span>07 61 18 33 22</span></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/prestations" class="menu-lien" data-libelle="Prestations et tarifs">Prestations et tarifs</a></li><li style="--i:2"><a href="/decrivez-votre-besoin" class="menu-lien" data-libelle="Décrivez votre besoin" aria-current="page">Décrivez votre besoin</a></li><li style="--i:3"><a href="/rayon-d-action" class="menu-lien" data-libelle="Rayon d’action">Rayon d’action</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton bouton--jaune" href="tel:+33761183322"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="tete-carrelage" id="questionnaire">
+  <figure class="media carrelage-fond" data-grok data-fx="parallaxe" data-fx-force="6" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/diagnostic-ouverture-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/grok/diagnostic-ouverture-1280.webp" srcset="/assets/images/grok/diagnostic-ouverture-640.webp 640w, /assets/images/grok/diagnostic-ouverture-1280.webp 1280w" sizes="100vw" alt="" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="carreaux" aria-hidden="true" data-effet="carrelage"><span style="--i:0"></span><span style="--i:1"></span><span style="--i:2"></span><span style="--i:3"></span><span style="--i:4"></span><span style="--i:5"></span><span style="--i:6"></span><span style="--i:7"></span><span style="--i:8"></span><span style="--i:9"></span><span style="--i:10"></span><span style="--i:11"></span><span style="--i:12"></span><span style="--i:13"></span><span style="--i:14"></span><span style="--i:15"></span><span style="--i:16"></span><span style="--i:17"></span><span style="--i:18"></span><span style="--i:19"></span><span style="--i:20"></span><span style="--i:21"></span><span style="--i:22"></span><span style="--i:23"></span><span style="--i:24"></span><span style="--i:25"></span><span style="--i:26"></span><span style="--i:27"></span><span style="--i:28"></span><span style="--i:29"></span><span style="--i:30"></span><span style="--i:31"></span><span style="--i:32"></span><span style="--i:33"></span><span style="--i:34"></span><span style="--i:35"></span><span style="--i:36"></span><span style="--i:37"></span><span style="--i:38"></span><span style="--i:39"></span></div>
+  <div class="conteneur questionnaire" data-questionnaire>
+    <div class="q-tete">
+      <p class="surtitre" data-raccord-cible>Décrivez votre besoin</p>
+      <h1 data-anime="gsap" class="q-titre">Qu’est-ce qui ne va pas ?</h1>
+      <p class="q-texte" data-anime="gsap">Trois questions, et la prestation qui correspond s’affiche, avec son tarif quand il est fixé.</p>
+      <p class="q-info" data-info-cle data-anime="gsap">3 questions, 1 prestation</p>
+    </div>
+    <div class="q-progression" data-anime="gsap" data-effet="niveau-eau">
+      <p class="q-etat" aria-live="polite" data-q-etat>Question 1 sur 3</p>
+      <div class="q-tuyau" aria-hidden="true"><span data-q-eau></span></div>
+    </div>
+    <div class="q-corps" data-q-corps data-anime="gsap">
+      <fieldset class="q-etape" data-q-etape="1">
+        <legend class="q-question" tabindex="-1">Où est le problème ?</legend>
+        <div class="q-tuiles"><button type="button" class="q-tuile" data-lieu="wc" aria-pressed="false" data-action-principale>
+          <span class="q-picto"><img src="/assets/images/pictos/wc-bouche-320.webp" alt="" width="320" height="320"></span>
+          <span class="q-nom">WC</span></button><button type="button" class="q-tuile" data-lieu="douche" aria-pressed="false">
+          <span class="q-picto"><img src="/assets/images/pictos/douche-320.webp" alt="" width="320" height="320"></span>
+          <span class="q-nom">Douche ou baignoire</span></button><button type="button" class="q-tuile" data-lieu="lavabo" aria-pressed="false">
+          <span class="q-picto"><img src="/assets/images/pictos/lavabo-320.webp" alt="" width="320" height="320"></span>
+          <span class="q-nom">Lavabo</span></button><button type="button" class="q-tuile" data-lieu="cuisine" aria-pressed="false">
+          <span class="q-picto"><img src="/assets/images/pictos/evier-320.webp" alt="" width="320" height="320"></span>
+          <span class="q-nom">Évier, cuisine</span></button><button type="button" class="q-tuile" data-lieu="chauffe-eau" aria-pressed="false">
+          <span class="q-picto"><img src="/assets/images/pictos/chauffe-eau-320.webp" alt="" width="320" height="320"></span>
+          <span class="q-nom">Chauffe-eau</span></button><button type="button" class="q-tuile" data-lieu="fuite" aria-pressed="false">
+          <span class="q-picto"><img src="/assets/images/pictos/canalisation-320.webp" alt="" width="320" height="320"></span>
+          <span class="q-nom">Fuite, humidité</span></button><button type="button" class="q-tuile" data-lieu="electricite" aria-pressed="false">
+          <span class="q-picto"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect x="14" y="10" width="36" height="44" rx="8" fill="#fff" stroke="#16191d" stroke-width="3"/><circle cx="26" cy="32" r="3.5" fill="#16191d"/><circle cx="38" cy="32" r="3.5" fill="#16191d"/><path d="M34 2 26 18h8l-6 14" fill="none" stroke="#ffc20e" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+          <span class="q-nom">Électricité</span></button></div>
+      </fieldset>
+      <fieldset class="q-etape" data-q-etape="2" hidden>
+        <legend class="q-question" tabindex="-1">Que se passe-t-il ?</legend>
+        <div class="q-choix" data-cas-pour="wc" hidden><button type="button" class="q-puce" data-cas="bouche" aria-pressed="false">C’est bouché</button><button type="button" class="q-puce" data-cas="fuite" aria-pressed="false">Ça fuit</button><button type="button" class="q-puce" data-cas="chasse" aria-pressed="false">La chasse d’eau coule</button><button type="button" class="q-puce" data-cas="remplacer" aria-pressed="false">À remplacer</button></div><div class="q-choix" data-cas-pour="douche" hidden><button type="button" class="q-puce" data-cas="bouche" aria-pressed="false">L’eau ne s’évacue plus</button><button type="button" class="q-puce" data-cas="fuite" aria-pressed="false">Ça fuit</button><button type="button" class="q-puce" data-cas="robinet" aria-pressed="false">Le robinet ou le pommeau</button><button type="button" class="q-puce" data-cas="joint" aria-pressed="false">Le joint est abîmé</button></div><div class="q-choix" data-cas-pour="lavabo" hidden><button type="button" class="q-puce" data-cas="bouche" aria-pressed="false">C’est bouché</button><button type="button" class="q-puce" data-cas="fuite" aria-pressed="false">Ça fuit</button><button type="button" class="q-puce" data-cas="robinet" aria-pressed="false">Le robinet est à changer</button></div><div class="q-choix" data-cas-pour="cuisine" hidden><button type="button" class="q-puce" data-cas="bouche" aria-pressed="false">C’est bouché</button><button type="button" class="q-puce" data-cas="fuite" aria-pressed="false">Ça fuit</button><button type="button" class="q-puce" data-cas="robinet" aria-pressed="false">Le robinet est à changer</button><button type="button" class="q-puce" data-cas="machine" aria-pressed="false">Brancher une machine</button></div><div class="q-choix" data-cas-pour="chauffe-eau" hidden><button type="button" class="q-puce" data-cas="froid" aria-pressed="false">Plus d’eau chaude</button><button type="button" class="q-puce" data-cas="fuite" aria-pressed="false">Le ballon fuit</button><button type="button" class="q-puce" data-cas="remplacer" aria-pressed="false">À remplacer</button></div><div class="q-choix" data-cas-pour="fuite" hidden><button type="button" class="q-puce" data-cas="humidite" aria-pressed="false">Une trace d’humidité</button><button type="button" class="q-puce" data-cas="visible" aria-pressed="false">Une fuite visible</button><button type="button" class="q-puce" data-cas="vanne" aria-pressed="false">La vanne d’arrêt</button></div><div class="q-choix" data-cas-pour="electricite" hidden><button type="button" class="q-puce" data-cas="prise" aria-pressed="false">Une prise à poser</button><button type="button" class="q-puce" data-cas="reseau" aria-pressed="false">Une prise réseau ou télé</button><button type="button" class="q-puce" data-cas="panne" aria-pressed="false">Une panne de courant</button></div>
+        <button type="button" class="lien q-retour" data-q-retour>Question précédente</button>
+      </fieldset>
+      <fieldset class="q-etape" data-q-etape="3" hidden>
+        <legend class="q-question" tabindex="-1">C’est pour quand ?</legend>
+        <div class="q-choix"><button type="button" class="q-puce" data-delai="urgence" aria-pressed="false">C’est urgent</button><button type="button" class="q-puce" data-delai="semaine" aria-pressed="false">Dans les prochains jours</button><button type="button" class="q-puce" data-delai="planifier" aria-pressed="false">Je planifie des travaux</button></div>
+        <button type="button" class="lien q-retour" data-q-retour>Question précédente</button>
+      </fieldset>
+      <div class="q-resultat" data-q-etape="4" hidden tabindex="-1">
+        <p class="q-question" data-q-titre-ok>Voici ce qu’il vous faut.</p>
+        <div class="q-aucune" data-q-aucune hidden><p class="q-question">Ce cas se règle par téléphone.</p><p>Aucune prestation en ligne ne correspond exactement : appelez, on vous dit tout de suite ce qu’il faut faire.</p></div>
+        <p class="q-urgence" data-q-urgence hidden><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg> C’est urgent : appelez directement, c’est le plus rapide. <a href="tel:+33761183322">07 61 18 33 22</a></p>
+        <div class="q-cartes"><article class="q-carte" data-presta="debouchage-wc" hidden>
+          <figure class="media q-carte-media" style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/debouchage-wc-640.webp" srcset="/assets/images/site/debouchage-wc-400.webp 400w, /assets/images/site/debouchage-wc-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Débouchage d’un WC à la pompe manuelle" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Débouchage WC</h2>
+            <div class="q-carte-prix"><span class="fiche-prix" data-prix><small>dès</small> <b><span class="prix-n" data-compte-prix="100">100</span> €</b> <small>TTC</small></span></div>
+            <ul><li>Canne, pompe manuelle, furet électrique ou aspirateur à eau selon le bouchon</li><li>Nettoyage du chantier</li></ul>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=debouchage-wc" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#debouchage-wc" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="reparation-de-fuite-sur-alimentation-wc" hidden>
+          <figure class="media q-carte-media" style="--cadrage:72% 45%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/fuite-alimentation-wc-640.webp" srcset="/assets/images/site/fuite-alimentation-wc-400.webp 400w, /assets/images/site/fuite-alimentation-wc-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Alimentation d’eau d’un WC et son flexible" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Réparation de fuite sur alimentation WC</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=reparation-de-fuite-sur-alimentation-wc" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#reparation-de-fuite-sur-alimentation-wc" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="remplacement-joint-au-pipe-d-evacuation" hidden>
+          <figure class="media q-carte-media" style="--cadrage:75% 45%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/joint-pipe-640.webp" srcset="/assets/images/site/joint-pipe-400.webp 400w, /assets/images/site/joint-pipe-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Pipe d’évacuation d’un WC en PVC blanc" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Remplacement joint au pipe d’évacuation</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=remplacement-joint-au-pipe-d-evacuation" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#remplacement-joint-au-pipe-d-evacuation" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="reparation-chasse-d-eau-flotteur" hidden>
+          <figure class="media q-carte-media" style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/chasse-eau-640.webp" srcset="/assets/images/site/chasse-eau-400.webp 400w, /assets/images/site/chasse-eau-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Réservoir de chasse d’eau ouvert, mécanisme et flotteur" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Réparation chasse d’eau / flotteur</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=reparation-chasse-d-eau-flotteur" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#reparation-chasse-d-eau-flotteur" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="pack-wc-standard-complet" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/wc-bouche-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Pack WC standard complet</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=pack-wc-standard-complet" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#pack-wc-standard-complet" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="remplacement-robinet-wc" hidden>
+          <figure class="media q-carte-media" style="--cadrage:50% 55%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/robinet-wc-640.webp" srcset="/assets/images/site/robinet-wc-400.webp 400w, /assets/images/site/robinet-wc-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Robinet d’arrêt d’un WC sur un tuyau de cuivre" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Remplacement robinet WC</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=remplacement-robinet-wc" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#remplacement-robinet-wc" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="debouchage-douche" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/douche-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Débouchage douche</h2>
+            <div class="q-carte-prix"><span class="fiche-prix" data-prix><b><span class="prix-n" data-compte-prix="149">149</span> €</b> <small>TTC</small></span></div>
+            <ul><li>Diagnostic de la cause du bouchon</li><li>Débouchage avec des outils professionnels (pompe manuelle, furet électrique)</li><li>Nettoyage du lieu de travail</li></ul>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=debouchage-douche" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#debouchage-douche" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="debouchage-baignoire" hidden>
+          <figure class="media q-carte-media" style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/outils-debouchage-640.webp" srcset="/assets/images/site/outils-debouchage-400.webp 400w, /assets/images/site/outils-debouchage-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Outillage de débouchage : furet électrique, pompe et ventouse" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Débouchage baignoire</h2>
+            <div class="q-carte-prix"><span class="fiche-prix" data-prix><b><span class="prix-n" data-compte-prix="149">149</span> €</b> <small>TTC</small></span></div>
+            <ul><li>Diagnostic de la cause du bouchon</li><li>Débouchage avec des outils professionnels (pompe manuelle, furet électrique)</li><li>Nettoyage du lieu de travail</li></ul>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=debouchage-baignoire" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#debouchage-baignoire" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="reparation-de-fuite-sur-evacuation-douche" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/douche-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Réparation de fuite sur évacuation douche</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=reparation-de-fuite-sur-evacuation-douche" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#reparation-de-fuite-sur-evacuation-douche" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="fuite-sur-evacuation-baignoire" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/baignoire-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Fuite sur évacuation baignoire</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=fuite-sur-evacuation-baignoire" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#fuite-sur-evacuation-baignoire" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="fuite-sur-alimentation-en-eau-baignoire" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/baignoire-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Fuite sur alimentation en eau baignoire</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=fuite-sur-alimentation-en-eau-baignoire" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#fuite-sur-alimentation-en-eau-baignoire" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="remplacement-robinet-mitigeur-douche" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/douche-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Remplacement robinet mitigeur douche</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=remplacement-robinet-mitigeur-douche" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#remplacement-robinet-mitigeur-douche" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="robinet-thermostatique-a-remplacer" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/baignoire-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Robinet thermostatique à remplacer</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=robinet-thermostatique-a-remplacer" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#robinet-thermostatique-a-remplacer" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="barre-de-pommeau-de-douche-a-remplacer" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/douche-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Barre de pommeau de douche à remplacer</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=barre-de-pommeau-de-douche-a-remplacer" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#barre-de-pommeau-de-douche-a-remplacer" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="joint-silicone-baignoire" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/baignoire-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Joint silicone baignoire</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=joint-silicone-baignoire" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#joint-silicone-baignoire" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="debouchage-lavabo" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/lavabo-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Débouchage lavabo</h2>
+            <div class="q-carte-prix"><span class="fiche-prix" data-prix><b><span class="prix-n" data-compte-prix="149">149</span> €</b> <small>TTC</small></span></div>
+            <ul><li>Diagnostic de la cause du bouchon</li><li>Débouchage avec des outils professionnels (pompe manuelle, furet électrique)</li><li>Nettoyage du lieu de travail</li></ul>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=debouchage-lavabo" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#debouchage-lavabo" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="reparation-de-fuite-sur-alimentation-en-eau-lavabo" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/lavabo-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Réparation de fuite sur alimentation en eau lavabo</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=reparation-de-fuite-sur-alimentation-en-eau-lavabo" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#reparation-de-fuite-sur-alimentation-en-eau-lavabo" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="reparation-de-fuite-sur-evacuation-lavabo" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/lavabo-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Réparation de fuite sur évacuation lavabo</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=reparation-de-fuite-sur-evacuation-lavabo" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#reparation-de-fuite-sur-evacuation-lavabo" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="remplacement-robinet-mitigeur-lavabo" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/lavabo-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Remplacement robinet mitigeur lavabo</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=remplacement-robinet-mitigeur-lavabo" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#remplacement-robinet-mitigeur-lavabo" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="robinet-melangeur-de-lavabo-a-remplacer" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/lavabo-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Robinet mélangeur de lavabo à remplacer</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=robinet-melangeur-de-lavabo-a-remplacer" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#robinet-melangeur-de-lavabo-a-remplacer" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="debouchage-evier" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/evier-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Débouchage évier</h2>
+            <div class="q-carte-prix"><span class="fiche-prix" data-prix><b><span class="prix-n" data-compte-prix="149">149</span> €</b> <small>TTC</small></span></div>
+            <ul><li>Diagnostic de la cause du bouchon</li><li>Débouchage avec des outils professionnels (pompe manuelle, furet électrique)</li><li>Nettoyage du lieu de travail</li></ul>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=debouchage-evier" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#debouchage-evier" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="reparation-de-fuite-sur-alimentation-en-eau-evier" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/evier-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Réparation de fuite sur alimentation en eau évier</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=reparation-de-fuite-sur-alimentation-en-eau-evier" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#reparation-de-fuite-sur-alimentation-en-eau-evier" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="reparation-de-fuite-sur-evacuation-evier" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/evier-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Réparation de fuite sur évacuation évier</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=reparation-de-fuite-sur-evacuation-evier" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#reparation-de-fuite-sur-evacuation-evier" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="remplacement-robinet-mitigeur-evier" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/evier-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Remplacement robinet mitigeur évier</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=remplacement-robinet-mitigeur-evier" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#remplacement-robinet-mitigeur-evier" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="robinet-melangeur-d-evier-a-remplacer" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/evier-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Robinet mélangeur d’évier à remplacer</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=robinet-melangeur-d-evier-a-remplacer" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#robinet-melangeur-d-evier-a-remplacer" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="robinet-de-machine-a-laver-a-remplacer" hidden>
+          <figure class="media q-carte-media" style="--cadrage:50% 55%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/robinet-machine-640.webp" srcset="/assets/images/site/robinet-machine-400.webp 400w, /assets/images/site/robinet-machine-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Robinet d’alimentation au mur, raccordé en cuivre" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Robinet de machine à laver à remplacer</h2>
+            <div class="q-carte-prix"><span class="fiche-prix" data-prix><b><span class="prix-n" data-compte-prix="169">169</span> €</b> <small>TTC</small></span></div>
+            <ul><li>Déplacement du plombier</li><li>Coupure de l’eau et vidange de la tuyauterie concernée</li><li>Dépose de l’ancien robinet et pose du neuf</li></ul>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=robinet-de-machine-a-laver-a-remplacer" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#robinet-de-machine-a-laver-a-remplacer" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="creation-alimentation-et-evacuation-machine-a-laver" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/evier-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Création alimentation et évacuation machine à laver</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=creation-alimentation-et-evacuation-machine-a-laver" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#creation-alimentation-et-evacuation-machine-a-laver" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="robinet-de-lave-vaisselle-a-remplacer" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/lave-vaisselle-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Robinet de lave-vaisselle à remplacer</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=robinet-de-lave-vaisselle-a-remplacer" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#robinet-de-lave-vaisselle-a-remplacer" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="probleme-de-ballon-d-eau-chaude" hidden>
+          <figure class="media q-carte-media" style="--cadrage:50% 45%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/ballon-640.webp" srcset="/assets/images/site/ballon-400.webp 400w, /assets/images/site/ballon-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Intérieur d’un chauffe-eau électrique, câblage du thermostat" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Problème de ballon d’eau chaude</h2>
+            <div class="q-carte-prix"><span class="fiche-prix" data-prix><b><span class="prix-n" data-compte-prix="149">149</span> €</b> <small>TTC</small></span></div>
+            <ul><li>Diagnostic de la cause de la panne</li><li>Outillage professionnel (appareils de mesure, recommandations)</li><li>Nettoyage du lieu de travail</li></ul>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=probleme-de-ballon-d-eau-chaude" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#probleme-de-ballon-d-eau-chaude" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="fuite-sur-alimentation-du-ballon-d-eau-chaude" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/chauffe-eau-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Fuite sur alimentation du ballon d’eau chaude</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=fuite-sur-alimentation-du-ballon-d-eau-chaude" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#fuite-sur-alimentation-du-ballon-d-eau-chaude" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="fuite-sur-evacuation-du-ballon-d-eau-chaude" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/chauffe-eau-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Fuite sur évacuation du ballon d’eau chaude</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=fuite-sur-evacuation-du-ballon-d-eau-chaude" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#fuite-sur-evacuation-du-ballon-d-eau-chaude" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="remplacement-groupe-de-securite" hidden>
+          <figure class="media q-carte-media" style="--cadrage:54% 45%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/groupe-securite-640.webp" srcset="/assets/images/site/groupe-securite-400.webp 400w, /assets/images/site/groupe-securite-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Groupe de sécurité et réducteur de pression sous un chauffe-eau" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Remplacement groupe de sécurité</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=remplacement-groupe-de-securite" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#remplacement-groupe-de-securite" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="pack-remplacement-chauffe-eau-electrique" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/chauffe-eau-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Pack remplacement chauffe-eau électrique</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=pack-remplacement-chauffe-eau-electrique" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#pack-remplacement-chauffe-eau-electrique" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="remplacement-du-ballon-ou-de-la-resistance" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/chauffe-eau-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Remplacement du ballon ou de la résistance</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=remplacement-du-ballon-ou-de-la-resistance" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#remplacement-du-ballon-ou-de-la-resistance" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="j-ai-une-trace-d-humidite" hidden>
+          <figure class="media q-carte-media" style="--cadrage:50% 45%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/trace-humidite-640.webp" srcset="/assets/images/site/trace-humidite-400.webp 400w, /assets/images/site/trace-humidite-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Trace d’humidité et peinture écaillée sur un mur" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">J’ai une trace d’humidité</h2>
+            <div class="q-carte-prix"><span class="fiche-prix" data-prix><small>dès</small> <b><span class="prix-n" data-compte-prix="150">150</span> €</b> <small>TTC</small></span></div>
+            <ul><li>Matériel de détection standard</li><li>Devis gratuit et détaillé pour les réparations</li><li>Rapport de recherche de fuite pour les démarches d’assurance</li></ul>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=j-ai-une-trace-d-humidite" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#j-ai-une-trace-d-humidite" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="recherche-de-fuite-simple" hidden>
+          <figure class="media q-carte-media" style="--cadrage:50% 45%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/recherche-fuite-640.webp" srcset="/assets/images/site/recherche-fuite-400.webp 400w, /assets/images/site/recherche-fuite-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Manomètre de contrôle de pression pendant une recherche de fuite" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Recherche de fuite simple</h2>
+            <div class="q-carte-prix"><span class="fiche-prix" data-prix><b><span class="prix-n" data-compte-prix="149">149</span> €</b> <small>TTC</small></span></div>
+            <ul><li>Localisation de la fuite et sa réparation</li><li>Contrôle du bon fonctionnement</li><li>Explications sur les travaux</li></ul>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=recherche-de-fuite-simple" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#recherche-de-fuite-simple" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="fuite-sur-une-alimentation-d-eau-visible" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/vanne-arret-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Fuite sur une alimentation d’eau visible</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=fuite-sur-une-alimentation-d-eau-visible" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#fuite-sur-une-alimentation-d-eau-visible" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="fuite-sur-un-tuyau-d-evacuation-visible" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/vanne-arret-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Fuite sur un tuyau d’évacuation visible</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=fuite-sur-un-tuyau-d-evacuation-visible" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#fuite-sur-un-tuyau-d-evacuation-visible" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="remplacement-vanne-d-arret" hidden>
+          <figure class="media q-carte-media" style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/vanne-arret-640.webp" srcset="/assets/images/site/vanne-arret-400.webp 400w, /assets/images/site/vanne-arret-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Vanne d’arrêt en laiton sur une canalisation" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Remplacement vanne d’arrêt</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=remplacement-vanne-d-arret" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#remplacement-vanne-d-arret" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="remplacement-vanne-d-arret-exterieure" hidden>
+          <div class="picto q-carte-media" data-visuel><img src="/assets/images/pictos/vanne-arret-320.webp" alt="" width="320" height="320" loading="lazy"></div>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Remplacement vanne d’arrêt extérieure</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=remplacement-vanne-d-arret-exterieure" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#remplacement-vanne-d-arret-exterieure" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="prises-electriques-standard" hidden>
+          <figure class="media q-carte-media" style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/prises-640.webp" srcset="/assets/images/site/prises-400.webp 400w, /assets/images/site/prises-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="Multiprise, testeur et outils d’électricien sur un plan de travail" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Prises électriques standard</h2>
+            <div class="q-carte-prix"><span class="fiche-prix" data-prix><b><span class="prix-n" data-compte-prix="155">155</span> €</b> <small>TTC</small></span></div>
+            <ul><li>Fourniture et pose de prises standard en rénovation électrique</li></ul>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=prises-electriques-standard" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#prises-electriques-standard" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="prises-electriques-specialisees" hidden>
+          <figure class="media q-carte-media" style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/prises-640.webp" srcset="/assets/images/site/prises-400.webp 400w, /assets/images/site/prises-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Prises électriques spécialisées</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=prises-electriques-specialisees" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#prises-electriques-specialisees" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article><article class="q-carte" data-presta="prises-electriques-communication" hidden>
+          <figure class="media q-carte-media" style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/site/prises-640.webp" srcset="/assets/images/site/prises-400.webp 400w, /assets/images/site/prises-640.webp 640w" sizes="(max-width: 760px) 40vw, 200px" alt="" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <div class="q-carte-texte">
+            <h2 class="q-carte-nom">Prises électriques communication</h2>
+            <div class="q-carte-prix"><span class="fiche-prix fiche-prix--demande" data-prix>Prix sur demande</span></div>
+            <p class="q-carte-actions"><a class="bouton bouton--jaune" data-commander href="/contact?prestation=prises-electriques-communication" data-libelle="Contact">Demander cette prestation</a> <a href="/prestations#prises-electriques-communication" class="lien-fleche" data-libelle="Prestations et tarifs">Voir la fiche <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+          </div>
+        </article></div>
+        <p class="q-fin"><a class="bouton bouton--encre" href="tel:+33761183322"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a> <button type="button" class="lien" data-q-recommencer>Recommencer</button></p>
+      </div>
+      <p class="q-sansjs"><a href="/prestations" class="lien-fleche" data-libelle="Prestations et tarifs">Prestations et tarifs <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="donnees-besoin">{"lieux":[{"id":"wc","nom":"WC","picto":"wc-bouche","cas":[{"id":"bouche","nom":"C’est bouché","prestations":["debouchage-wc"]},{"id":"fuite","nom":"Ça fuit","prestations":["reparation-de-fuite-sur-alimentation-wc","remplacement-joint-au-pipe-d-evacuation"]},{"id":"chasse","nom":"La chasse d’eau coule","prestations":["reparation-chasse-d-eau-flotteur"]},{"id":"remplacer","nom":"À remplacer","prestations":["pack-wc-standard-complet","remplacement-robinet-wc"]}]},{"id":"douche","nom":"Douche ou baignoire","picto":"douche","cas":[{"id":"bouche","nom":"L’eau ne s’évacue plus","prestations":["debouchage-douche","debouchage-baignoire"]},{"id":"fuite","nom":"Ça fuit","prestations":["reparation-de-fuite-sur-evacuation-douche","fuite-sur-evacuation-baignoire","fuite-sur-alimentation-en-eau-baignoire"]},{"id":"robinet","nom":"Le robinet ou le pommeau","prestations":["remplacement-robinet-mitigeur-douche","robinet-thermostatique-a-remplacer","barre-de-pommeau-de-douche-a-remplacer"]},{"id":"joint","nom":"Le joint est abîmé","prestations":["joint-silicone-baignoire"]}]},{"id":"lavabo","nom":"Lavabo","picto":"lavabo","cas":[{"id":"bouche","nom":"C’est bouché","prestations":["debouchage-lavabo"]},{"id":"fuite","nom":"Ça fuit","prestations":["reparation-de-fuite-sur-alimentation-en-eau-lavabo","reparation-de-fuite-sur-evacuation-lavabo"]},{"id":"robinet","nom":"Le robinet est à changer","prestations":["remplacement-robinet-mitigeur-lavabo","robinet-melangeur-de-lavabo-a-remplacer"]}]},{"id":"cuisine","nom":"Évier, cuisine","picto":"evier","cas":[{"id":"bouche","nom":"C’est bouché","prestations":["debouchage-evier"]},{"id":"fuite","nom":"Ça fuit","prestations":["reparation-de-fuite-sur-alimentation-en-eau-evier","reparation-de-fuite-sur-evacuation-evier"]},{"id":"robinet","nom":"Le robinet est à changer","prestations":["remplacement-robinet-mitigeur-evier","robinet-melangeur-d-evier-a-remplacer"]},{"id":"machine","nom":"Brancher une machine","prestations":["robinet-de-machine-a-laver-a-remplacer","creation-alimentation-et-evacuation-machine-a-laver","robinet-de-lave-vaisselle-a-remplacer"]}]},{"id":"chauffe-eau","nom":"Chauffe-eau","picto":"chauffe-eau","cas":[{"id":"froid","nom":"Plus d’eau chaude","prestations":["probleme-de-ballon-d-eau-chaude"]},{"id":"fuite","nom":"Le ballon fuit","prestations":["fuite-sur-alimentation-du-ballon-d-eau-chaude","fuite-sur-evacuation-du-ballon-d-eau-chaude","remplacement-groupe-de-securite"]},{"id":"remplacer","nom":"À remplacer","prestations":["pack-remplacement-chauffe-eau-electrique","remplacement-du-ballon-ou-de-la-resistance"]}]},{"id":"fuite","nom":"Fuite, humidité","picto":"canalisation","cas":[{"id":"humidite","nom":"Une trace d’humidité","prestations":["j-ai-une-trace-d-humidite"]},{"id":"visible","nom":"Une fuite visible","prestations":["recherche-de-fuite-simple","fuite-sur-une-alimentation-d-eau-visible","fuite-sur-un-tuyau-d-evacuation-visible"]},{"id":"vanne","nom":"La vanne d’arrêt","prestations":["remplacement-vanne-d-arret","remplacement-vanne-d-arret-exterieure"]}]},{"id":"electricite","nom":"Électricité","picto":null,"cas":[{"id":"prise","nom":"Une prise à poser","prestations":["prises-electriques-standard","prises-electriques-specialisees"]},{"id":"reseau","nom":"Une prise réseau ou télé","prestations":["prises-electriques-communication"]},{"id":"panne","nom":"Une panne de courant","prestations":[]}]}]}</script>
+<section class="suite conteneur" id="ensuite">
+  <figure class="media suite-media" data-grok data-anime="rideau" style="--cadrage:58% 50%">
+  <picture>
+    <img src="/assets/images/grok/diagnostic-siphon-784.webp" srcset="/assets/images/grok/diagnostic-siphon-480.webp 480w, /assets/images/grok/diagnostic-siphon-640.webp 640w, /assets/images/grok/diagnostic-siphon-784.webp 784w" sizes="(max-width: 760px) 92vw, 44vw" alt="Démontage d’un siphon de lavabo, mains gantées" width="784" height="523" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div>
+    <p class="surtitre" data-raccord-cible>Et ensuite</p>
+    <h2 data-anime="lignes">On vous rappelle pour fixer le détail.</h2>
+    <p data-anime>Après la validation de votre demande, nous vous contactons rapidement pour préciser le détail et le délai d’intervention. Vous pouvez joindre une ou deux photos du problème.</p>
+    <ol class="suite-liste" data-anime="cascade"><li><b>Commandez en ligne</b> Votre demande, une ou deux photos, le délai souhaité, vos coordonnées.</li><li><b>On vous rappelle</b> Pour préciser le détail et le délai d’intervention.</li></ol>
+  </div>
+</section>
+<section class="fin-page fin-page--nuit" id="fin">
+  <div class="conteneur fin-page-grille">
+    <figure class="media fin-media" data-fx="zoom" style="--cadrage:52% 45%">
+  <picture>
+    <img src="/assets/images/site/recherche-fuite-640.webp" srcset="/assets/images/site/recherche-fuite-400.webp 400w, /assets/images/site/recherche-fuite-640.webp 640w" sizes="(max-width: 760px) 92vw, 34vw" alt="Manomètre de contrôle de pression pendant une recherche de fuite" width="640" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div>
+      <h2 data-anime="lignes" data-raccord-cible>Vous préférez en parler ?</h2>
+      <p data-anime>Un appel suffit pour décrire le problème et fixer un rendez-vous.</p>
+      <p class="fin-actions" data-anime><a class="appel-numero appel-numero--moyen" href="tel:+33761183322" data-survol="magnetique"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg><span>07 61 18 33 22</span></a></p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied" data-masque-barre>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.png" alt="Dépannage 60" width="622" height="242" loading="lazy">
+      <p>9 bis rue de l’Abreuvoir, 60126 Longueil-Sainte-Marie</p>
+      <p><a class="pied-tel" href="tel:+33761183322">07 61 18 33 22</a></p>
+      <p class="pied-petit">SIREN 538 098 245</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/prestations" data-libelle="Prestations et tarifs">Prestations et tarifs</a></li><li><a href="/decrivez-votre-besoin" data-libelle="Décrivez votre besoin" aria-current="page">Décrivez votre besoin</a></li><li><a href="/rayon-d-action" data-libelle="Rayon d’action">Rayon d’action</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Nos communes</p>
+      <ul class="pied-communes"><li><a href="/rayon-d-action#commune-longueil-sainte-marie" data-libelle="Rayon d’action">Longueil-Sainte-Marie</a></li><li><a href="/rayon-d-action#commune-rivecourt" data-libelle="Rayon d’action">Rivecourt</a></li><li><a href="/rayon-d-action#commune-le-meux" data-libelle="Rayon d’action">Le Meux</a></li><li><a href="/rayon-d-action#commune-chevrieres" data-libelle="Rayon d’action">Chevrières</a></li><li><a href="/rayon-d-action#commune-houdancourt" data-libelle="Rayon d’action">Houdancourt</a></li><li><a href="/rayon-d-action#commune-verberie" data-libelle="Rayon d’action">Verberie</a></li><li><a href="/rayon-d-action#commune-saint-vaast-de-longmont" data-libelle="Rayon d’action">Saint-Vaast-de-Longmont</a></li><li><a href="/rayon-d-action#commune-compiegne" data-libelle="Rayon d’action">Compiègne</a></li><li><a href="/rayon-d-action#commune-creil" data-libelle="Rayon d’action">Creil</a></li><li><a href="/rayon-d-action#commune-lamorlaye" data-libelle="Rayon d’action">Lamorlaye</a></li></ul>
+    </div>
+    <div>
+      <p class="pied-titre">Confort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100025931762469" target="_blank" rel="noopener">Dépannage 60 sur Facebook <span class="visuellement-cache">(nouvel onglet)</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Maquette de démonstration : formulaires simulés, rien n’est envoyé. Les informations marquées « à compléter » seront fournies par le client.</p>
+    <p>© Dépannage 60</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--jaune" href="tel:+33761183322"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg>Appeler</a>
+  <a href="/contact" class="bouton bouton--encre" data-libelle="Contact">Contact</a>
+</div>
+</body>
+</html>

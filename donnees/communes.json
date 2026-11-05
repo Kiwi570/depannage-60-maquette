@@ -1,0 +1,23 @@
+{
+  "depart": { "nom": "Longueil-Sainte-Marie", "cp": "60126", "lat": 49.3545, "lon": 2.7155 },
+  "liste": [
+    { "id": "longueil-sainte-marie", "nom": "Longueil-Sainte-Marie", "cp": "60126", "lat": 49.3545, "lon": 2.7155 },
+    { "id": "rivecourt", "nom": "Rivecourt", "cp": "60126", "lat": 49.3487, "lon": 2.7322 },
+    { "id": "le-meux", "nom": "Le Meux", "cp": "60880", "lat": 49.3697, "lon": 2.7447 },
+    { "id": "chevrieres", "nom": "Chevrières", "cp": "60710", "lat": 49.3463, "lon": 2.6844 },
+    { "id": "houdancourt", "nom": "Houdancourt", "cp": "60710", "lat": 49.3419, "lon": 2.6402 },
+    { "id": "verberie", "nom": "Verberie", "cp": "60410", "lat": 49.3111, "lon": 2.7317 },
+    { "id": "saint-vaast-de-longmont", "nom": "Saint-Vaast-de-Longmont", "cp": "60410", "lat": 49.2961, "lon": 2.7472 },
+    { "id": "compiegne", "nom": "Compiègne", "cp": "60200", "lat": 49.4179, "lon": 2.8261 },
+    { "id": "creil", "nom": "Creil", "cp": "60100", "lat": 49.2597, "lon": 2.4747 },
+    { "id": "lamorlaye", "nom": "Lamorlaye", "cp": "60260", "lat": 49.1553, "lon": 2.4417 }
+  ],
+  "oise": [
+    { "nom": "Beauvais", "lat": 49.4295, "lon": 2.0807 },
+    { "nom": "Nogent-sur-Oise", "lat": 49.2717, "lon": 2.4683 },
+    { "nom": "Noyon", "lat": 49.5811, "lon": 2.9989 },
+    { "nom": "Pont-Sainte-Maxence", "lat": 49.3017, "lon": 2.6047 },
+    { "nom": "Crépy-en-Valois", "lat": 49.2339, "lon": 2.8889 }
+  ],
+  "riviere": [[49.5811, 2.9989], [49.52, 2.93], [49.4535, 2.8611], [49.4179, 2.8261], [49.3905, 2.7790], [49.3697, 2.7447], [49.3487, 2.7322], [49.3311, 2.7150], [49.3111, 2.6900], [49.3017, 2.6047], [49.2800, 2.5300], [49.2597, 2.4747], [49.2200, 2.4000], [49.1900, 2.3300]]
+}

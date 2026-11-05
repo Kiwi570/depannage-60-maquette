@@ -1,0 +1,592 @@
+[
+ {
+  "nom": "grok/accueil-ouverture",
+  "role": "ouverture",
+  "page": "Accueil",
+  "emplacement": "Ouverture plein cadre (eau WebGL par-dessus)",
+  "priorite": "Indispensable",
+  "source": "recu/grok/accueil-ouverture.jpg",
+  "source_mobile": "recu/grok/accueil-ouverture-mobile.jpg",
+  "mobile": "9:16",
+  "zone_texte": "gauche",
+  "consigne_scene": "Close view of a polished chrome mixer tap releasing a clear, steady stream of water into a white ceramic washbasin in a bright and spotless bathroom, droplets catching the light, the tap and stream placed in the right part of the frame, calm and reassuring",
+  "alt": "Robinet chromé et filet d’eau claire dans une vasque blanche",
+  "cadrage": [
+   74,
+   48
+  ],
+  "cadrage_mobile": [
+   60,
+   45
+  ]
+ },
+ {
+  "nom": "grok/accueil-outils",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "page": "Accueil",
+  "emplacement": "Le prix avant de venir",
+  "priorite": "Conseillée",
+  "source": "recu/grok/accueil-outils.jpg",
+  "consigne_scene": "Top-down close view of an open professional plumber toolbox on a light oak floor, adjustable wrenches, a roll of white sealing tape and new brass fittings neatly arranged, objects at rest, nobody",
+  "alt": "Boîte à outils de plombier ouverte : clés, ruban d’étanchéité, raccords en laiton",
+  "cadrage": [
+   50,
+   45
+  ]
+ },
+ {
+  "nom": "grok/accueil-mur",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "page": "Accueil",
+  "emplacement": "Derrière le mur (enduit qui s'ouvre au défilement)",
+  "priorite": "Indispensable",
+  "source": "recu/grok/accueil-mur.jpg",
+  "gabarit": "texture",
+  "consigne_scene": "Straight-on texture of a smooth matte off-white plaster wall with very subtle trowel marks, raking light revealing the relief, filling the whole frame edge to edge, no objects",
+  "alt": "",
+  "cadrage": [
+   50,
+   50
+  ]
+ },
+ {
+  "nom": "grok/accueil-plomberie",
+  "role": "carte-service",
+  "page": "Accueil",
+  "emplacement": "Derrière le mur : carte Plomberie",
+  "priorite": "Indispensable",
+  "source": "recu/grok/accueil-plomberie.jpg",
+  "scene": "new copper pipes with neatly soldered elbows and a brass shut-off valve fixed with clips along a white wall",
+  "alt": "Tuyaux de cuivre neufs et vanne d’arrêt en laiton fixés au mur",
+  "cadrage": [
+   58,
+   50
+  ]
+ },
+ {
+  "nom": "grok/accueil-electricite",
+  "role": "carte-service",
+  "page": "Accueil",
+  "emplacement": "Derrière le mur : carte Électricité",
+  "priorite": "Indispensable",
+  "source": "recu/grok/accueil-electricite.jpg",
+  "consigne_scene": "Close front view of an open modern residential electrical panel with neat rows of plain white circuit breakers without any label and tidy cable runs, a work-gloved hand at the edge of the frame holding an insulated screwdriver, raking light",
+  "alt": "Tableau électrique ouvert, disjoncteurs alignés, main gantée au tournevis",
+  "cadrage": [
+   50,
+   45
+  ]
+ },
+ {
+  "nom": "grok/renovation-salle-de-bain",
+  "role": "galerie",
+  "ratio": "3:4",
+  "page": "Accueil",
+  "emplacement": "Rénovation : galerie (1/4)",
+  "priorite": "Conseillée",
+  "source": "recu/grok/renovation-salle-de-bain.jpg",
+  "gabarit": "lieu",
+  "scene": "a renovated bathroom with a walk-in shower, large white tiles and a chrome rain shower head",
+  "alt": "Salle de bain rénovée avec douche à l’italienne",
+  "cadrage": [
+   50,
+   55
+  ]
+ },
+ {
+  "nom": "grok/renovation-cuisine",
+  "role": "galerie",
+  "ratio": "3:4",
+  "page": "Accueil",
+  "emplacement": "Rénovation : galerie (2/4)",
+  "priorite": "Conseillée",
+  "source": "recu/grok/renovation-cuisine.jpg",
+  "gabarit": "lieu",
+  "scene": "a renovated kitchen corner with a white ceramic sink and a chrome tap under a window, plain cabinets",
+  "alt": "Coin cuisine rénové, évier en céramique sous la fenêtre",
+  "cadrage": [
+   50,
+   60
+  ]
+ },
+ {
+  "nom": "grok/renovation-piece",
+  "role": "galerie",
+  "ratio": "3:4",
+  "page": "Accueil",
+  "emplacement": "Rénovation : galerie (3/4)",
+  "priorite": "Conseillée",
+  "source": "recu/grok/renovation-piece.jpg",
+  "gabarit": "lieu",
+  "scene": "a freshly plastered and painted empty living room with a smooth white ceiling, a light oak floor and a tall window",
+  "alt": "Pièce à vivre aux murs et plafond refaits, parquet clair",
+  "cadrage": [
+   50,
+   60
+  ]
+ },
+ {
+  "nom": "grok/renovation-pmr",
+  "role": "galerie",
+  "ratio": "3:4",
+  "page": "Accueil",
+  "emplacement": "Rénovation : galerie (4/4, salle de bain adaptée)",
+  "priorite": "Conseillée",
+  "source": "recu/grok/renovation-pmr.jpg",
+  "gabarit": "lieu",
+  "scene": "an accessible bathroom with a level walk-in shower without any step, a fold-down shower seat and stainless steel grab bars on white tiles",
+  "alt": "Salle de bain adaptée : douche de plain-pied, siège rabattable et barres d’appui",
+  "cadrage": [
+   50,
+   55
+  ]
+ },
+ {
+  "nom": "grok/accueil-gouttes",
+  "role": "section-fond",
+  "page": "Accueil",
+  "emplacement": "Nos engagements (fond)",
+  "priorite": "Indispensable",
+  "source": "recu/grok/accueil-gouttes.jpg",
+  "zone_texte": "gauche",
+  "consigne_scene": "Macro view of a polished copper pipe surface with clear water droplets pearling into round beads, low grazing light, shallow depth of field, the brightest part on the right, no people, no tools",
+  "alt": "",
+  "cadrage": [
+   60,
+   50
+  ]
+ },
+ {
+  "nom": "grok/accueil-sac",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "page": "Accueil",
+  "emplacement": "Qui intervient",
+  "priorite": "Conseillée",
+  "source": "recu/grok/accueil-sac.jpg",
+  "consigne_scene": "An open canvas tool bag standing on the doorstep of a house, showing pliers, a pipe wrench and an insulated screwdriver, soft morning light, objects at rest, nobody",
+  "alt": "Sac à outils ouvert posé sur le pas d’une porte",
+  "cadrage": [
+   55,
+   62
+  ]
+ },
+ {
+  "nom": "grok/accueil-appel",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "page": "Accueil",
+  "emplacement": "Appel final (fond sombre)",
+  "priorite": "Indispensable",
+  "source": "recu/grok/accueil-appel.jpg",
+  "zone_texte": "gauche",
+  "consigne_scene": "A deep navy blue tiled bathroom wall with a single brass tap above the edge of a white basin, warm lamp light in the evening, a lot of empty space on the left, calm",
+  "alt": "",
+  "cadrage": [
+   60,
+   60
+  ]
+ },
+ {
+  "nom": "grok/prestation-wc",
+  "role": "produit",
+  "ratio": "4:3",
+  "page": "Prestations et tarifs",
+  "emplacement": "Catalogue : famille WC",
+  "priorite": "Conseillée",
+  "source": "recu/grok/prestation-wc.jpg",
+  "consigne_scene": "A clean white wall-hung toilet in a bright tiled bathroom, front three-quarter view, plain chrome flush plate, objects only, nobody",
+  "alt": "WC suspendu dans une salle d’eau claire",
+  "cadrage": [
+   50,
+   55
+  ]
+ },
+ {
+  "nom": "grok/prestation-lavabo",
+  "role": "produit",
+  "ratio": "4:3",
+  "page": "Prestations et tarifs",
+  "emplacement": "Catalogue : familles Lavabo, Évier, Électroménager",
+  "priorite": "Conseillée",
+  "source": "recu/grok/prestation-lavabo.jpg",
+  "consigne_scene": "A white ceramic washbasin with a chrome tap and its neat chrome siphon visible underneath, front view, white tiled wall, objects only, nobody",
+  "alt": "Lavabo blanc, robinet chromé et siphon",
+  "cadrage": [
+   55,
+   50
+  ]
+ },
+ {
+  "nom": "grok/prestation-douche",
+  "role": "produit",
+  "ratio": "4:3",
+  "page": "Prestations et tarifs",
+  "emplacement": "Catalogue : familles Douche, Baignoire",
+  "priorite": "Conseillée",
+  "source": "recu/grok/prestation-douche.jpg",
+  "consigne_scene": "A white bathtub with a chrome thermostatic mixer and a shower head on a flexible hose resting on its wall bracket, light grey tiled wall, objects only, nobody",
+  "alt": "Baignoire et mitigeur thermostatique avec douchette",
+  "cadrage": [
+   55,
+   50
+  ]
+ },
+ {
+  "nom": "grok/prestation-chauffe-eau",
+  "role": "produit",
+  "ratio": "4:3",
+  "page": "Prestations et tarifs",
+  "emplacement": "Catalogue : familles Chauffe-eau, Chauffage",
+  "priorite": "Conseillée",
+  "source": "recu/grok/prestation-chauffe-eau.jpg",
+  "consigne_scene": "A plain white electric water heater cylinder fixed on a utility room wall, with its copper pipe connections underneath, clean and dry, objects only, nobody",
+  "alt": "Chauffe-eau électrique et ses raccords en cuivre",
+  "cadrage": [
+   55,
+   45
+  ]
+ },
+ {
+  "nom": "grok/prestation-fuite",
+  "role": "produit",
+  "ratio": "4:3",
+  "page": "Prestations et tarifs",
+  "emplacement": "Catalogue : familles Recherche de fuite, Canalisation",
+  "priorite": "Conseillée",
+  "source": "recu/grok/prestation-fuite.jpg",
+  "consigne_scene": "White drain pipes and copper supply pipes in the open cabinet under a kitchen sink, dry and clean, a small torch lying on the cabinet floor, objects only, nobody",
+  "alt": "Évacuations et arrivées d’eau sous un évier",
+  "cadrage": [
+   45,
+   50
+  ]
+ },
+ {
+  "nom": "grok/prestations-pieces",
+  "role": "vignette",
+  "page": "Prestations et tarifs",
+  "emplacement": "Ce que comprend un prix",
+  "priorite": "Conseillée",
+  "source": "recu/grok/prestations-pieces.jpg",
+  "consigne_scene": "New brass fittings, a roll of white sealing tape and a small round pressure gauge laid out on a white worktop, top-down view, objects at rest, nobody",
+  "alt": "Raccords en laiton, ruban d’étanchéité et manomètre",
+  "cadrage": [
+   62,
+   50
+  ]
+ },
+ {
+  "nom": "grok/prestations-faq",
+  "role": "section-fond",
+  "page": "Prestations et tarifs",
+  "emplacement": "Questions fréquentes (fond)",
+  "priorite": "Conseillée",
+  "source": "recu/grok/prestations-faq.jpg",
+  "zone_texte": "gauche",
+  "consigne_scene": "Close view of a chrome sink drain in a white ceramic basin with clear water gently swirling down, soft light, the drain placed in the right part of the frame",
+  "alt": "",
+  "cadrage": [
+   72,
+   55
+  ]
+ },
+ {
+  "nom": "grok/diagnostic-ouverture",
+  "role": "ouverture",
+  "page": "Décrivez votre besoin",
+  "emplacement": "Ouverture (carrelage qui se retourne par-dessus)",
+  "priorite": "Indispensable",
+  "source": "recu/grok/diagnostic-ouverture.jpg",
+  "mobile": "9:16",
+  "zone_texte": "haut",
+  "gabarit": "texture",
+  "consigne_scene": "Straight-on texture of glossy white square ceramic tiles with light grey grout lines, a perfectly aligned regular grid, a soft daylight reflection, filling the whole frame edge to edge, no objects",
+  "alt": "",
+  "cadrage": [
+   50,
+   50
+  ]
+ },
+ {
+  "nom": "grok/diagnostic-siphon",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "page": "Décrivez votre besoin",
+  "emplacement": "Résultat du questionnaire",
+  "priorite": "Conseillée",
+  "source": "recu/grok/diagnostic-siphon.jpg",
+  "scene": "a chrome siphon under a white washbasin being unscrewed",
+  "alt": "Démontage d’un siphon de lavabo, mains gantées",
+  "cadrage": [
+   58,
+   50
+  ]
+ },
+ {
+  "nom": "grok/rayon-rue",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "page": "Rayon d'action",
+  "emplacement": "Toute l'Oise",
+  "priorite": "Conseillée",
+  "source": "recu/grok/rayon-rue.jpg",
+  "gabarit": "lieu",
+  "zone_texte": "gauche",
+  "consigne_scene": "Quiet residential street of brick houses with small front gardens in a small town of northern France on a clear autumn morning, empty pavement, no cars",
+  "alt": "Rue résidentielle de maisons en brique, un matin d’automne",
+  "cadrage": [
+   60,
+   55
+  ]
+ },
+ {
+  "nom": "grok/rayon-village",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "page": "Rayon d'action",
+  "emplacement": "Vos communes",
+  "priorite": "Facultative",
+  "source": "recu/grok/rayon-village.jpg",
+  "gabarit": "lieu",
+  "consigne_scene": "A quiet country lane lined with low brick walls leading to a few brick houses of a village of northern France, clear autumn morning, nobody, no cars",
+  "alt": "Chemin de village entre des murets de brique",
+  "cadrage": [
+   55,
+   60
+  ]
+ },
+ {
+  "nom": "grok/404",
+  "role": "404",
+  "page": "404",
+  "emplacement": "Page introuvable",
+  "priorite": "Conseillée",
+  "source": "recu/grok/404.jpg",
+  "mobile": "9:16",
+  "zone_texte": "gauche",
+  "alt": "Coude de cuivre qui fuit dans un seau jaune",
+  "cadrage": [
+   62,
+   58
+  ]
+ },
+ {
+  "nom": "site/debouchage-wc",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/debouchage-wc.png",
+  "alt": "Débouchage d’un WC à la pompe manuelle",
+  "cadrage": [
+   60,
+   50
+  ]
+ },
+ {
+  "nom": "site/fuite-alimentation-wc",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/reparation-fuite-alimentation-wc.jpg",
+  "alt": "Alimentation d’eau d’un WC et son flexible",
+  "cadrage": [
+   55,
+   45
+  ]
+ },
+ {
+  "nom": "site/robinet-wc",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/remplacement-robinet-wc.jpg",
+  "alt": "Robinet d’arrêt d’un WC sur un tuyau de cuivre",
+  "cadrage": [
+   58,
+   55
+  ]
+ },
+ {
+  "nom": "site/chasse-eau",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/reparation-chasse-eau-flotteur.jpg",
+  "alt": "Réservoir de chasse d’eau ouvert, mécanisme et flotteur",
+  "cadrage": [
+   60,
+   50
+  ]
+ },
+ {
+  "nom": "site/joint-pipe",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/remplacement-joint-pipe-evacuation.jpg",
+  "alt": "Pipe d’évacuation d’un WC en PVC blanc",
+  "cadrage": [
+   55,
+   45
+  ]
+ },
+ {
+  "nom": "site/douchette-wc",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/creation-alimentation-douchette-wc.jpg",
+  "alt": "WC avec douchette raccordée au mur",
+  "cadrage": [
+   50,
+   50
+  ]
+ },
+ {
+  "nom": "site/outils-debouchage",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/debouchage-baignoire.png",
+  "alt": "Outillage de débouchage : furet électrique, pompe et ventouse",
+  "cadrage": [
+   50,
+   50
+  ]
+ },
+ {
+  "nom": "site/ballon",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/vous-avez-probleme-ballon.jpg",
+  "alt": "Intérieur d’un chauffe-eau électrique, câblage du thermostat",
+  "cadrage": [
+   55,
+   45
+  ]
+ },
+ {
+  "nom": "site/groupe-securite",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/remplacement-groupe-securite-2.jpg",
+  "alt": "Groupe de sécurité et réducteur de pression sous un chauffe-eau",
+  "cadrage": [
+   52,
+   45
+  ]
+ },
+ {
+  "nom": "site/recherche-fuite",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/recherche-fuite-simple.png",
+  "alt": "Manomètre de contrôle de pression pendant une recherche de fuite",
+  "cadrage": [
+   52,
+   45
+  ]
+ },
+ {
+  "nom": "site/trace-humidite",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/j-ai-trace-humidite.png",
+  "alt": "Trace d’humidité et peinture écaillée sur un mur",
+  "cadrage": [
+   58,
+   45
+  ]
+ },
+ {
+  "nom": "site/vanne-arret",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/remplacement-vanne-arret.png",
+  "alt": "Vanne d’arrêt en laiton sur une canalisation",
+  "cadrage": [
+   52,
+   50
+  ]
+ },
+ {
+  "nom": "site/robinet-machine",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/robinet-machine-laver-remplacer-2.png",
+  "alt": "Robinet d’alimentation au mur, raccordé en cuivre",
+  "cadrage": [
+   45,
+   55
+  ]
+ },
+ {
+  "nom": "site/prises",
+  "role": "produit",
+  "ratio": "4:3",
+  "largeurs": [
+   400,
+   640
+  ],
+  "source": "recu/vous-avez-probleme-ballon-3.png",
+  "alt": "Multiprise, testeur et outils d’électricien sur un plan de travail",
+  "cadrage": [
+   55,
+   50
+  ]
+ },
+ {
+  "nom": "logo",
+  "role": "logo",
+  "source": "recu/logo-encre.png",
+  "alt": "Dépannage 60"
+ }
+]

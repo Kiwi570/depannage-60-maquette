@@ -1,0 +1,21 @@
+{
+  "nom": "Dépannage 60",
+  "adresse": "https://depannage-60-maquette.vercel.app",
+  "siteActuel": "depannage-60.com",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "prestations", "besoin", "rayon", "contact"],
+  "actionEntete": { "page": "besoin" },
+  "couleurs": { "fond": "#f4f1ea", "texte": "#16191d", "voile": "#0e2340", "theme": "#f4f1ea", "ouverture": "#f4f1ea", "menu": "#f4f1ea" },
+  "contact": {
+    "telephone": "07 61 18 33 22",
+    "telephoneLien": "+33761183322",
+    "email": "",
+    "adresse": "9 bis rue de l’Abreuvoir, 60126 Longueil-Sainte-Marie",
+    "siren": "538 098 245",
+    "facebook": "https://www.facebook.com/profile.php?id=100025931762469"
+  },
+  "polices": ["/assets/polices/bricolage.woff2"],
+  "imagePartage": "grok/accueil-ouverture-1280.webp",
+  "curseur": true
+}

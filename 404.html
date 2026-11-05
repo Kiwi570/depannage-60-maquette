@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-page="404" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page introuvable : Dépannage 60</title>
+<meta name="description" content="Cette page n’existe pas ou plus.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://depannage-60-maquette.vercel.app/404">
+<style>:root{--fond:#f4f1ea;--texte:#16191d;--voile-fond:#0e2340;--ouverture-fond:#f4f1ea;--menu-fond:#f4f1ea}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f4f1ea">
+<link rel="icon" href="/assets/images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dépannage 60">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Page introuvable : Dépannage 60">
+<meta property="og:description" content="Cette page n’existe pas ou plus.">
+<meta property="og:url" content="https://depannage-60-maquette.vercel.app/404">
+<meta property="og:image" content="https://depannage-60-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dépannage 60, plomberie et électricité dans l’Oise">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["Plumber","Electrician"],"name":"Dépannage 60","telephone":"+33761183322","address":{"@type":"PostalAddress","streetAddress":"9 bis rue de l’Abreuvoir","postalCode":"60126","addressLocality":"Longueil-Sainte-Marie","addressCountry":"FR"},"areaServed":["Longueil-Sainte-Marie","Rivecourt","Le Meux","Chevrières","Houdancourt","Verberie","Saint-Vaast-de-Longmont","Compiègne","Creil","Lamorlaye","Oise"],"sameAs":["https://www.facebook.com/profile.php?id=100025931762469"]}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/losanges.png" alt="" width="472" height="112"><span data-voile-libelle>Page introuvable</span></div></div>
+<div class="ouverture-panneau" data-ouverture data-gouttiere="#f4f1ea" aria-hidden="true">
+  <div class="ouv-moitie ouv-haut"></div><div class="ouv-moitie ouv-bas"></div>
+  <svg class="ouv-reseaux" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+    <path class="ouv-tuyau" d="M-10 486 H430 Q480 486 480 456 V440" pathLength="1"/>
+    <path class="ouv-tuyau-eau" d="M-10 486 H430 Q480 486 480 456 V440" pathLength="1"/>
+    <path class="ouv-cable" d="M1010 508 H560 Q520 508 520 478 V452" pathLength="1"/>
+  </svg>
+  <div class="ouv-scene">
+    <img class="ouv-losanges" src="/assets/images/losanges.png" alt="" width="472" height="112">
+    <p class="ouv-nom"><span class="ouv-mot">DÉPANNAGE<span class="ouv-eau">DÉPANNAGE</span></span><span class="ouv-60">60<span class="ouv-60-lum">60</span></span></p>
+    <div class="ouv-bas-ligne">
+      <svg class="mano ouv-mano" viewBox="0 0 100 100" aria-hidden="true" focusable="false" style="--angle:60deg">
+<circle class="mano-fond" cx="50" cy="50" r="47"/>
+<path class="mano-arc" d="M13.6 71.0 A42 42 0 1 1 86.4 71.0" pathLength="1"/>
+<g class="mano-grad"><line x1="17.1" y1="69.0" x2="23.2" y2="65.5"/><line x1="17.1" y1="31.0" x2="23.2" y2="34.5"/><line x1="50.0" y1="12.0" x2="50.0" y2="19.0"/><line x1="82.9" y1="31.0" x2="76.8" y2="34.5"/><line x1="82.9" y1="69.0" x2="76.8" y2="65.5"/></g>
+<g class="mano-aiguille"><path d="M50 50 L48 47 L50 14 L52 47 Z"/><circle cx="50" cy="50" r="5"/></g>
+</svg>
+      <p class="ouv-ligne"><span class="ouv-chiffre" data-ouv-chiffre>45</span> min · Plomberie · Électricité · Oise</p>
+    </div>
+  </div>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo-encre.png" alt="" width="622" height="242"><span class="visuellement-cache">Dépannage 60, Accueil</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/prestations" data-libelle="Prestations et tarifs">Prestations et tarifs</a></li><li><a href="/decrivez-votre-besoin" data-libelle="Décrivez votre besoin">Décrivez votre besoin</a></li><li><a href="/rayon-d-action" data-libelle="Rayon d’action">Rayon d’action</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--jaune entete-tel" href="tel:+33761183322"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg><span>07 61 18 33 22</span></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/prestations" class="menu-lien" data-libelle="Prestations et tarifs">Prestations et tarifs</a></li><li style="--i:2"><a href="/decrivez-votre-besoin" class="menu-lien" data-libelle="Décrivez votre besoin">Décrivez votre besoin</a></li><li style="--i:3"><a href="/rayon-d-action" class="menu-lien" data-libelle="Rayon d’action">Rayon d’action</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton bouton--jaune" href="tel:+33761183322"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="introuvable" id="introuvable">
+  <figure class="media introuvable-media" data-grok data-fx="zoom" style="--cadrage:62% 58%;--cadrage-mobile:58% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/404-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/grok/404-1600.webp" srcset="/assets/images/grok/404-800.webp 800w, /assets/images/grok/404-1600.webp 1600w" sizes="100vw" alt="Coude de cuivre qui fuit dans un seau jaune" width="1600" height="900" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur introuvable-texte">
+    <p class="surtitre">Erreur 404</p>
+    <h1 data-anime="lignes">Fuite détectée : cette page n’existe pas.</h1>
+    <p data-info-cle>Le lien est peut-être coupé. Revenez à l’accueil ou trouvez votre prestation.</p>
+    <p class="introuvable-actions"><a href="/" class="bouton bouton--jaune" data-libelle="Accueil" data-action-principale>Revenir à l’accueil</a> <a href="/prestations" class="lien-fleche" data-libelle="Prestations et tarifs">Voir les prestations <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied" data-masque-barre>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.png" alt="Dépannage 60" width="622" height="242" loading="lazy">
+      <p>9 bis rue de l’Abreuvoir, 60126 Longueil-Sainte-Marie</p>
+      <p><a class="pied-tel" href="tel:+33761183322">07 61 18 33 22</a></p>
+      <p class="pied-petit">SIREN 538 098 245</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/prestations" data-libelle="Prestations et tarifs">Prestations et tarifs</a></li><li><a href="/decrivez-votre-besoin" data-libelle="Décrivez votre besoin">Décrivez votre besoin</a></li><li><a href="/rayon-d-action" data-libelle="Rayon d’action">Rayon d’action</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Nos communes</p>
+      <ul class="pied-communes"><li><a href="/rayon-d-action#commune-longueil-sainte-marie" data-libelle="Rayon d’action">Longueil-Sainte-Marie</a></li><li><a href="/rayon-d-action#commune-rivecourt" data-libelle="Rayon d’action">Rivecourt</a></li><li><a href="/rayon-d-action#commune-le-meux" data-libelle="Rayon d’action">Le Meux</a></li><li><a href="/rayon-d-action#commune-chevrieres" data-libelle="Rayon d’action">Chevrières</a></li><li><a href="/rayon-d-action#commune-houdancourt" data-libelle="Rayon d’action">Houdancourt</a></li><li><a href="/rayon-d-action#commune-verberie" data-libelle="Rayon d’action">Verberie</a></li><li><a href="/rayon-d-action#commune-saint-vaast-de-longmont" data-libelle="Rayon d’action">Saint-Vaast-de-Longmont</a></li><li><a href="/rayon-d-action#commune-compiegne" data-libelle="Rayon d’action">Compiègne</a></li><li><a href="/rayon-d-action#commune-creil" data-libelle="Rayon d’action">Creil</a></li><li><a href="/rayon-d-action#commune-lamorlaye" data-libelle="Rayon d’action">Lamorlaye</a></li></ul>
+    </div>
+    <div>
+      <p class="pied-titre">Confort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100025931762469" target="_blank" rel="noopener">Dépannage 60 sur Facebook <span class="visuellement-cache">(nouvel onglet)</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Maquette de démonstration : formulaires simulés, rien n’est envoyé. Les informations marquées « à compléter » seront fournies par le client.</p>
+    <p>© Dépannage 60</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--jaune" href="tel:+33761183322"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg>Appeler</a>
+  <a href="/decrivez-votre-besoin" class="bouton bouton--encre" data-libelle="Décrivez votre besoin">Mon problème</a>
+</div>
+</body>
+</html>

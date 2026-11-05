@@ -1,0 +1,2781 @@
+{
+  "grok/accueil-ouverture": {
+    "nom": "grok/accueil-ouverture",
+    "source": "recu/grok/accueil-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Robinet chromé et filet d’eau claire dans une vasque blanche",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "3346a3e6f6430471",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "52% 45%"
+    },
+    "cadrage": "74% 50%",
+    "sujet": {
+      "x": 12.5,
+      "y": 0,
+      "l": 84.4,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.55,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.28,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.26,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 48,
+      "width": 1168,
+      "height": 657,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-ouverture-640.webp",
+      "grok/accueil-ouverture-1280.webp",
+      "grok/accueil-ouverture-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/accueil-ouverture-640.webp": 9402,
+      "grok/accueil-ouverture-1280.webp": 25452,
+      "grok/accueil-ouverture-mobile-640.webp": 24186
+    },
+    "media": "c.media({ nom: 'grok/accueil-ouverture', alt: \"Robinet chromé et filet d’eau claire dans une vasque blanche\", cadrage: '74% 50%', cadrageMobile: '52% 45%', sizes: '100vw', priorite: true })"
+  },
+  "grok/accueil-outils": {
+    "nom": "grok/accueil-outils",
+    "source": "recu/grok/accueil-outils.jpg",
+    "role": "carte-service",
+    "alt": "Boîte à outils de plombier ouverte : clés, ruban d’étanchéité, raccords en laiton",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "4356e15e170fe201",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 54%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 89.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.5,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.09,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 784,
+      "height": 980,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/accueil-outils-480.webp",
+      "grok/accueil-outils-640.webp",
+      "grok/accueil-outils-784.webp"
+    ],
+    "poids": {
+      "grok/accueil-outils-480.webp": 32366,
+      "grok/accueil-outils-640.webp": 53448,
+      "grok/accueil-outils-784.webp": 77456
+    },
+    "media": "c.media({ nom: 'grok/accueil-outils', alt: \"Boîte à outils de plombier ouverte : clés, ruban d’étanchéité, raccords en laiton\", cadrage: '50% 54%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/accueil-mur": {
+    "nom": "grok/accueil-mur",
+    "source": "recu/grok/accueil-mur.jpg",
+    "role": "section-fond",
+    "alt": "",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "49a0d85fa74291f0",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.59,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.59,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.58,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.54,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 64,
+      "width": 1168,
+      "height": 657,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-mur-640.webp",
+      "grok/accueil-mur-1280.webp"
+    ],
+    "poids": {
+      "grok/accueil-mur-640.webp": 10572,
+      "grok/accueil-mur-1280.webp": 76852
+    },
+    "media": "c.media({ nom: 'grok/accueil-mur', alt: \"\", sizes: '100vw' })"
+  },
+  "grok/accueil-plomberie": {
+    "nom": "grok/accueil-plomberie",
+    "source": "recu/grok/accueil-plomberie.jpg",
+    "role": "carte-service",
+    "alt": "Tuyaux de cuivre neufs et vanne d’arrêt en laiton fixés au mur",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "79145dc1c2037086",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "58% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 73.2,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.37,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.27,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.05,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.03,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/accueil-plomberie-480.webp",
+      "grok/accueil-plomberie-640.webp",
+      "grok/accueil-plomberie-784.webp"
+    ],
+    "poids": {
+      "grok/accueil-plomberie-480.webp": 27652,
+      "grok/accueil-plomberie-640.webp": 47518,
+      "grok/accueil-plomberie-784.webp": 61306
+    },
+    "media": "c.media({ nom: 'grok/accueil-plomberie', alt: \"Tuyaux de cuivre neufs et vanne d’arrêt en laiton fixés au mur\", cadrage: '58% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/accueil-electricite": {
+    "nom": "grok/accueil-electricite",
+    "source": "recu/grok/accueil-electricite.jpg",
+    "role": "carte-service",
+    "alt": "Tableau électrique ouvert, disjoncteurs alignés, main gantée au tournevis",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "423fd52d5bc35286",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 45%",
+    "sujet": {
+      "x": 0,
+      "y": 9.4,
+      "l": 96.1,
+      "h": 90.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/accueil-electricite-480.webp",
+      "grok/accueil-electricite-640.webp",
+      "grok/accueil-electricite-784.webp"
+    ],
+    "poids": {
+      "grok/accueil-electricite-480.webp": 25860,
+      "grok/accueil-electricite-640.webp": 42072,
+      "grok/accueil-electricite-784.webp": 56336
+    },
+    "media": "c.media({ nom: 'grok/accueil-electricite', alt: \"Tableau électrique ouvert, disjoncteurs alignés, main gantée au tournevis\", cadrage: '50% 45%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/renovation-salle-de-bain": {
+    "nom": "grok/renovation-salle-de-bain",
+    "source": "recu/grok/renovation-salle-de-bain.jpg",
+    "role": "galerie",
+    "alt": "Salle de bain rénovée avec douche à l’italienne",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "e7a99e25724a533d",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 27.3,
+      "y": 33.9,
+      "l": 54.5,
+      "h": 49
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.69,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.68,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.5,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.42,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 120,
+      "width": 784,
+      "height": 1045,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,22 fois (source de 784 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/renovation-salle-de-bain-480.webp",
+      "grok/renovation-salle-de-bain-640.webp",
+      "grok/renovation-salle-de-bain-960.webp"
+    ],
+    "poids": {
+      "grok/renovation-salle-de-bain-480.webp": 8170,
+      "grok/renovation-salle-de-bain-640.webp": 13642,
+      "grok/renovation-salle-de-bain-960.webp": 25826
+    },
+    "media": "c.media({ nom: 'grok/renovation-salle-de-bain', alt: \"Salle de bain rénovée avec douche à l’italienne\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "grok/renovation-cuisine": {
+    "nom": "grok/renovation-cuisine",
+    "source": "recu/grok/renovation-cuisine.jpg",
+    "role": "galerie",
+    "alt": "Coin cuisine rénové, évier en céramique sous la fenêtre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "e5726772c970a284",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 2.2,
+      "l": 95.5,
+      "h": 97.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.51,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.19,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 123,
+      "width": 784,
+      "height": 1045,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,22 fois (source de 784 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/renovation-cuisine-480.webp",
+      "grok/renovation-cuisine-640.webp",
+      "grok/renovation-cuisine-960.webp"
+    ],
+    "poids": {
+      "grok/renovation-cuisine-480.webp": 12770,
+      "grok/renovation-cuisine-640.webp": 18556,
+      "grok/renovation-cuisine-960.webp": 29784
+    },
+    "media": "c.media({ nom: 'grok/renovation-cuisine', alt: \"Coin cuisine rénové, évier en céramique sous la fenêtre\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "grok/renovation-piece": {
+    "nom": "grok/renovation-piece",
+    "source": "recu/grok/renovation-piece.jpg",
+    "role": "galerie",
+    "alt": "Pièce à vivre aux murs et plafond refaits, parquet clair",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "d58274d4a6fb3db6",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 18.2,
+      "y": 51.2,
+      "l": 77.3,
+      "h": 38.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.86,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.52,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.49,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.14,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 123,
+      "width": 784,
+      "height": 1045,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,22 fois (source de 784 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/renovation-piece-480.webp",
+      "grok/renovation-piece-640.webp",
+      "grok/renovation-piece-960.webp"
+    ],
+    "poids": {
+      "grok/renovation-piece-480.webp": 18094,
+      "grok/renovation-piece-640.webp": 29824,
+      "grok/renovation-piece-960.webp": 51920
+    },
+    "media": "c.media({ nom: 'grok/renovation-piece', alt: \"Pièce à vivre aux murs et plafond refaits, parquet clair\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "grok/renovation-pmr": {
+    "nom": "grok/renovation-pmr",
+    "source": "recu/grok/renovation-pmr.jpg",
+    "role": "galerie",
+    "alt": "Salle de bain adaptée : douche de plain-pied, siège rabattable et barres d’appui",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "fa5fd52c664a96cb",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 18.2,
+      "y": 13,
+      "l": 50,
+      "h": 69.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.65,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.63,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.56,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.4,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 120,
+      "width": 784,
+      "height": 1045,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,22 fois (source de 784 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/renovation-pmr-480.webp",
+      "grok/renovation-pmr-640.webp",
+      "grok/renovation-pmr-960.webp"
+    ],
+    "poids": {
+      "grok/renovation-pmr-480.webp": 12570,
+      "grok/renovation-pmr-640.webp": 19966,
+      "grok/renovation-pmr-960.webp": 35420
+    },
+    "media": "c.media({ nom: 'grok/renovation-pmr', alt: \"Salle de bain adaptée : douche de plain-pied, siège rabattable et barres d’appui\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "grok/accueil-gouttes": {
+    "nom": "grok/accueil-gouttes",
+    "source": "recu/grok/accueil-gouttes.jpg",
+    "role": "section-fond",
+    "alt": "",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "dcbab37b16412e9f",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "60% 50%",
+    "sujet": {
+      "x": 3.1,
+      "y": 0,
+      "l": 96.9,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.38,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.25,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.1,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-gouttes-640.webp",
+      "grok/accueil-gouttes-1280.webp"
+    ],
+    "poids": {
+      "grok/accueil-gouttes-640.webp": 18056,
+      "grok/accueil-gouttes-1280.webp": 42614
+    },
+    "media": "c.media({ nom: 'grok/accueil-gouttes', alt: \"\", cadrage: '60% 50%', sizes: '100vw' })"
+  },
+  "grok/accueil-sac": {
+    "nom": "grok/accueil-sac",
+    "source": "recu/grok/accueil-sac.jpg",
+    "role": "carte-service",
+    "alt": "Sac à outils ouvert posé sur le pas d’une porte",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "eb096bbcb4647274",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "55% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.06,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 188,
+      "width": 784,
+      "height": 980,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/accueil-sac-480.webp",
+      "grok/accueil-sac-640.webp",
+      "grok/accueil-sac-784.webp"
+    ],
+    "poids": {
+      "grok/accueil-sac-480.webp": 32362,
+      "grok/accueil-sac-640.webp": 49768,
+      "grok/accueil-sac-784.webp": 70464
+    },
+    "media": "c.media({ nom: 'grok/accueil-sac', alt: \"Sac à outils ouvert posé sur le pas d’une porte\", cadrage: '55% 55%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/accueil-appel": {
+    "nom": "grok/accueil-appel",
+    "source": "recu/grok/accueil-appel.jpg",
+    "role": "section-fond",
+    "alt": "",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "7db8e61f3f1ac47f",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "60% 52%",
+    "sujet": {
+      "x": 3.1,
+      "y": 0,
+      "l": 96.9,
+      "h": 94.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.28,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 127,
+      "width": 1168,
+      "height": 657,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-appel-640.webp",
+      "grok/accueil-appel-1280.webp"
+    ],
+    "poids": {
+      "grok/accueil-appel-640.webp": 9750,
+      "grok/accueil-appel-1280.webp": 26440
+    },
+    "media": "c.media({ nom: 'grok/accueil-appel', alt: \"\", cadrage: '60% 52%', sizes: '100vw' })"
+  },
+  "grok/prestation-wc": {
+    "nom": "grok/prestation-wc",
+    "source": "recu/grok/prestation-wc.jpg",
+    "role": "produit",
+    "alt": "WC suspendu dans une salle d’eau claire",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "71e389d3d90561a8",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.3,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.14,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.1,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 62,
+      "top": 0,
+      "width": 1045,
+      "height": 784,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600",
+      "1168 px de large",
+      "compression visible"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/prestation-wc-480.webp",
+      "grok/prestation-wc-640.webp"
+    ],
+    "poids": {
+      "grok/prestation-wc-480.webp": 6208,
+      "grok/prestation-wc-640.webp": 10044
+    },
+    "media": "c.media({ nom: 'grok/prestation-wc', alt: \"WC suspendu dans une salle d’eau claire\", cadrage: '50% 55%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "grok/prestation-lavabo": {
+    "nom": "grok/prestation-lavabo",
+    "source": "recu/grok/prestation-lavabo.jpg",
+    "role": "produit",
+    "alt": "Lavabo blanc, robinet chromé et siphon",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "f4647a88a3fdbaf7",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "54% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 27.3,
+      "l": 80.3,
+      "h": 68.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.72,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.68,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.48,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.4,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 74,
+      "top": 0,
+      "width": 1045,
+      "height": 784,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600",
+      "1168 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/prestation-lavabo-480.webp",
+      "grok/prestation-lavabo-640.webp"
+    ],
+    "poids": {
+      "grok/prestation-lavabo-480.webp": 6364,
+      "grok/prestation-lavabo-640.webp": 9842
+    },
+    "media": "c.media({ nom: 'grok/prestation-lavabo', alt: \"Lavabo blanc, robinet chromé et siphon\", cadrage: '54% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "grok/prestation-douche": {
+    "nom": "grok/prestation-douche",
+    "source": "recu/grok/prestation-douche.jpg",
+    "role": "produit",
+    "alt": "Baignoire et mitigeur thermostatique avec douchette",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "2bd620d4788daa64",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 18.2,
+      "l": 93.4,
+      "h": 77.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.52,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.5,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.31,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 120,
+      "top": 0,
+      "width": 1045,
+      "height": 784,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600",
+      "1168 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/prestation-douche-480.webp",
+      "grok/prestation-douche-640.webp"
+    ],
+    "poids": {
+      "grok/prestation-douche-480.webp": 6088,
+      "grok/prestation-douche-640.webp": 10206
+    },
+    "media": "c.media({ nom: 'grok/prestation-douche', alt: \"Baignoire et mitigeur thermostatique avec douchette\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "grok/prestation-chauffe-eau": {
+    "nom": "grok/prestation-chauffe-eau",
+    "source": "recu/grok/prestation-chauffe-eau.jpg",
+    "role": "produit",
+    "alt": "Chauffe-eau électrique et ses raccords en cuivre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "0dd9c58a14ae6673",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "61% 45%",
+    "sujet": {
+      "x": 0,
+      "y": 22.7,
+      "l": 83.8,
+      "h": 72.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.7,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.62,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.17,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1045,
+      "height": 784,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600",
+      "1168 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/prestation-chauffe-eau-480.webp",
+      "grok/prestation-chauffe-eau-640.webp"
+    ],
+    "poids": {
+      "grok/prestation-chauffe-eau-480.webp": 8612,
+      "grok/prestation-chauffe-eau-640.webp": 12870
+    },
+    "media": "c.media({ nom: 'grok/prestation-chauffe-eau', alt: \"Chauffe-eau électrique et ses raccords en cuivre\", cadrage: '61% 45%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "grok/prestation-fuite": {
+    "nom": "grok/prestation-fuite",
+    "source": "recu/grok/prestation-fuite.jpg",
+    "role": "produit",
+    "alt": "Évacuations et arrivées d’eau sous un évier",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "5082535fe6d6e891",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 3.2,
+      "y": 0,
+      "l": 96.8,
+      "h": 95.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 3,
+      "top": 0,
+      "width": 1045,
+      "height": 784,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600",
+      "1168 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/prestation-fuite-480.webp",
+      "grok/prestation-fuite-640.webp"
+    ],
+    "poids": {
+      "grok/prestation-fuite-480.webp": 7226,
+      "grok/prestation-fuite-640.webp": 11564
+    },
+    "media": "c.media({ nom: 'grok/prestation-fuite', alt: \"Évacuations et arrivées d’eau sous un évier\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "grok/prestations-pieces": {
+    "nom": "grok/prestations-pieces",
+    "source": "recu/grok/prestations-pieces.jpg",
+    "role": "vignette",
+    "alt": "Raccords en laiton, ruban d’étanchéité et manomètre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "5d95ff4076ffa49c",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "62% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 93.8,
+      "h": 77.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.56,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.47,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.19,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.04,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1168 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/prestations-pieces-480.webp",
+      "grok/prestations-pieces-640.webp",
+      "grok/prestations-pieces-800.webp"
+    ],
+    "poids": {
+      "grok/prestations-pieces-480.webp": 9592,
+      "grok/prestations-pieces-640.webp": 16094,
+      "grok/prestations-pieces-800.webp": 23802
+    },
+    "media": "c.media({ nom: 'grok/prestations-pieces', alt: \"Raccords en laiton, ruban d’étanchéité et manomètre\", cadrage: '62% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/prestations-faq": {
+    "nom": "grok/prestations-faq",
+    "source": "recu/grok/prestations-faq.jpg",
+    "role": "section-fond",
+    "alt": "",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "00d36cfb17582027",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "72% 55%",
+    "sujet": {
+      "x": 50,
+      "y": 0,
+      "l": 34.4,
+      "h": 73.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.76,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.64,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.41,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.32,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/prestations-faq-640.webp",
+      "grok/prestations-faq-1280.webp"
+    ],
+    "poids": {
+      "grok/prestations-faq-640.webp": 15832,
+      "grok/prestations-faq-1280.webp": 39590
+    },
+    "media": "c.media({ nom: 'grok/prestations-faq', alt: \"\", cadrage: '72% 55%', sizes: '100vw' })"
+  },
+  "grok/diagnostic-ouverture": {
+    "nom": "grok/diagnostic-ouverture",
+    "source": "recu/grok/diagnostic-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "cc09a3afb8816d35",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 50%"
+    },
+    "cadrage": "50% 60%",
+    "sujet": {
+      "x": 0,
+      "y": 5.4,
+      "l": 96.9,
+      "h": 94.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.54,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.53,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.46,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.45,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1168,
+      "height": 657,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/diagnostic-ouverture-640.webp",
+      "grok/diagnostic-ouverture-1280.webp",
+      "grok/diagnostic-ouverture-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/diagnostic-ouverture-640.webp": 3482,
+      "grok/diagnostic-ouverture-1280.webp": 9462,
+      "grok/diagnostic-ouverture-mobile-640.webp": 6036
+    },
+    "media": "c.media({ nom: 'grok/diagnostic-ouverture', alt: \"\", cadrage: '50% 60%', cadrageMobile: '50% 50%', sizes: '100vw', priorite: true })"
+  },
+  "grok/diagnostic-siphon": {
+    "nom": "grok/diagnostic-siphon",
+    "source": "recu/grok/diagnostic-siphon.jpg",
+    "role": "carte-service",
+    "alt": "Démontage d’un siphon de lavabo, mains gantées",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "9c13283eefa357da",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "58% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 4.1,
+      "l": 100,
+      "h": 91.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.29,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.18,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.07,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 3,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1168 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/diagnostic-siphon-480.webp",
+      "grok/diagnostic-siphon-640.webp",
+      "grok/diagnostic-siphon-784.webp"
+    ],
+    "poids": {
+      "grok/diagnostic-siphon-480.webp": 10044,
+      "grok/diagnostic-siphon-640.webp": 15200,
+      "grok/diagnostic-siphon-784.webp": 20998
+    },
+    "media": "c.media({ nom: 'grok/diagnostic-siphon', alt: \"Démontage d’un siphon de lavabo, mains gantées\", cadrage: '58% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+  },
+  "grok/rayon-rue": {
+    "nom": "grok/rayon-rue",
+    "source": "recu/grok/rayon-rue.jpg",
+    "role": "section-fond",
+    "alt": "Rue résidentielle de maisons en brique, un matin d’automne",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "e87b19285f89ce78",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "60% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 98.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.15,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.12,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 103,
+      "width": 1168,
+      "height": 657,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/rayon-rue-640.webp",
+      "grok/rayon-rue-1280.webp"
+    ],
+    "poids": {
+      "grok/rayon-rue-640.webp": 49998,
+      "grok/rayon-rue-1280.webp": 146316
+    },
+    "media": "c.media({ nom: 'grok/rayon-rue', alt: \"Rue résidentielle de maisons en brique, un matin d’automne\", cadrage: '60% 50%', sizes: '100vw' })"
+  },
+  "grok/rayon-village": {
+    "nom": "grok/rayon-village",
+    "source": "recu/grok/rayon-village.jpg",
+    "role": "carte-service",
+    "alt": "Chemin de village entre des murets de brique",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "99877f6afc97d65f",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "55% 52%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.07,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 188,
+      "width": 784,
+      "height": 980,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/rayon-village-480.webp",
+      "grok/rayon-village-640.webp",
+      "grok/rayon-village-784.webp"
+    ],
+    "poids": {
+      "grok/rayon-village-480.webp": 76274,
+      "grok/rayon-village-640.webp": 119756,
+      "grok/rayon-village-784.webp": 160984
+    },
+    "media": "c.media({ nom: 'grok/rayon-village', alt: \"Chemin de village entre des murets de brique\", cadrage: '55% 52%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/404": {
+    "nom": "grok/404",
+    "source": "recu/grok/404.jpg",
+    "role": "404",
+    "alt": "Coude de cuivre qui fuit dans un seau jaune",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "6c966d1dd4758be6",
+    "ratio": "16:9",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 58%"
+    },
+    "cadrage": "62% 50%",
+    "sujet": {
+      "x": 43.8,
+      "y": 7.9,
+      "l": 34.4,
+      "h": 75.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.88,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.65,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.53,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.44,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 126,
+      "width": 1168,
+      "height": 657,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,37 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/404-800.webp",
+      "grok/404-1600.webp",
+      "grok/404-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/404-800.webp": 16334,
+      "grok/404-1600.webp": 45776,
+      "grok/404-mobile-640.webp": 30962
+    },
+    "media": "c.media({ nom: 'grok/404', alt: \"Coude de cuivre qui fuit dans un seau jaune\", cadrage: '62% 50%', cadrageMobile: '50% 58%', sizes: '100vw', ratio: '16 / 9' })"
+  },
+  "site/debouchage-wc": {
+    "nom": "site/debouchage-wc",
+    "source": "recu/debouchage-wc.png",
+    "role": "produit",
+    "alt": "Débouchage d’un WC à la pompe manuelle",
+    "grok": false,
+    "mention": null,
+    "empreinte": "e9afa65c27a03077",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 1.5,
+      "l": 100,
+      "h": 68.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 214,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/debouchage-wc-400.webp",
+      "site/debouchage-wc-640.webp"
+    ],
+    "poids": {
+      "site/debouchage-wc-400.webp": 12646,
+      "site/debouchage-wc-640.webp": 21518
+    },
+    "media": "c.media({ nom: 'site/debouchage-wc', alt: \"Débouchage d’un WC à la pompe manuelle\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/fuite-alimentation-wc": {
+    "nom": "site/fuite-alimentation-wc",
+    "source": "recu/reparation-fuite-alimentation-wc.jpg",
+    "role": "produit",
+    "alt": "Alimentation d’eau d’un WC et son flexible",
+    "grok": false,
+    "mention": null,
+    "empreinte": "2813dcf59d2211e4",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "72% 45%",
+    "sujet": {
+      "x": 0,
+      "y": 15.6,
+      "l": 88.3,
+      "h": 84.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.59,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.43,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.43,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.43,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 55,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/fuite-alimentation-wc-400.webp",
+      "site/fuite-alimentation-wc-640.webp"
+    ],
+    "poids": {
+      "site/fuite-alimentation-wc-400.webp": 7698,
+      "site/fuite-alimentation-wc-640.webp": 14658
+    },
+    "media": "c.media({ nom: 'site/fuite-alimentation-wc', alt: \"Alimentation d’eau d’un WC et son flexible\", cadrage: '72% 45%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/robinet-wc": {
+    "nom": "site/robinet-wc",
+    "source": "recu/remplacement-robinet-wc.jpg",
+    "role": "produit",
+    "alt": "Robinet d’arrêt d’un WC sur un tuyau de cuivre",
+    "grok": false,
+    "mention": null,
+    "empreinte": "9da70122ab9255c8",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 17.1,
+      "y": 28.9,
+      "l": 56.6,
+      "h": 71
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.8,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.66,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.54,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.51,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 197,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/robinet-wc-400.webp",
+      "site/robinet-wc-640.webp"
+    ],
+    "poids": {
+      "site/robinet-wc-400.webp": 7832,
+      "site/robinet-wc-640.webp": 13876
+    },
+    "media": "c.media({ nom: 'site/robinet-wc', alt: \"Robinet d’arrêt d’un WC sur un tuyau de cuivre\", cadrage: '50% 55%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/chasse-eau": {
+    "nom": "site/chasse-eau",
+    "source": "recu/reparation-chasse-eau-flotteur.jpg",
+    "role": "produit",
+    "alt": "Réservoir de chasse d’eau ouvert, mécanisme et flotteur",
+    "grok": false,
+    "mention": null,
+    "empreinte": "62f9a49713bb66fb",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 10,
+      "l": 100,
+      "h": 90
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.65,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.64,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.29,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.16,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 214,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/chasse-eau-400.webp",
+      "site/chasse-eau-640.webp"
+    ],
+    "poids": {
+      "site/chasse-eau-400.webp": 6998,
+      "site/chasse-eau-640.webp": 11678
+    },
+    "media": "c.media({ nom: 'site/chasse-eau', alt: \"Réservoir de chasse d’eau ouvert, mécanisme et flotteur\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/joint-pipe": {
+    "nom": "site/joint-pipe",
+    "source": "recu/remplacement-joint-pipe-evacuation.jpg",
+    "role": "produit",
+    "alt": "Pipe d’évacuation d’un WC en PVC blanc",
+    "grok": false,
+    "mention": null,
+    "empreinte": "35e78e8916532b6b",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "75% 45%",
+    "sujet": {
+      "x": 0,
+      "y": 21,
+      "l": 96.1,
+      "h": 43.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.64,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.59,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.52,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.29,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 40,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/joint-pipe-400.webp",
+      "site/joint-pipe-640.webp"
+    ],
+    "poids": {
+      "site/joint-pipe-400.webp": 8750,
+      "site/joint-pipe-640.webp": 16082
+    },
+    "media": "c.media({ nom: 'site/joint-pipe', alt: \"Pipe d’évacuation d’un WC en PVC blanc\", cadrage: '75% 45%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/douchette-wc": {
+    "nom": "site/douchette-wc",
+    "source": "recu/creation-alimentation-douchette-wc.jpg",
+    "role": "produit",
+    "alt": "WC avec douchette raccordée au mur",
+    "grok": false,
+    "mention": null,
+    "empreinte": "960b123c57fe7903",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 29.6,
+      "y": 0,
+      "l": 48.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.76,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.69,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.67,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.66,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 134,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/douchette-wc-400.webp",
+      "site/douchette-wc-640.webp"
+    ],
+    "poids": {
+      "site/douchette-wc-400.webp": 5600,
+      "site/douchette-wc-640.webp": 9964
+    },
+    "media": "c.media({ nom: 'site/douchette-wc', alt: \"WC avec douchette raccordée au mur\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/outils-debouchage": {
+    "nom": "site/outils-debouchage",
+    "source": "recu/debouchage-baignoire.png",
+    "role": "produit",
+    "alt": "Outillage de débouchage : furet électrique, pompe et ventouse",
+    "grok": false,
+    "mention": null,
+    "empreinte": "db5b219495ea9119",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 6.5,
+      "l": 97.2,
+      "h": 87.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.09,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 134,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/outils-debouchage-400.webp",
+      "site/outils-debouchage-640.webp"
+    ],
+    "poids": {
+      "site/outils-debouchage-400.webp": 25954,
+      "site/outils-debouchage-640.webp": 43410
+    },
+    "media": "c.media({ nom: 'site/outils-debouchage', alt: \"Outillage de débouchage : furet électrique, pompe et ventouse\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/ballon": {
+    "nom": "site/ballon",
+    "source": "recu/vous-avez-probleme-ballon.jpg",
+    "role": "produit",
+    "alt": "Intérieur d’un chauffe-eau électrique, câblage du thermostat",
+    "grok": false,
+    "mention": null,
+    "empreinte": "86dea2cac74c79f9",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 45%",
+    "sujet": {
+      "x": 2.5,
+      "y": 0.5,
+      "l": 97.5,
+      "h": 53.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.34,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.03,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 174,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/ballon-400.webp",
+      "site/ballon-640.webp"
+    ],
+    "poids": {
+      "site/ballon-400.webp": 20900,
+      "site/ballon-640.webp": 35696
+    },
+    "media": "c.media({ nom: 'site/ballon', alt: \"Intérieur d’un chauffe-eau électrique, câblage du thermostat\", cadrage: '50% 45%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/groupe-securite": {
+    "nom": "site/groupe-securite",
+    "source": "recu/remplacement-groupe-securite-2.jpg",
+    "role": "produit",
+    "alt": "Groupe de sécurité et réducteur de pression sous un chauffe-eau",
+    "grok": false,
+    "mention": null,
+    "empreinte": "9abeabb4a1df4215",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "54% 45%",
+    "sujet": {
+      "x": 0.1,
+      "y": 0,
+      "l": 85.4,
+      "h": 99.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.45,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.17,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 130,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/groupe-securite-400.webp",
+      "site/groupe-securite-640.webp"
+    ],
+    "poids": {
+      "site/groupe-securite-400.webp": 11936,
+      "site/groupe-securite-640.webp": 20438
+    },
+    "media": "c.media({ nom: 'site/groupe-securite', alt: \"Groupe de sécurité et réducteur de pression sous un chauffe-eau\", cadrage: '54% 45%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/recherche-fuite": {
+    "nom": "site/recherche-fuite",
+    "source": "recu/recherche-fuite-simple.png",
+    "role": "produit",
+    "alt": "Manomètre de contrôle de pression pendant une recherche de fuite",
+    "grok": false,
+    "mention": null,
+    "empreinte": "206d0beb0b90bf03",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 45%",
+    "sujet": {
+      "x": 0,
+      "y": 18.8,
+      "l": 100,
+      "h": 65.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.32,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.28,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.27,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 150,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/recherche-fuite-400.webp",
+      "site/recherche-fuite-640.webp"
+    ],
+    "poids": {
+      "site/recherche-fuite-400.webp": 9992,
+      "site/recherche-fuite-640.webp": 16972
+    },
+    "media": "c.media({ nom: 'site/recherche-fuite', alt: \"Manomètre de contrôle de pression pendant une recherche de fuite\", cadrage: '50% 45%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/trace-humidite": {
+    "nom": "site/trace-humidite",
+    "source": "recu/j-ai-trace-humidite.png",
+    "role": "produit",
+    "alt": "Trace d’humidité et peinture écaillée sur un mur",
+    "grok": false,
+    "mention": null,
+    "empreinte": "09382858efdb110b",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 45%",
+    "sujet": {
+      "x": 31.5,
+      "y": 13.2,
+      "l": 35.3,
+      "h": 55.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.92,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.82,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.82,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.76,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 197,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/trace-humidite-400.webp",
+      "site/trace-humidite-640.webp"
+    ],
+    "poids": {
+      "site/trace-humidite-400.webp": 4202,
+      "site/trace-humidite-640.webp": 8308
+    },
+    "media": "c.media({ nom: 'site/trace-humidite', alt: \"Trace d’humidité et peinture écaillée sur un mur\", cadrage: '50% 45%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/vanne-arret": {
+    "nom": "site/vanne-arret",
+    "source": "recu/remplacement-vanne-arret.png",
+    "role": "produit",
+    "alt": "Vanne d’arrêt en laiton sur une canalisation",
+    "grok": false,
+    "mention": null,
+    "empreinte": "9ea909365203c456",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 18.1,
+      "y": 22.8,
+      "l": 64.4,
+      "h": 77
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.39,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.39,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.35,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.1,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 150,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/vanne-arret-400.webp",
+      "site/vanne-arret-640.webp"
+    ],
+    "poids": {
+      "site/vanne-arret-400.webp": 7872,
+      "site/vanne-arret-640.webp": 13512
+    },
+    "media": "c.media({ nom: 'site/vanne-arret', alt: \"Vanne d’arrêt en laiton sur une canalisation\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/robinet-machine": {
+    "nom": "site/robinet-machine",
+    "source": "recu/robinet-machine-laver-remplacer-2.png",
+    "role": "produit",
+    "alt": "Robinet d’alimentation au mur, raccordé en cuivre",
+    "grok": false,
+    "mention": null,
+    "empreinte": "44625231095e4665",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 20.5,
+      "y": 35.4,
+      "l": 29.3,
+      "h": 63.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.81,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.78,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.59,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.48,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 94,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/robinet-machine-400.webp",
+      "site/robinet-machine-640.webp"
+    ],
+    "poids": {
+      "site/robinet-machine-400.webp": 7566,
+      "site/robinet-machine-640.webp": 16102
+    },
+    "media": "c.media({ nom: 'site/robinet-machine', alt: \"Robinet d’alimentation au mur, raccordé en cuivre\", cadrage: '50% 55%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "site/prises": {
+    "nom": "site/prises",
+    "source": "recu/vous-avez-probleme-ballon-3.png",
+    "role": "produit",
+    "alt": "Multiprise, testeur et outils d’électricien sur un plan de travail",
+    "grok": false,
+    "mention": null,
+    "empreinte": "9de86ed9b699ed3c",
+    "ratio": "4:3",
+    "largeurs": [
+      400,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 8.1,
+      "l": 100,
+      "h": 88.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 174,
+      "top": 0,
+      "width": 533,
+      "height": 400,
+      "source": [
+        800,
+        400
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "800 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 533 px après recadrage)"
+    ],
+    "fichiers": [
+      "site/prises-400.webp",
+      "site/prises-640.webp"
+    ],
+    "poids": {
+      "site/prises-400.webp": 20568,
+      "site/prises-640.webp": 33368
+    },
+    "media": "c.media({ nom: 'site/prises', alt: \"Multiprise, testeur et outils d’électricien sur un plan de travail\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "logo": {
+    "nom": "logo",
+    "source": "recu/logo-encre.png",
+    "role": "logo",
+    "alt": "Dépannage 60",
+    "grok": false,
+    "mention": null,
+    "empreinte": "5d11e704bd8083bd",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-240.webp",
+      "logo-480.webp"
+    ],
+    "poids": {
+      "logo-240.webp": 7300,
+      "logo-480.webp": 18624
+    },
+    "media": "c.media({ nom: 'logo', alt: \"Dépannage 60\", sizes: '240px' })"
+  }
+}

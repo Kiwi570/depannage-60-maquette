@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-page="contact" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact et rendez-vous : Dépannage 60</title>
+<meta name="description" content="Demandez à être rappelé et prenez rendez-vous avec Dépannage 60, ou appelez le 07 61 18 33 22.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://depannage-60-maquette.vercel.app/contact">
+<style>:root{--fond:#f4f1ea;--texte:#16191d;--voile-fond:#0e2340;--ouverture-fond:#f4f1ea;--menu-fond:#f4f1ea}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f4f1ea">
+<link rel="icon" href="/assets/images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dépannage 60">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Contact et rendez-vous : Dépannage 60">
+<meta property="og:description" content="Demandez à être rappelé et prenez rendez-vous avec Dépannage 60, ou appelez le 07 61 18 33 22.">
+<meta property="og:url" content="https://depannage-60-maquette.vercel.app/contact">
+<meta property="og:image" content="https://depannage-60-maquette.vercel.app/assets/partage/contact-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Contacter Dépannage 60">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["Plumber","Electrician"],"name":"Dépannage 60","telephone":"+33761183322","address":{"@type":"PostalAddress","streetAddress":"9 bis rue de l’Abreuvoir","postalCode":"60126","addressLocality":"Longueil-Sainte-Marie","addressCountry":"FR"},"areaServed":["Longueil-Sainte-Marie","Rivecourt","Le Meux","Chevrières","Houdancourt","Verberie","Saint-Vaast-de-Longmont","Compiègne","Creil","Lamorlaye","Oise"],"sameAs":["https://www.facebook.com/profile.php?id=100025931762469"]}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/losanges.png" alt="" width="472" height="112"><span data-voile-libelle>Contact</span></div></div>
+<div class="ouverture-panneau" data-ouverture data-gouttiere="#f4f1ea" aria-hidden="true">
+  <div class="ouv-moitie ouv-haut"></div><div class="ouv-moitie ouv-bas"></div>
+  <svg class="ouv-reseaux" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+    <path class="ouv-tuyau" d="M-10 486 H430 Q480 486 480 456 V440" pathLength="1"/>
+    <path class="ouv-tuyau-eau" d="M-10 486 H430 Q480 486 480 456 V440" pathLength="1"/>
+    <path class="ouv-cable" d="M1010 508 H560 Q520 508 520 478 V452" pathLength="1"/>
+  </svg>
+  <div class="ouv-scene">
+    <img class="ouv-losanges" src="/assets/images/losanges.png" alt="" width="472" height="112">
+    <p class="ouv-nom"><span class="ouv-mot">DÉPANNAGE<span class="ouv-eau">DÉPANNAGE</span></span><span class="ouv-60">60<span class="ouv-60-lum">60</span></span></p>
+    <div class="ouv-bas-ligne">
+      <svg class="mano ouv-mano" viewBox="0 0 100 100" aria-hidden="true" focusable="false" style="--angle:60deg">
+<circle class="mano-fond" cx="50" cy="50" r="47"/>
+<path class="mano-arc" d="M13.6 71.0 A42 42 0 1 1 86.4 71.0" pathLength="1"/>
+<g class="mano-grad"><line x1="17.1" y1="69.0" x2="23.2" y2="65.5"/><line x1="17.1" y1="31.0" x2="23.2" y2="34.5"/><line x1="50.0" y1="12.0" x2="50.0" y2="19.0"/><line x1="82.9" y1="31.0" x2="76.8" y2="34.5"/><line x1="82.9" y1="69.0" x2="76.8" y2="65.5"/></g>
+<g class="mano-aiguille"><path d="M50 50 L48 47 L50 14 L52 47 Z"/><circle cx="50" cy="50" r="5"/></g>
+</svg>
+      <p class="ouv-ligne"><span class="ouv-chiffre" data-ouv-chiffre>45</span> min · Plomberie · Électricité · Oise</p>
+    </div>
+  </div>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo-encre.png" alt="" width="622" height="242"><span class="visuellement-cache">Dépannage 60, Accueil</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/prestations" data-libelle="Prestations et tarifs">Prestations et tarifs</a></li><li><a href="/decrivez-votre-besoin" data-libelle="Décrivez votre besoin">Décrivez votre besoin</a></li><li><a href="/rayon-d-action" data-libelle="Rayon d’action">Rayon d’action</a></li><li><a href="/contact" data-libelle="Contact" aria-current="page">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--jaune entete-tel" href="tel:+33761183322"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg><span>07 61 18 33 22</span></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/prestations" class="menu-lien" data-libelle="Prestations et tarifs">Prestations et tarifs</a></li><li style="--i:2"><a href="/decrivez-votre-besoin" class="menu-lien" data-libelle="Décrivez votre besoin">Décrivez votre besoin</a></li><li style="--i:3"><a href="/rayon-d-action" class="menu-lien" data-libelle="Rayon d’action">Rayon d’action</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact" aria-current="page">Contact</a></li></ul>
+  <p><a class="bouton bouton--jaune" href="tel:+33761183322"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="tete-prise" id="demande">
+  <div class="conteneur tete-prise-grille">
+    <div class="tete-prise-texte">
+      <p class="surtitre surtitre--encre" data-raccord-cible>Contact et rendez-vous</p>
+      <h1 data-anime="gsap" class="tete-prise-titre">Demandez à être rappelé.</h1>
+      <p data-anime="gsap">Décrivez votre demande en trois étapes : nous vous recontactons pour préciser le détail et le délai d’intervention.</p>
+      <p class="tete-prise-actions" data-anime="gsap"><a class="bouton bouton--encre" href="#formulaire" data-sans-transition data-action-principale>Remplir ma demande</a> <a class="tete-prise-tel" href="tel:+33761183322" data-info-cle><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg>Ou appelez le 07 61 18 33 22</a></p>
+      <div class="prise" data-effet="prise-branchee" data-visuel><svg class="prise-svg" viewBox="0 0 520 120" aria-hidden="true" focusable="false">
+<path class="prise-cable" d="M-20 70 C 120 70, 160 20, 300 52 S 400 70, 404 66" pathLength="1"/>
+<g class="prise-fiche"><rect x="380" y="46" width="54" height="40" rx="10"/><rect x="434" y="56" width="22" height="7" rx="2"/><rect x="434" y="70" width="22" height="7" rx="2"/></g>
+<g class="prise-socle"><rect x="462" y="30" width="56" height="72" rx="12"/><circle cx="490" cy="66" r="20"/><circle class="prise-trou" cx="483" cy="60" r="3"/><circle class="prise-trou" cx="483" cy="73" r="3"/></g>
+</svg></div>
+    </div>
+    <div class="fpe" id="formulaire" data-module="formulaire-par-etapes" data-anime="gsap">
+      <div class="fpe__carton">
+        <span class="fpe-led" aria-hidden="true"></span>
+        <form class="fpe__form" action="#" method="post" novalidate>
+          <div class="fpe__progression">
+            <ol class="fpe__reperes" aria-label="Progression"></ol>
+            <div class="fpe__barre" aria-hidden="true"><span></span></div>
+            <p class="fpe__etat" aria-live="polite"></p>
+          </div>
+          <fieldset class="fpe__etape" data-etape="Votre besoin">
+            <legend class="fpe__legende"><h2 class="fpe__titre">De quels travaux s’agit-il ?</h2></legend>
+            <fieldset class="fpe__groupe" data-libelle="Type de travaux">
+              <legend class="fpe__groupe-titre">Type de travaux <i aria-hidden="true">*</i></legend>
+              <div class="fpe__puces"><label class="fpe__puce"><input type="radio" name="type" value="Plomberie" required><span class="fpe__choix-texte">Plomberie</span></label><label class="fpe__puce"><input type="radio" name="type" value="Électricité"><span class="fpe__choix-texte">Électricité</span></label><label class="fpe__puce"><input type="radio" name="type" value="Chauffage"><span class="fpe__choix-texte">Chauffage</span></label><label class="fpe__puce"><input type="radio" name="type" value="Maçonnerie"><span class="fpe__choix-texte">Maçonnerie</span></label><label class="fpe__puce"><input type="radio" name="type" value="Menuiserie"><span class="fpe__choix-texte">Menuiserie</span></label><label class="fpe__puce"><input type="radio" name="type" value="Plâtrerie"><span class="fpe__choix-texte">Plâtrerie</span></label><label class="fpe__puce"><input type="radio" name="type" value="Revêtement murs"><span class="fpe__choix-texte">Revêtement murs</span></label><label class="fpe__puce"><input type="radio" name="type" value="Revêtement sol"><span class="fpe__choix-texte">Revêtement sol</span></label><label class="fpe__puce"><input type="radio" name="type" value="Projet complet"><span class="fpe__choix-texte">Projet complet</span></label></div>
+            </fieldset>
+            <fieldset class="fpe__groupe" data-libelle="Nature de l’intervention">
+              <legend class="fpe__groupe-titre">Nature de l’intervention <i aria-hidden="true">*</i></legend>
+              <div class="fpe__puces"><label class="fpe__puce"><input type="radio" name="nature" value="Dépannage" required><span class="fpe__choix-texte">Dépannage</span></label><label class="fpe__puce"><input type="radio" name="nature" value="Dépannage en urgence"><span class="fpe__choix-texte">Dépannage en urgence</span></label><label class="fpe__puce"><input type="radio" name="nature" value="Rénovation"><span class="fpe__choix-texte">Rénovation</span></label><label class="fpe__puce"><input type="radio" name="nature" value="Réparation"><span class="fpe__choix-texte">Réparation</span></label><label class="fpe__puce"><input type="radio" name="nature" value="Montage"><span class="fpe__choix-texte">Montage</span></label><label class="fpe__puce"><input type="radio" name="nature" value="Pose"><span class="fpe__choix-texte">Pose</span></label><label class="fpe__puce"><input type="radio" name="nature" value="Partenariat professionnel"><span class="fpe__choix-texte">Partenariat professionnel</span></label></div>
+            </fieldset>
+          </fieldset>
+          <fieldset class="fpe__etape" data-etape="Les détails">
+            <legend class="fpe__legende"><h2 class="fpe__titre">Racontez-nous.</h2></legend>
+            <div class="fpe__champ">
+              <label for="fpe-prestation">Prestation choisie</label>
+              <select id="fpe-prestation" name="prestation" data-libelle="Prestation choisie">
+                <option value="">Aucune, je décris ma demande</option>
+                <option value="debouchage-wc" data-reseau="plomberie">Débouchage WC</option><option value="reparation-de-fuite-sur-alimentation-wc" data-reseau="plomberie">Réparation de fuite sur alimentation WC</option><option value="remplacement-robinet-wc" data-reseau="plomberie">Remplacement robinet WC</option><option value="reparation-chasse-d-eau-flotteur" data-reseau="plomberie">Réparation chasse d’eau / flotteur</option><option value="remplacement-joint-au-pipe-d-evacuation" data-reseau="plomberie">Remplacement joint au pipe d’évacuation</option><option value="creation-d-une-alimentation-douchette-wc" data-reseau="plomberie">Création d’une alimentation douchette WC</option><option value="pack-wc-standard-complet" data-reseau="plomberie">Pack WC standard complet</option><option value="debouchage-evier" data-reseau="plomberie">Débouchage évier</option><option value="remplacement-robinet-mitigeur-evier" data-reseau="plomberie">Remplacement robinet mitigeur évier</option><option value="robinet-melangeur-d-evier-a-remplacer" data-reseau="plomberie">Robinet mélangeur d’évier à remplacer</option><option value="vidange-evier" data-reseau="plomberie">Vidange évier</option><option value="reparation-de-fuite-sur-alimentation-en-eau-evier" data-reseau="plomberie">Réparation de fuite sur alimentation en eau évier</option><option value="reparation-de-fuite-sur-evacuation-evier" data-reseau="plomberie">Réparation de fuite sur évacuation évier</option><option value="vidange-machine-a-laver" data-reseau="plomberie">Vidange machine à laver</option><option value="remplacement-robinet-machine-a-laver" data-reseau="plomberie">Remplacement robinet machine à laver</option><option value="creation-alimentation-et-evacuation-machine-a-laver" data-reseau="plomberie">Création alimentation et évacuation machine à laver</option><option value="remplacement-flexible-gaz-pc-gaz-a-vie" data-reseau="plomberie">Remplacement flexible gaz (PC gaz) à vie</option><option value="pack-meuble-evier-complet" data-reseau="plomberie">Pack meuble évier complet</option><option value="debouchage-lavabo" data-reseau="plomberie">Débouchage lavabo</option><option value="vidange-lavabo" data-reseau="plomberie">Vidange lavabo</option><option value="remplacement-robinet-mitigeur-lavabo" data-reseau="plomberie">Remplacement robinet mitigeur lavabo</option><option value="robinet-melangeur-de-lavabo-a-remplacer" data-reseau="plomberie">Robinet mélangeur de lavabo à remplacer</option><option value="reparation-de-fuite-sur-alimentation-en-eau-lavabo" data-reseau="plomberie">Réparation de fuite sur alimentation en eau lavabo</option><option value="reparation-de-fuite-sur-evacuation-lavabo" data-reseau="plomberie">Réparation de fuite sur évacuation lavabo</option><option value="pack-remplacement-lavabo-complet" data-reseau="plomberie">Pack remplacement lavabo complet</option><option value="debouchage-baignoire" data-reseau="plomberie">Débouchage baignoire</option><option value="robinet-mitigeur-baignoire" data-reseau="plomberie">Robinet mitigeur baignoire</option><option value="robinet-melangeur-de-baignoire-a-remplacer" data-reseau="plomberie">Robinet mélangeur de baignoire à remplacer</option><option value="robinet-thermostatique-a-remplacer" data-reseau="plomberie">Robinet thermostatique à remplacer</option><option value="vidange-baignoire" data-reseau="plomberie">Vidange baignoire</option><option value="joint-silicone-baignoire" data-reseau="plomberie">Joint silicone baignoire</option><option value="fuite-sur-evacuation-baignoire" data-reseau="plomberie">Fuite sur évacuation baignoire</option><option value="fuite-sur-alimentation-en-eau-baignoire" data-reseau="plomberie">Fuite sur alimentation en eau baignoire</option><option value="pack-remplacement-baignoire-complete" data-reseau="plomberie">Pack remplacement baignoire complète</option><option value="debouchage-douche" data-reseau="plomberie">Débouchage douche</option><option value="vidange-douche" data-reseau="plomberie">Vidange douche</option><option value="remplacement-robinet-mitigeur-douche" data-reseau="plomberie">Remplacement robinet mitigeur douche</option><option value="reparation-de-fuite-sur-alimentation-en-eau-douche" data-reseau="plomberie">Réparation de fuite sur alimentation en eau douche</option><option value="reparation-de-fuite-sur-evacuation-douche" data-reseau="plomberie">Réparation de fuite sur évacuation douche</option><option value="barre-de-pommeau-de-douche-a-remplacer" data-reseau="plomberie">Barre de pommeau de douche à remplacer</option><option value="pack-remplacement-receveur-de-douche" data-reseau="plomberie">Pack remplacement receveur de douche</option><option value="probleme-de-ballon-d-eau-chaude" data-reseau="plomberie">Problème de ballon d’eau chaude</option><option value="remplacement-reducteur-de-pression" data-reseau="plomberie">Remplacement réducteur de pression</option><option value="remplacement-groupe-de-securite" data-reseau="plomberie">Remplacement groupe de sécurité</option><option value="remplacement-des-thermostats-de-chauffe-eau" data-reseau="plomberie">Remplacement des thermostats de chauffe-eau</option><option value="fuite-sur-alimentation-du-ballon-d-eau-chaude" data-reseau="plomberie">Fuite sur alimentation du ballon d’eau chaude</option><option value="fuite-sur-evacuation-du-ballon-d-eau-chaude" data-reseau="plomberie">Fuite sur évacuation du ballon d’eau chaude</option><option value="remplacement-du-ballon-ou-de-la-resistance" data-reseau="plomberie">Remplacement du ballon ou de la résistance</option><option value="pack-remplacement-chauffe-eau-electrique" data-reseau="plomberie">Pack remplacement chauffe-eau électrique</option><option value="recherche-de-fuite-simple" data-reseau="plomberie">Recherche de fuite simple</option><option value="recherche-de-fuite-approfondie" data-reseau="plomberie">Recherche de fuite approfondie</option><option value="j-ai-une-trace-d-humidite" data-reseau="plomberie">J’ai une trace d’humidité</option><option value="remplacement-vanne-d-arret" data-reseau="plomberie">Remplacement vanne d’arrêt</option><option value="j-ai-une-fuite-sur-un-joint" data-reseau="plomberie">J’ai une fuite sur un joint</option><option value="fuite-sur-un-flexible" data-reseau="plomberie">Fuite sur un flexible</option><option value="remplacement-reducteur-de-pression-canalisation" data-reseau="plomberie">Remplacement réducteur de pression</option><option value="remplacement-vanne-d-arret-exterieure" data-reseau="plomberie">Remplacement vanne d’arrêt extérieure</option><option value="remplacement-reducteur-de-pression-exterieur" data-reseau="plomberie">Remplacement réducteur de pression extérieur</option><option value="remplacement-robinet-de-puisage-exterieur" data-reseau="plomberie">Remplacement robinet de puisage extérieur</option><option value="fuite-sur-une-alimentation-d-eau-visible" data-reseau="plomberie">Fuite sur une alimentation d’eau visible</option><option value="fuite-sur-un-tuyau-d-evacuation-visible" data-reseau="plomberie">Fuite sur un tuyau d’évacuation visible</option><option value="creation-d-une-alimentation-et-d-une-evacuation-d-eau" data-reseau="plomberie">Création d’une alimentation et d’une évacuation d’eau</option><option value="robinet-de-machine-a-laver-a-remplacer" data-reseau="plomberie">Robinet de machine à laver à remplacer</option><option value="robinet-de-lave-vaisselle-a-remplacer" data-reseau="plomberie">Robinet de lave-vaisselle à remplacer</option><option value="creation-alimentation-machine-a-laver" data-reseau="plomberie">Création alimentation machine à laver</option><option value="creation-evacuation-machine-a-laver" data-reseau="plomberie">Création évacuation machine à laver</option><option value="prises-electriques-standard" data-reseau="electricite">Prises électriques standard</option><option value="prises-electriques-specialisees" data-reseau="electricite">Prises électriques spécialisées</option><option value="prises-electriques-communication" data-reseau="electricite">Prises électriques communication</option>
+              </select>
+            </div>
+            <div class="fpe__grille">
+              <div class="fpe__champ"><label for="fpe-piece">Pièce concernée</label>
+                <select id="fpe-piece" name="piece"><option value=""></option><option>Salle de bain</option><option>WC</option><option>Cuisine</option><option>Buanderie</option><option>Chambre</option><option>Séjour</option><option>Garage</option><option>Sous-sol</option><option>Extérieur</option><option>Autre</option></select></div>
+              <div class="fpe__champ"><label for="fpe-delai">Délai souhaité</label>
+                <select id="fpe-delai" name="delai"><option value="urgence">Dépannage en urgence</option><option value="semaine">Dans la semaine</option><option value="planifier">À planifier</option></select></div>
+            </div>
+            <div class="fpe__champ">
+              <label for="fpe-message">Votre demande <i aria-hidden="true">*</i></label>
+              <textarea id="fpe-message" name="message" rows="4" minlength="10" required aria-describedby="fpe-message-aide"></textarea>
+              <p class="fpe__aide" id="fpe-message-aide">Ce qui se passe, depuis quand, ce que vous avez déjà essayé.</p>
+            </div>
+            <div class="fpe__champ"><label for="fpe-photos">Une ou deux photos (facultatif)</label><input id="fpe-photos" name="photos" type="file" accept="image/*" multiple></div>
+          </fieldset>
+          <fieldset class="fpe__etape" data-etape="Vos coordonnées">
+            <legend class="fpe__legende"><h2 class="fpe__titre">Comment vous joindre ?</h2></legend>
+            <div class="fpe__grille">
+              <div class="fpe__champ"><label for="fpe-nom">Nom <i aria-hidden="true">*</i></label><input id="fpe-nom" name="nom" autocomplete="family-name" required></div>
+              <div class="fpe__champ"><label for="fpe-prenom">Prénom <i aria-hidden="true">*</i></label><input id="fpe-prenom" name="prenom" autocomplete="given-name" required></div>
+              <div class="fpe__champ"><label for="fpe-email">E-mail <i aria-hidden="true">*</i></label><input id="fpe-email" name="email" type="email" autocomplete="email" required></div>
+              <div class="fpe__champ"><label for="fpe-tel">Téléphone <i aria-hidden="true">*</i></label><input id="fpe-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="[0-9 +().\-]{10,20}"></div>
+            </div>
+            <label class="fpe__case"><input type="checkbox" name="accord" value="oui" required data-libelle="Accord" data-hors-recap><span class="fpe__choix-texte">J’accepte que mes coordonnées servent seulement à répondre à ma demande. <i aria-hidden="true">*</i></span></label>
+            <p class="fpe__aide mention-donnees">Vos données servent seulement à vous recontacter. Politique de confidentialité : à compléter.</p>
+          </fieldset>
+          <fieldset class="fpe__etape" data-etape="Récapitulatif" data-recap>
+            <legend class="fpe__legende"><h2 class="fpe__titre">Tout est juste ?</h2></legend>
+            <div class="fpe__recap"></div>
+          </fieldset>
+          <div class="fpe__nav">
+            <button class="fpe__bouton fpe__bouton--ligne" type="button" data-precedent>Retour</button>
+            <button class="fpe__bouton" type="button" data-suivant>Continuer</button>
+            <button class="fpe__bouton" type="submit">Envoyer la demande</button>
+          </div>
+          <p class="fpe__note">Formulaire de démonstration : rien n’est envoyé.</p>
+        </form>
+        <div class="fpe__fin" hidden data-message-envoi>
+          <h2>Demande prête, rien n’a été envoyé.</h2>
+          <p>Ceci est une maquette : le formulaire est simulé. Sur le site en ligne, Dépannage 60 recevra votre demande et vous rappellera.</p>
+          <p data-resume></p>
+          <button type="button" class="fpe__bouton fpe__bouton--ligne" data-recommencer>Nouvelle demande</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="acces conteneur" id="acces">
+  <div class="acces-texte">
+    <p class="surtitre" data-raccord-cible>Où nous trouver</p>
+    <h2 data-anime="lignes">Au 9 bis rue de l’Abreuvoir, à Longueil-Sainte-Marie.</h2>
+    <dl class="acces-liste" data-anime="cascade">
+      <div><dt>Adresse</dt><dd>9 bis rue de l’Abreuvoir, 60126 Longueil-Sainte-Marie</dd></div>
+      <div><dt>Téléphone</dt><dd><a href="tel:+33761183322">07 61 18 33 22</a></dd></div>
+      <div><dt>Horaires</dt><dd class="a-completer">À compléter</dd></div>
+    </dl>
+    <p><a class="lien-fleche" href="https://www.facebook.com/profile.php?id=100025931762469" target="_blank" rel="noopener">Suivre Dépannage 60 sur Facebook <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+  </div>
+  <div class="acces-visuels">
+    <figure class="media acces-media" data-grok data-anime="rideau" style="--cadrage:55% 62%">
+  <picture>
+    <img src="/assets/images/grok/accueil-sac-784.webp" srcset="/assets/images/grok/accueil-sac-480.webp 480w, /assets/images/grok/accueil-sac-640.webp 640w, /assets/images/grok/accueil-sac-784.webp 784w" sizes="(max-width: 760px) 92vw, 24vw" alt="Sac à outils ouvert posé sur le pas d’une porte" width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div data-effet="ondes-60"><div class="carte " id="carte-contact" role="img" aria-label="Schéma : Longueil-Sainte-Marie et les communes voisines" data-visuel data-carte>
+  <svg viewBox="-26 -13 42 40" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+    <defs><pattern id="carte-contact-grille" width="2" height="2" patternUnits="userSpaceOnUse"><path d="M2 0H0V2" fill="none" class="carte-grille"/></pattern></defs>
+    <rect x="-26" y="-13" width="42" height="40" fill="url(#carte-contact-grille)"/>
+    <circle class="carte-anneau" cx="0" cy="0" r="10" pathLength="1"/><circle class="carte-anneau" cx="0" cy="0" r="20" pathLength="1"/><circle class="carte-anneau" cx="0" cy="0" r="30" pathLength="1"/>
+    <path class="carte-riviere" d="M20.55 -25.06 L15.55 -18.30 L10.56 -10.95 L8.02 -7.01 L4.60 -3.98 L2.12 -1.68 L1.21 0.64 L-0.04 2.59 L-1.85 4.80 L-8.03 5.84 L-13.45 8.24 L-17.46 10.48 L-22.88 14.87 L-27.95 18.19" pathLength="1"/>
+    <g class="carte-ondes" data-ondes><circle r="1"/><circle r="1"/><circle r="1"/></g>
+    <path class="carte-trajet" data-trajet d="M0 0" pathLength="1"/>
+    <circle class="carte-point carte-point--depart" data-point="longueil-sainte-marie" cx="0.00" cy="0.00" r="1.1"/><circle class="carte-point" data-point="rivecourt" cx="1.21" cy="0.64" r="0.7"/><circle class="carte-point" data-point="le-meux" cx="2.12" cy="-1.68" r="0.7"/><circle class="carte-point" data-point="chevrieres" cx="-2.26" cy="0.91" r="0.7"/><circle class="carte-point" data-point="houdancourt" cx="-5.46" cy="1.39" r="0.7"/><circle class="carte-point" data-point="verberie" cx="1.17" cy="4.80" r="0.7"/><circle class="carte-point" data-point="saint-vaast-de-longmont" cx="2.30" cy="6.46" r="0.7"/><circle class="carte-point" data-point="compiegne" cx="8.02" cy="-7.01" r="0.7"/><circle class="carte-point" data-point="creil" cx="-17.46" cy="10.48" r="0.7"/><circle class="carte-point" data-point="lamorlaye" cx="-19.85" cy="22.03" r="0.7"/>
+  </svg>
+  <span class="carte-km" style="left:73.81%;top:54.15%" aria-hidden="true">10 km</span><span class="carte-km" style="left:85.71%;top:75.80%" aria-hidden="true">20 km</span>
+  <span class="carte-km carte-km--riviere" style="left:90.61%;top:5.13%" aria-hidden="true">l’Oise</span>
+  <span class="carte-etiquette carte-etiquette--fin" data-etiquette="longueil-sainte-marie" data-repere style="left:59.05%;top:26.50%" aria-hidden="true">Longueil-Sainte-Marie</span><span class="carte-etiquette carte-etiquette--debut carte-etiquette--secondaire" data-etiquette="rivecourt" data-repere style="left:66.19%;top:36.25%" aria-hidden="true">Rivecourt</span><span class="carte-etiquette carte-etiquette--debut carte-etiquette--secondaire" data-etiquette="le-meux" data-repere style="left:69.52%;top:26.00%" aria-hidden="true">Le Meux</span><span class="carte-etiquette carte-etiquette--fin carte-etiquette--secondaire" data-etiquette="chevrieres" data-repere style="left:53.81%;top:38.50%" aria-hidden="true">Chevrières</span><span class="carte-etiquette carte-etiquette--fin carte-etiquette--secondaire" data-etiquette="houdancourt" data-repere style="left:46.19%;top:31.00%" aria-hidden="true">Houdancourt</span><span class="carte-etiquette carte-etiquette--debut carte-etiquette--secondaire" data-etiquette="verberie" data-repere style="left:68.10%;top:43.50%" aria-hidden="true">Verberie</span><span class="carte-etiquette carte-etiquette--debut carte-etiquette--secondaire" data-etiquette="saint-vaast-de-longmont" data-repere style="left:70.48%;top:50.50%" aria-hidden="true">Saint-Vaast-de-Longmont</span><span class="carte-etiquette carte-etiquette--milieu" data-etiquette="compiegne" data-repere style="left:81.19%;top:9.50%" aria-hidden="true">Compiègne</span><span class="carte-etiquette carte-etiquette--milieu" data-etiquette="creil" data-repere style="left:19.52%;top:53.00%" aria-hidden="true">Creil</span><span class="carte-etiquette carte-etiquette--debut" data-etiquette="lamorlaye" data-repere style="left:20.48%;top:91.00%" aria-hidden="true">Lamorlaye</span>
+  <span class="carte-note" aria-hidden="true">Schéma, distances à vol d’oiseau</span>
+</div></div>
+  </div>
+</section>
+<section class="fin-page fin-page--nuit" id="fin">
+  <div class="conteneur fin-page-grille fin-page-grille--simple">
+    <figure class="media fin-media" data-grok data-fx="zoom" style="--cadrage:55% 45%">
+  <picture>
+    <img src="/assets/images/grok/prestation-chauffe-eau-640.webp" srcset="/assets/images/grok/prestation-chauffe-eau-480.webp 480w, /assets/images/grok/prestation-chauffe-eau-640.webp 640w" sizes="(max-width: 760px) 92vw, 26vw" alt="Chauffe-eau électrique et ses raccords en cuivre" width="640" height="480" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div>
+      <h2 data-anime="lignes" data-raccord-cible>Une urgence, tout de suite ?</h2>
+      <p data-anime>Le téléphone reste le plus rapide.</p>
+    </div>
+    <p class="fin-actions" data-anime><a class="appel-numero appel-numero--moyen" href="tel:+33761183322" data-survol="magnetique"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg><span>07 61 18 33 22</span></a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied" data-masque-barre>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.png" alt="Dépannage 60" width="622" height="242" loading="lazy">
+      <p>9 bis rue de l’Abreuvoir, 60126 Longueil-Sainte-Marie</p>
+      <p><a class="pied-tel" href="tel:+33761183322">07 61 18 33 22</a></p>
+      <p class="pied-petit">SIREN 538 098 245</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/prestations" data-libelle="Prestations et tarifs">Prestations et tarifs</a></li><li><a href="/decrivez-votre-besoin" data-libelle="Décrivez votre besoin">Décrivez votre besoin</a></li><li><a href="/rayon-d-action" data-libelle="Rayon d’action">Rayon d’action</a></li><li><a href="/contact" data-libelle="Contact" aria-current="page">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Nos communes</p>
+      <ul class="pied-communes"><li><a href="/rayon-d-action#commune-longueil-sainte-marie" data-libelle="Rayon d’action">Longueil-Sainte-Marie</a></li><li><a href="/rayon-d-action#commune-rivecourt" data-libelle="Rayon d’action">Rivecourt</a></li><li><a href="/rayon-d-action#commune-le-meux" data-libelle="Rayon d’action">Le Meux</a></li><li><a href="/rayon-d-action#commune-chevrieres" data-libelle="Rayon d’action">Chevrières</a></li><li><a href="/rayon-d-action#commune-houdancourt" data-libelle="Rayon d’action">Houdancourt</a></li><li><a href="/rayon-d-action#commune-verberie" data-libelle="Rayon d’action">Verberie</a></li><li><a href="/rayon-d-action#commune-saint-vaast-de-longmont" data-libelle="Rayon d’action">Saint-Vaast-de-Longmont</a></li><li><a href="/rayon-d-action#commune-compiegne" data-libelle="Rayon d’action">Compiègne</a></li><li><a href="/rayon-d-action#commune-creil" data-libelle="Rayon d’action">Creil</a></li><li><a href="/rayon-d-action#commune-lamorlaye" data-libelle="Rayon d’action">Lamorlaye</a></li></ul>
+    </div>
+    <div>
+      <p class="pied-titre">Confort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100025931762469" target="_blank" rel="noopener">Dépannage 60 sur Facebook <span class="visuellement-cache">(nouvel onglet)</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Maquette de démonstration : formulaires simulés, rien n’est envoyé. Les informations marquées « à compléter » seront fournies par le client.</p>
+    <p>© Dépannage 60</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--jaune" href="tel:+33761183322"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.6 4.2-2 1.4a12 12 0 0 0 6.8 6.8l1.4-2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5C10.5 19.2 4.8 13.5 4.5 6a2.5 2.5 0 0 1 2.1-2.5Z" fill="currentColor"/></svg>Appeler</a>
+  <a href="/decrivez-votre-besoin" class="bouton bouton--encre" data-libelle="Décrivez votre besoin">Mon problème</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+_audit
+_partage
+source
+outils
+donnees
+recu
+README.md
+CHANGELOG.md
+*.zip
+plan-images.json
+direction.json
+grok-consignes.json
+*.docx
+node_modules

@@ -1,0 +1,9 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["Plumber", "Electrician"],
+  "name": "Dépannage 60",
+  "telephone": "+33761183322",
+  "address": { "@type": "PostalAddress", "streetAddress": "9 bis rue de l’Abreuvoir", "postalCode": "60126", "addressLocality": "Longueil-Sainte-Marie", "addressCountry": "FR" },
+  "areaServed": ["Longueil-Sainte-Marie", "Rivecourt", "Le Meux", "Chevrières", "Houdancourt", "Verberie", "Saint-Vaast-de-Longmont", "Compiègne", "Creil", "Lamorlaye", "Oise"],
+  "sameAs": ["https://www.facebook.com/profile.php?id=100025931762469"]
+}

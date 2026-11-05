@@ -1,0 +1,361 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "langueAutre": "Autre langue",
+    "actionEntete": "Décrire mon problème",
+    "appeler": "Appeler",
+    "appelerLong": "Appeler le 07 61 18 33 22",
+    "calmeReduire": "Réduire les animations",
+    "calmeRetablir": "Rétablir les animations",
+    "calmeSysteme": "Animations réduites par le réglage de votre appareil",
+    "sommaire": "Sommaire",
+    "confort": "Confort",
+    "communes": "Nos communes",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette de démonstration : formulaires simulés, rien n’est envoyé. Les informations marquées « à compléter » seront fournies par le client.",
+    "mentions": "Mentions légales : à compléter",
+    "confidentialite": "Politique de confidentialité : à compléter",
+    "siren": "SIREN 538 098 245",
+    "facebook": "Dépannage 60 sur Facebook",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "introLigne": "Plomberie · Électricité · Oise",
+    "introMinutes": "min",
+    "barreBesoin": "Mon problème",
+    "ttc": "TTC",
+    "des": "dès",
+    "surDemande": "Prix sur demande",
+    "compris": "Ce qui est compris",
+    "nonCompris": "Ce qui ne l’est pas",
+    "commander": "Demander cette prestation",
+    "voirFiche": "Voir la fiche",
+    "aVolOiseau": "à vol d’oiseau",
+    "nouvelOnglet": "(nouvel onglet)"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "Dépannage 60 : plombier et électricien dans l’Oise, prix affichés",
+      "description": "Dépannage plomberie et électricité, rénovation tous corps d’état autour de Longueil-Sainte-Marie et dans l’Oise. Prix affichés, devis avant intervention.",
+      "nav": "Accueil",
+      "partageAlt": "Dépannage 60, plomberie et électricité dans l’Oise",
+      "accroche": "Fuite, panne, WC bouché ?"
+    },
+    "prestations": {
+      "titre": "Prestations et tarifs : Dépannage 60",
+      "description": "Toutes les prestations de plomberie et d’électricité de Dépannage 60, avec le prix affiché, ce qui est compris et ce qui ne l’est pas.",
+      "nav": "Prestations et tarifs",
+      "partageAlt": "Prestations et tarifs de Dépannage 60",
+      "accroche": "69 prestations, tarifs en clair"
+    },
+    "besoin": {
+      "titre": "Décrivez votre besoin : Dépannage 60",
+      "description": "Trois questions pour trouver la prestation qu’il vous faut, avec son prix, puis la commander ou appeler.",
+      "nav": "Décrivez votre besoin",
+      "partageAlt": "Décrivez votre besoin en trois questions",
+      "accroche": "Qu’est-ce qui ne va pas ?"
+    },
+    "rayon": {
+      "titre": "Rayon d’action : Dépannage 60 dans l’Oise",
+      "description": "Longueil-Sainte-Marie, Compiègne, Creil, Verberie, Chevrières et les communes voisines, et toute l’Oise sur demande.",
+      "nav": "Rayon d’action",
+      "partageAlt": "Carte du rayon d’action de Dépannage 60",
+      "accroche": "On vient chez vous ?"
+    },
+    "contact": {
+      "titre": "Contact et rendez-vous : Dépannage 60",
+      "description": "Demandez à être rappelé et prenez rendez-vous avec Dépannage 60, ou appelez le 07 61 18 33 22.",
+      "nav": "Contact",
+      "partageAlt": "Contacter Dépannage 60",
+      "accroche": "Demandez à être rappelé"
+    },
+    "404": {
+      "titre": "Page introuvable : Dépannage 60",
+      "description": "Cette page n’existe pas ou plus.",
+      "nav": "Page introuvable",
+      "partageAlt": "Page introuvable",
+      "accroche": "Fuite détectée"
+    }
+  },
+  "accueil": {
+    "hero": {
+      "surtitre": "Plomberie · Électricité · Rénovation · Oise",
+      "titre1": "Fuite, panne,",
+      "titre2": "WC bouché ?",
+      "titre3": "On s’en occupe.",
+      "texte": "Dépannage et travaux autour de Longueil-Sainte-Marie et dans toute l’Oise. Les tarifs des dépannages courants sont affichés, le devis est fait avant d’intervenir.",
+      "decrire": "Décrire mon problème",
+      "info": "Intervention en moins de 45 min autour de Longueil-Sainte-Marie",
+      "indiceSouris": "Passez la souris sur l’eau",
+      "indiceDoigt": "Touchez l’eau"
+    },
+    "diag": {
+      "surtitre": "Quel est votre problème ?",
+      "titre": "Basculez l’interrupteur de votre panne.",
+      "texte": "Chaque problème courant a sa prestation et son prix affiché. Touchez-en un pour voir ce qui est compris.",
+      "autre": "Autre problème ? Décrivez votre besoin",
+      "fuite": "Fuite d’eau",
+      "wc": "WC bouché",
+      "evacuation": "Évier ou douche bouché",
+      "eauChaude": "Plus d’eau chaude",
+      "humidite": "Trace d’humidité",
+      "prise": "Prise à poser"
+    },
+    "prix": {
+      "surtitre": "Tarifs affichés",
+      "titre": "Le prix, avant qu’on se déplace.",
+      "texte": "Chaque prestation a sa fiche : la description, le tarif quand il est fixé, le détail de ce qui est facturé, ce qui est compris et ce qui ne l’est pas.",
+      "ticketTitre": "Débouchage WC",
+      "ticketTotal": "Total",
+      "ticketNote": "Méthode selon le bouchon : canne, pompe manuelle, furet électrique ou aspirateur à eau.",
+      "garantie1": "Chiffrage gratuit",
+      "garantie2": "Devis avant intervention",
+      "action": "Voir toutes les prestations"
+    },
+    "etapes": {
+      "surtitre": "Comment ça marche",
+      "titre": "Quatre vannes, et c’est réglé.",
+      "e1t": "Décrivez votre besoin",
+      "e1": "Quelques questions sur votre problème suffisent.",
+      "e2t": "Trouvez la prestation",
+      "e2": "Sa description, son tarif, ce qui est compris.",
+      "e3t": "Commandez en ligne",
+      "e3": "Votre demande, une ou deux photos, le délai souhaité, vos coordonnées.",
+      "e4t": "On vous rappelle",
+      "e4": "Pour préciser le détail et le délai d’intervention.",
+      "action": "Commencer"
+    },
+    "mur": {
+      "surtitre": "Plomberie et électricité",
+      "titre": "Derrière le mur, deux réseaux.",
+      "texte": "L’eau et le courant, du dépannage à la mise en conformité : on intervient sur les deux.",
+      "plomberie": "Plomberie",
+      "plomberieTexte": "WC, évier, lavabo, baignoire, douche, chauffe-eau, recherche de fuite, canalisations, raccordement d’électroménager.",
+      "electricite": "Électricité",
+      "electriciteTexte": "Pannes, courts-circuits, tableau électrique, disjoncteurs, prises, points lumineux et mise aux normes.",
+      "voirPlomberie": "Les prestations de plomberie",
+      "voirElectricite": "Les prestations d’électricité",
+      "eauFroide": "Eau froide",
+      "eauChaude": "Eau chaude",
+      "courant": "Courant",
+      "glisser": "Faites glisser le schéma"
+    },
+    "rayon": {
+      "surtitre": "Rayon d’action",
+      "titre": "On vient chez vous ?",
+      "texte": "Dix communes autour de Longueil-Sainte-Marie, et partout dans l’Oise.",
+      "action": "Vérifier ma commune",
+      "carte": "Schéma de la zone d’intervention autour de Longueil-Sainte-Marie, distances à vol d’oiseau"
+    },
+    "engagements": {
+      "surtitre": "Nos engagements",
+      "titre": "Ce qui est vissé d’avance.",
+      "g1t": "Déplacement inclus",
+      "g1": "Le déplacement est compris dans le prix affiché de la prestation.",
+      "g2t": "Devis avant intervention",
+      "g2": "Le chiffrage est gratuit, le prix est fixé à l’avance.",
+      "g3t": "Travail soigné",
+      "g3": "Une exécution soignée, et le lieu de travail nettoyé après l’intervention.",
+      "g4t": "Garantie sur intervention",
+      "g4": "Les prestations sont garanties, dans le respect des normes en vigueur."
+    },
+    "renovation": {
+      "surtitre": "Rénovation et aménagement",
+      "titre": "Et quand il faut tout refaire.",
+      "texte": "Rénovation tous corps d’état, amélioration de l’habitat et restructuration de biens : nous planifions les travaux et suivons le chantier jusqu’à la fin.",
+      "texte2": "Pour les particuliers, les locaux commerciaux, les bureaux et les locaux d’activité. Garantie décennale des prestations tous corps d’état.",
+      "region": "Rénovation, défilement horizontal",
+      "c1t": "Salles d’eau",
+      "c1": "Plomberie, revêtements des murs et des sols, rénovation complète de salle de bain.",
+      "c2t": "Cuisine et agencement",
+      "c2": "Agencement, transformations, mise en conformité de l’électricité et de la plomberie.",
+      "c3t": "Murs, plafonds, sols",
+      "c3": "Plâtrerie et isolation, maçonnerie, menuiserie, revêtements des murs, plafonds et sols.",
+      "c4t": "Salle de bain adaptée",
+      "c4": "Aménagement pour une personne à mobilité réduite, avec un devis complet sur mesure.",
+      "faites": "Faites défiler"
+    },
+    "qui": {
+      "surtitre": "Qui intervient",
+      "titre": "Pedro Ricardo dos Reis Oliveira, et un réseau d’intervenants.",
+      "citation": "« Conseil, dépannage, aide pour réaliser tous vos travaux. »",
+      "texte": "Dépannage 60 intervient sur tout domaine grâce à un réseau d’intervenants de qualité, pour un service de proximité qui repose sur de vraies valeurs humaines.",
+      "proTitre": "Professionnels du bâtiment",
+      "proTexte": "Devenez partenaire de Dépannage 60 et collaborez sur nos nombreuses interventions.",
+      "proAction": "Devenir partenaire"
+    },
+    "appel": {
+      "surtitre": "Une urgence ?",
+      "titre": "Un appel, et le problème est pris en main.",
+      "rappel": "Demander à être rappelé",
+      "ruban": "Longueil-Sainte-Marie · Rivecourt · Le Meux · Chevrières · Houdancourt · Verberie · Saint-Vaast-de-Longmont · Compiègne · Creil · Lamorlaye · Toute l’Oise ·"
+    }
+  },
+  "prestations": {
+    "tete": {
+      "surtitre": "Prestations et tarifs",
+      "titre1": "69 prestations,",
+      "titre2": "tarifs en clair.",
+      "texte": "Plomberie et électricité : le tarif est donné quand il est affiché sur la fiche, sinon la prestation est sur devis gratuit.",
+      "action": "Trouver ma prestation",
+      "info": "Débouchage WC dès 100 € TTC"
+    },
+    "catalogue": {
+      "titre": "Toutes les prestations",
+      "reseau": "Réseau",
+      "famille": "Famille",
+      "tout": "Tout",
+      "plomberie": "Plomberie",
+      "electricite": "Électricité",
+      "recherche": "Rechercher une prestation",
+      "rechercheExemple": "fuite, robinet, prise…",
+      "compte1": "prestation",
+      "compte2": "prestations",
+      "reinit": "Tout afficher",
+      "vide": "Aucune prestation ne correspond.",
+      "duree": "Durée indiquée",
+      "supplements": "Suppléments selon le type",
+      "avantDoublage": "avant doublage",
+      "sousGoulotte": "sous goulotte saignée",
+      "prise": "Type de prise"
+    },
+    "inclus": {
+      "surtitre": "Ce que comprend un prix",
+      "titre": "Un exemple, ligne par ligne.",
+      "nom": "Robinet de machine à laver à remplacer",
+      "texte": "Le détail facturé, ce qui est compris et ce qui ne l’est pas : tout est écrit sur la fiche avant de commander."
+    },
+    "faq": {
+      "titre": "Questions fréquentes",
+      "surtitre": "Questions pratiques"
+    },
+    "fin": {
+      "titre": "Vous ne trouvez pas ?",
+      "texte": "Répondez à trois questions : on vous montre la prestation qui correspond, ou on vous rappelle.",
+      "action": "Décrire mon besoin"
+    }
+  },
+  "besoin": {
+    "tete": {
+      "surtitre": "Décrivez votre besoin",
+      "titre": "Qu’est-ce qui ne va pas ?",
+      "texte": "Trois questions, et la prestation qui correspond s’affiche, avec son tarif quand il est fixé.",
+      "info": "3 questions, 1 prestation"
+    },
+    "q1": "Où est le problème ?",
+    "q2": "Que se passe-t-il ?",
+    "q3": "C’est pour quand ?",
+    "etape": "Question {n} sur 3",
+    "retour": "Question précédente",
+    "recommencer": "Recommencer",
+    "resultatTitre": "Voici ce qu’il vous faut.",
+    "resultatAucune": "Ce cas se règle par téléphone.",
+    "resultatAucuneTexte": "Aucune prestation en ligne ne correspond exactement : appelez, on vous dit tout de suite ce qu’il faut faire.",
+    "urgence": "C’est urgent : appelez directement, c’est le plus rapide.",
+    "suite": {
+      "surtitre": "Et ensuite",
+      "titre": "On vous rappelle pour fixer le détail.",
+      "texte": "Après la validation de votre demande, nous vous contactons rapidement pour préciser le détail et le délai d’intervention. Vous pouvez joindre une ou deux photos du problème."
+    },
+    "fin": {
+      "titre": "Vous préférez en parler ?",
+      "texte": "Un appel suffit pour décrire le problème et fixer un rendez-vous."
+    }
+  },
+  "rayon": {
+    "tete": {
+      "surtitre": "Rayon d’action",
+      "titre": "On vient chez vous ?",
+      "texte": "Dix communes autour de Longueil-Sainte-Marie, et partout dans l’Oise.",
+      "champ": "Votre commune",
+      "exemple": "Compiègne, Creil…",
+      "verifier": "Vérifier",
+      "info": "Moins de 45 min autour de Longueil-Sainte-Marie",
+      "oui": "Oui, {commune} fait partie de nos communes : environ {km} km de Longueil-Sainte-Marie à vol d’oiseau.",
+      "oise": "{commune} est dans l’Oise : nous intervenons dans tout le département. Appelez pour connaître le délai.",
+      "non": "Cette commune n’est pas dans notre liste. Appelez le 07 61 18 33 22 : nous vous dirons si nous pouvons intervenir.",
+      "vide": "Tapez le nom de votre commune.",
+      "carte": "Schéma de la zone d’intervention : Longueil-Sainte-Marie au centre, cercles de 10, 20 et 30 km, distances à vol d’oiseau",
+      "schema": "Schéma, distances à vol d’oiseau",
+      "riviere": "l’Oise"
+    },
+    "liste": {
+      "surtitre": "Nos communes",
+      "titre": "Dix communes, un même numéro.",
+      "texte": "Distances à vol d’oiseau depuis Longueil-Sainte-Marie, à titre indicatif.",
+      "appeler": "Appeler",
+      "depart": "Point de départ"
+    },
+    "oise": {
+      "surtitre": "Toute l’Oise",
+      "titre": "Et partout dans l’Oise.",
+      "texte": "Notre équipe intervient dans tout le département de l’Oise, que ce soit à Beauvais, Compiègne, Creil, Nogent-sur-Oise, Noyon, Pont-Sainte-Maxence, Crépy-en-Valois ou toute autre localité des environs.",
+      "action": "Demander une intervention"
+    }
+  },
+  "contact": {
+    "tete": {
+      "surtitre": "Contact et rendez-vous",
+      "titre": "Demandez à être rappelé.",
+      "texte": "Décrivez votre demande en trois étapes : nous vous recontactons pour préciser le détail et le délai d’intervention.",
+      "telephone": "Ou appelez le 07 61 18 33 22",
+      "remplir": "Remplir ma demande"
+    },
+    "form": {
+      "e1": "Votre besoin",
+      "e2": "Les détails",
+      "e3": "Vos coordonnées",
+      "e4": "Récapitulatif",
+      "q1": "De quels travaux s’agit-il ?",
+      "q2": "Racontez-nous.",
+      "q3": "Comment vous joindre ?",
+      "q4": "Tout est juste ?",
+      "type": "Type de travaux",
+      "nature": "Nature de l’intervention",
+      "prestation": "Prestation choisie",
+      "prestationAucune": "Aucune, je décris ma demande",
+      "piece": "Pièce concernée",
+      "message": "Votre demande",
+      "messageAide": "Ce qui se passe, depuis quand, ce que vous avez déjà essayé.",
+      "photos": "Une ou deux photos (facultatif)",
+      "delai": "Délai souhaité",
+      "nom": "Nom",
+      "prenom": "Prénom",
+      "email": "E-mail",
+      "tel": "Téléphone",
+      "accord": "J’accepte que mes coordonnées servent seulement à répondre à ma demande.",
+      "donnees": "Vos données servent seulement à vous recontacter. Politique de confidentialité : à compléter.",
+      "precedent": "Retour",
+      "suivant": "Continuer",
+      "envoyer": "Envoyer la demande",
+      "finTitre": "Demande prête, rien n’a été envoyé.",
+      "finTexte": "Ceci est une maquette : le formulaire est simulé. Sur le site en ligne, Dépannage 60 recevra votre demande et vous rappellera.",
+      "recommencer": "Nouvelle demande",
+      "simule": "Formulaire de démonstration : rien n’est envoyé."
+    },
+    "acces": {
+      "surtitre": "Où nous trouver",
+      "titre": "Au 9 bis rue de l’Abreuvoir, à Longueil-Sainte-Marie.",
+      "adresse": "Adresse",
+      "telephone": "Téléphone",
+      "horaires": "Horaires",
+      "horairesTexte": "À compléter",
+      "carte": "Schéma : Longueil-Sainte-Marie et les communes voisines",
+      "facebook": "Suivre Dépannage 60 sur Facebook"
+    },
+    "fin": {
+      "titre": "Une urgence, tout de suite ?",
+      "texte": "Le téléphone reste le plus rapide."
+    }
+  },
+  "introuvable": {
+    "surtitre": "Erreur 404",
+    "titre": "Fuite détectée : cette page n’existe pas.",
+    "texte": "Le lien est peut-être coupé. Revenez à l’accueil ou trouvez votre prestation.",
+    "retour": "Revenir à l’accueil",
+    "prestations": "Voir les prestations"
+  }
+}

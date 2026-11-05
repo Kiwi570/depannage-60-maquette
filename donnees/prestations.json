@@ -1,0 +1,1158 @@
+{
+ "familles": [
+  {
+   "id": "wc",
+   "nom": "WC",
+   "reseau": "plomberie",
+   "picto": "wc-bouche"
+  },
+  {
+   "id": "evier",
+   "nom": "Évier",
+   "reseau": "plomberie",
+   "picto": "evier"
+  },
+  {
+   "id": "lavabo",
+   "nom": "Lavabo",
+   "reseau": "plomberie",
+   "picto": "lavabo"
+  },
+  {
+   "id": "baignoire",
+   "nom": "Baignoire",
+   "reseau": "plomberie",
+   "picto": "baignoire"
+  },
+  {
+   "id": "douche",
+   "nom": "Douche",
+   "reseau": "plomberie",
+   "picto": "douche"
+  },
+  {
+   "id": "chauffe-eau",
+   "nom": "Chauffe-eau",
+   "reseau": "plomberie",
+   "picto": "chauffe-eau"
+  },
+  {
+   "id": "fuite",
+   "nom": "Recherche de fuite",
+   "reseau": "plomberie",
+   "picto": "robinet"
+  },
+  {
+   "id": "canalisation",
+   "nom": "Canalisation",
+   "reseau": "plomberie",
+   "picto": "vanne-arret"
+  },
+  {
+   "id": "electromenager",
+   "nom": "Électroménager",
+   "reseau": "plomberie",
+   "picto": "lave-vaisselle"
+  },
+  {
+   "id": "chauffage",
+   "nom": "Chauffage",
+   "reseau": "plomberie",
+   "picto": "radiateur"
+  },
+  {
+   "id": "prises",
+   "nom": "Prises électriques",
+   "reseau": "electricite",
+   "picto": null
+  },
+  {
+   "id": "point-lumineux",
+   "nom": "Point lumineux",
+   "reseau": "electricite",
+   "picto": null
+  },
+  {
+   "id": "divers-electricite",
+   "nom": "Divers électricité",
+   "reseau": "electricite",
+   "picto": null
+  }
+ ],
+ "prestations": [
+  {
+   "id": "debouchage-wc",
+   "famille": "wc",
+   "nom": "Débouchage WC",
+   "prix": 100,
+   "des": true,
+   "photo": "site/debouchage-wc",
+   "duree": null,
+   "detail": [
+    [
+     "Déplacement jusqu’à 30 km",
+     "compris"
+    ],
+    [
+     "Main-d’œuvre, 1 h",
+     "comprise"
+    ]
+   ],
+   "inclus": [
+    "Canne, pompe manuelle, furet électrique ou aspirateur à eau selon le bouchon",
+    "Nettoyage du chantier"
+   ],
+   "nonInclus": [
+    "Si le débouchage simple ne suffit pas : société de curage",
+    "Colonne commune : contacter le syndic",
+    "Toute intervention hors descriptif : sur devis"
+   ],
+   "supplements": []
+  },
+  {
+   "id": "reparation-de-fuite-sur-alimentation-wc",
+   "famille": "wc",
+   "nom": "Réparation de fuite sur alimentation WC",
+   "prix": null,
+   "des": false,
+   "photo": "site/fuite-alimentation-wc",
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-robinet-wc",
+   "famille": "wc",
+   "nom": "Remplacement robinet WC",
+   "prix": null,
+   "des": false,
+   "photo": "site/robinet-wc",
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "reparation-chasse-d-eau-flotteur",
+   "famille": "wc",
+   "nom": "Réparation chasse d’eau / flotteur",
+   "prix": null,
+   "des": false,
+   "photo": "site/chasse-eau",
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-joint-au-pipe-d-evacuation",
+   "famille": "wc",
+   "nom": "Remplacement joint au pipe d’évacuation",
+   "prix": null,
+   "des": false,
+   "photo": "site/joint-pipe",
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "creation-d-une-alimentation-douchette-wc",
+   "famille": "wc",
+   "nom": "Création d’une alimentation douchette WC",
+   "prix": null,
+   "des": false,
+   "photo": "site/douchette-wc",
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "pack-wc-standard-complet",
+   "famille": "wc",
+   "nom": "Pack WC standard complet",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "debouchage-evier",
+   "famille": "evier",
+   "nom": "Débouchage évier",
+   "prix": 149,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [
+    [
+     "Déplacement",
+     "49 €"
+    ],
+    [
+     "Main-d’œuvre, 1 h",
+     "100 €"
+    ]
+   ],
+   "inclus": [
+    "Diagnostic de la cause du bouchon",
+    "Débouchage avec des outils professionnels (pompe manuelle, furet électrique)",
+    "Nettoyage du lieu de travail"
+   ],
+   "nonInclus": [
+    "Toute intervention hors descriptif : sur devis, par téléphone"
+   ],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-robinet-mitigeur-evier",
+   "famille": "evier",
+   "nom": "Remplacement robinet mitigeur évier",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "robinet-melangeur-d-evier-a-remplacer",
+   "famille": "evier",
+   "nom": "Robinet mélangeur d’évier à remplacer",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "vidange-evier",
+   "famille": "evier",
+   "nom": "Vidange évier",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "reparation-de-fuite-sur-alimentation-en-eau-evier",
+   "famille": "evier",
+   "nom": "Réparation de fuite sur alimentation en eau évier",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "reparation-de-fuite-sur-evacuation-evier",
+   "famille": "evier",
+   "nom": "Réparation de fuite sur évacuation évier",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "vidange-machine-a-laver",
+   "famille": "evier",
+   "nom": "Vidange machine à laver",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-robinet-machine-a-laver",
+   "famille": "evier",
+   "nom": "Remplacement robinet machine à laver",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "creation-alimentation-et-evacuation-machine-a-laver",
+   "famille": "evier",
+   "nom": "Création alimentation et évacuation machine à laver",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-flexible-gaz-pc-gaz-a-vie",
+   "famille": "evier",
+   "nom": "Remplacement flexible gaz (PC gaz) à vie",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "pack-meuble-evier-complet",
+   "famille": "evier",
+   "nom": "Pack meuble évier complet",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "debouchage-lavabo",
+   "famille": "lavabo",
+   "nom": "Débouchage lavabo",
+   "prix": 149,
+   "des": false,
+   "photo": null,
+   "duree": "1 h à 1 h 30",
+   "detail": [
+    [
+     "Déplacement",
+     "49 €"
+    ],
+    [
+     "Main-d’œuvre, 1 h",
+     "100 €"
+    ]
+   ],
+   "inclus": [
+    "Diagnostic de la cause du bouchon",
+    "Débouchage avec des outils professionnels (pompe manuelle, furet électrique)",
+    "Nettoyage du lieu de travail"
+   ],
+   "nonInclus": [
+    "Toute intervention hors descriptif : sur devis, par téléphone"
+   ],
+   "supplements": []
+  },
+  {
+   "id": "vidange-lavabo",
+   "famille": "lavabo",
+   "nom": "Vidange lavabo",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-robinet-mitigeur-lavabo",
+   "famille": "lavabo",
+   "nom": "Remplacement robinet mitigeur lavabo",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "robinet-melangeur-de-lavabo-a-remplacer",
+   "famille": "lavabo",
+   "nom": "Robinet mélangeur de lavabo à remplacer",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "reparation-de-fuite-sur-alimentation-en-eau-lavabo",
+   "famille": "lavabo",
+   "nom": "Réparation de fuite sur alimentation en eau lavabo",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "reparation-de-fuite-sur-evacuation-lavabo",
+   "famille": "lavabo",
+   "nom": "Réparation de fuite sur évacuation lavabo",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "pack-remplacement-lavabo-complet",
+   "famille": "lavabo",
+   "nom": "Pack remplacement lavabo complet",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "debouchage-baignoire",
+   "famille": "baignoire",
+   "nom": "Débouchage baignoire",
+   "prix": 149,
+   "des": false,
+   "photo": "site/outils-debouchage",
+   "duree": "1 h à 1 h 30",
+   "detail": [
+    [
+     "Déplacement",
+     "49 €"
+    ],
+    [
+     "Main-d’œuvre, 1 h",
+     "100 €"
+    ]
+   ],
+   "inclus": [
+    "Diagnostic de la cause du bouchon",
+    "Débouchage avec des outils professionnels (pompe manuelle, furet électrique)",
+    "Nettoyage du lieu de travail"
+   ],
+   "nonInclus": [
+    "Toute intervention hors descriptif : sur devis, par téléphone"
+   ],
+   "supplements": []
+  },
+  {
+   "id": "robinet-mitigeur-baignoire",
+   "famille": "baignoire",
+   "nom": "Robinet mitigeur baignoire",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "robinet-melangeur-de-baignoire-a-remplacer",
+   "famille": "baignoire",
+   "nom": "Robinet mélangeur de baignoire à remplacer",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "robinet-thermostatique-a-remplacer",
+   "famille": "baignoire",
+   "nom": "Robinet thermostatique à remplacer",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "vidange-baignoire",
+   "famille": "baignoire",
+   "nom": "Vidange baignoire",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "joint-silicone-baignoire",
+   "famille": "baignoire",
+   "nom": "Joint silicone baignoire",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "fuite-sur-evacuation-baignoire",
+   "famille": "baignoire",
+   "nom": "Fuite sur évacuation baignoire",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "fuite-sur-alimentation-en-eau-baignoire",
+   "famille": "baignoire",
+   "nom": "Fuite sur alimentation en eau baignoire",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "pack-remplacement-baignoire-complete",
+   "famille": "baignoire",
+   "nom": "Pack remplacement baignoire complète",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "debouchage-douche",
+   "famille": "douche",
+   "nom": "Débouchage douche",
+   "prix": 149,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [
+    [
+     "Déplacement",
+     "49 €"
+    ],
+    [
+     "Main-d’œuvre, 1 h",
+     "100 €"
+    ]
+   ],
+   "inclus": [
+    "Diagnostic de la cause du bouchon",
+    "Débouchage avec des outils professionnels (pompe manuelle, furet électrique)",
+    "Nettoyage du lieu de travail"
+   ],
+   "nonInclus": [
+    "Toute intervention hors descriptif : sur devis, par téléphone"
+   ],
+   "supplements": []
+  },
+  {
+   "id": "vidange-douche",
+   "famille": "douche",
+   "nom": "Vidange douche",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-robinet-mitigeur-douche",
+   "famille": "douche",
+   "nom": "Remplacement robinet mitigeur douche",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "reparation-de-fuite-sur-alimentation-en-eau-douche",
+   "famille": "douche",
+   "nom": "Réparation de fuite sur alimentation en eau douche",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "reparation-de-fuite-sur-evacuation-douche",
+   "famille": "douche",
+   "nom": "Réparation de fuite sur évacuation douche",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "barre-de-pommeau-de-douche-a-remplacer",
+   "famille": "douche",
+   "nom": "Barre de pommeau de douche à remplacer",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "pack-remplacement-receveur-de-douche",
+   "famille": "douche",
+   "nom": "Pack remplacement receveur de douche",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "probleme-de-ballon-d-eau-chaude",
+   "famille": "chauffe-eau",
+   "nom": "Problème de ballon d’eau chaude",
+   "prix": 149,
+   "des": false,
+   "photo": "site/ballon",
+   "duree": null,
+   "detail": [
+    [
+     "Déplacement",
+     "49 €"
+    ],
+    [
+     "Main-d’œuvre, 1 h",
+     "100 €"
+    ]
+   ],
+   "inclus": [
+    "Diagnostic de la cause de la panne",
+    "Outillage professionnel (appareils de mesure, recommandations)",
+    "Nettoyage du lieu de travail"
+   ],
+   "nonInclus": [
+    "Toute intervention hors descriptif : sur devis"
+   ],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-reducteur-de-pression",
+   "famille": "chauffe-eau",
+   "nom": "Remplacement réducteur de pression",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-groupe-de-securite",
+   "famille": "chauffe-eau",
+   "nom": "Remplacement groupe de sécurité",
+   "prix": null,
+   "des": false,
+   "photo": "site/groupe-securite",
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-des-thermostats-de-chauffe-eau",
+   "famille": "chauffe-eau",
+   "nom": "Remplacement des thermostats de chauffe-eau",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "fuite-sur-alimentation-du-ballon-d-eau-chaude",
+   "famille": "chauffe-eau",
+   "nom": "Fuite sur alimentation du ballon d’eau chaude",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "fuite-sur-evacuation-du-ballon-d-eau-chaude",
+   "famille": "chauffe-eau",
+   "nom": "Fuite sur évacuation du ballon d’eau chaude",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-du-ballon-ou-de-la-resistance",
+   "famille": "chauffe-eau",
+   "nom": "Remplacement du ballon ou de la résistance",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "pack-remplacement-chauffe-eau-electrique",
+   "famille": "chauffe-eau",
+   "nom": "Pack remplacement chauffe-eau électrique",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "recherche-de-fuite-simple",
+   "famille": "fuite",
+   "nom": "Recherche de fuite simple",
+   "prix": 149,
+   "des": false,
+   "photo": "site/recherche-fuite",
+   "duree": "1 h à 1 h 30",
+   "detail": [
+    [
+     "Déplacement",
+     "49 €"
+    ],
+    [
+     "Fournitures et pièces",
+     "0 €"
+    ],
+    [
+     "Main-d’œuvre, 1 h",
+     "100 €"
+    ]
+   ],
+   "inclus": [
+    "Localisation de la fuite et sa réparation",
+    "Contrôle du bon fonctionnement",
+    "Explications sur les travaux",
+    "Nettoyage de la zone"
+   ],
+   "nonInclus": [
+    "Toute intervention hors descriptif : sur devis, par téléphone"
+   ],
+   "supplements": []
+  },
+  {
+   "id": "recherche-de-fuite-approfondie",
+   "famille": "fuite",
+   "nom": "Recherche de fuite approfondie",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "j-ai-une-trace-d-humidite",
+   "famille": "canalisation",
+   "nom": "J’ai une trace d’humidité",
+   "prix": 150,
+   "des": true,
+   "photo": "site/trace-humidite",
+   "duree": null,
+   "detail": [
+    [
+     "Déplacement à domicile",
+     "compris"
+    ],
+    [
+     "Recherche et diagnostic, 1 h",
+     "compris"
+    ]
+   ],
+   "inclus": [
+    "Matériel de détection standard",
+    "Devis gratuit et détaillé pour les réparations",
+    "Rapport de recherche de fuite pour les démarches d’assurance"
+   ],
+   "nonInclus": [
+    "Réparation de la canalisation : devis complémentaire",
+    "Remise en état des supports (peinture, plâtrerie, isolation)",
+    "Caméra endoscopique ou gaz traceur, sauf option ou accord préalable"
+   ],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-vanne-d-arret",
+   "famille": "canalisation",
+   "nom": "Remplacement vanne d’arrêt",
+   "prix": null,
+   "des": false,
+   "photo": "site/vanne-arret",
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "j-ai-une-fuite-sur-un-joint",
+   "famille": "canalisation",
+   "nom": "J’ai une fuite sur un joint",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "fuite-sur-un-flexible",
+   "famille": "canalisation",
+   "nom": "Fuite sur un flexible",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-reducteur-de-pression-canalisation",
+   "famille": "canalisation",
+   "nom": "Remplacement réducteur de pression",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-vanne-d-arret-exterieure",
+   "famille": "canalisation",
+   "nom": "Remplacement vanne d’arrêt extérieure",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-reducteur-de-pression-exterieur",
+   "famille": "canalisation",
+   "nom": "Remplacement réducteur de pression extérieur",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "remplacement-robinet-de-puisage-exterieur",
+   "famille": "canalisation",
+   "nom": "Remplacement robinet de puisage extérieur",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "fuite-sur-une-alimentation-d-eau-visible",
+   "famille": "canalisation",
+   "nom": "Fuite sur une alimentation d’eau visible",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "fuite-sur-un-tuyau-d-evacuation-visible",
+   "famille": "canalisation",
+   "nom": "Fuite sur un tuyau d’évacuation visible",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "creation-d-une-alimentation-et-d-une-evacuation-d-eau",
+   "famille": "canalisation",
+   "nom": "Création d’une alimentation et d’une évacuation d’eau",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "robinet-de-machine-a-laver-a-remplacer",
+   "famille": "electromenager",
+   "nom": "Robinet de machine à laver à remplacer",
+   "prix": 169,
+   "des": false,
+   "photo": "site/robinet-machine",
+   "duree": null,
+   "detail": [
+    [
+     "Déplacement",
+     "49 €"
+    ],
+    [
+     "Fournitures et pièces",
+     "20 €"
+    ],
+    [
+     "Main-d’œuvre, 1 h",
+     "100 €"
+    ]
+   ],
+   "inclus": [
+    "Déplacement du plombier",
+    "Coupure de l’eau et vidange de la tuyauterie concernée",
+    "Dépose de l’ancien robinet et pose du neuf",
+    "Robinet standard en laiton chromé fourni",
+    "Remplacement du joint entre robinet et flexible",
+    "Mise en eau et contrôle de pression",
+    "Évacuation et recyclage de l’ancien robinet"
+   ],
+   "nonInclus": [
+    "Flexible plastique de la machine, sauf fourni ou en supplément",
+    "Modification importante de la tuyauterie cassée, dessoudée ou très corrodée",
+    "Déplacement, installation ou mise en service électrique de la machine",
+    "Création ou débouchage de l’évacuation PVC"
+   ],
+   "supplements": []
+  },
+  {
+   "id": "robinet-de-lave-vaisselle-a-remplacer",
+   "famille": "electromenager",
+   "nom": "Robinet de lave-vaisselle à remplacer",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "creation-alimentation-machine-a-laver",
+   "famille": "electromenager",
+   "nom": "Création alimentation machine à laver",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "creation-evacuation-machine-a-laver",
+   "famille": "electromenager",
+   "nom": "Création évacuation machine à laver",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "prises-electriques-standard",
+   "famille": "prises",
+   "nom": "Prises électriques standard",
+   "prix": 155,
+   "des": false,
+   "photo": "site/prises",
+   "duree": null,
+   "detail": [],
+   "inclus": [
+    "Fourniture et pose de prises standard en rénovation électrique"
+   ],
+   "nonInclus": [],
+   "supplements": [
+    [
+     "16 A + T",
+     "0 €",
+     "30 €"
+    ],
+    [
+     "16 A + T avec interrupteur",
+     "30 €",
+     "100 €"
+    ],
+    [
+     "16 A + T avec variateur",
+     "60 €",
+     "100 €"
+    ],
+    [
+     "16 A + T étanche",
+     "65 €",
+     "150 €"
+    ]
+   ]
+  },
+  {
+   "id": "prises-electriques-specialisees",
+   "famille": "prises",
+   "nom": "Prises électriques spécialisées",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  },
+  {
+   "id": "prises-electriques-communication",
+   "famille": "prises",
+   "nom": "Prises électriques communication",
+   "prix": null,
+   "des": false,
+   "photo": null,
+   "duree": null,
+   "detail": [],
+   "inclus": [],
+   "nonInclus": [],
+   "supplements": []
+  }
+ ]
+}
